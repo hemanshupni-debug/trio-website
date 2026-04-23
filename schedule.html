@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Schedule Meeting</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: white;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card */
+.card {
+  display: flex;
+  width: 900px;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  color: black;
+}
+
+/* LEFT - Calendar */
+.left {
+  width: 45%;
+  background: linear-gradient(135deg, #007BFF, #00c6ff);
+  color: white;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.day {
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.day:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.active {
+  background: white;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+/* RIGHT */
+.right {
+  width: 55%;
+  padding: 25px;
+}
+
+.times button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.times button:hover {
+  background: #007BFF;
+  color: white;
+}
+
+.selected-info {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.submit-btn {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #0056b3;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="card">
+
+    <!-- LEFT -->
+    <div class="left">
+      <div class="header">
+        <button onclick="prevMonth()">❮</button>
+        <h3 id="monthYear"></h3>
+        <button onclick="nextMonth()">❯</button>
+      </div>
+
+      <div class="calendar" id="calendar"></div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right">
+
+      <h3>Select Time</h3>
+
+      <div class="times" id="timeSlots"></div>
+
+      <div class="selected-info">
+        Selected: <span id="selectedText">None</span>
+      </div>
+
+      <h3>Your Info</h3>
+
+     <form id="meetingForm" action="https://formspree.io/f/xaqlnaee" method="POST">
+
+  <input type="hidden" name="_subject" value="TRIO Exhibition - New Booking">
+  <input type="hidden" name="_from_name" value="TRIO Exhibition">
+  <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <input type="hidden" name="date" id="selectedDate">
+  <input type="hidden" name="time" id="selectedTime">
+
+  <button class="submit-btn">Confirm Booking</button>
+</form>
+
+    </div>
+
+  </div>
+</div>
+
+<script>
+
+
+let date = new Date();
+let selectedDate = "";
+let selectedTime = "";
+
+/* Calendar */
+function renderCalendar() {
+  const calendar = document.getElementById("calendar");
+  calendar.innerHTML = "";
+
+  const monthYear = document.getElementById("monthYear");
+  monthYear.innerText = date.toLocaleString('default', { month: 'long', year: 'numeric' });
+
+  let firstDay = new Date(date.getFullYear(), date.getMonth(), 1).getDay();
+  let daysInMonth = new Date(date.getFullYear(), date.getMonth()+1, 0).getDate();
+
+  for (let i = 0; i < firstDay; i++) {
+    calendar.innerHTML += "<div></div>";
+  }
+
+  for (let d = 1; d <= daysInMonth; d++) {
+    let day = document.createElement("div");
+    day.classList.add("day");
+    day.innerText = d;
+day.onclick = () => {
+  document.querySelectorAll(".day").forEach(el => el.classList.remove("active"));
+  day.classList.add("active");
+
+  selectedDate = `${d}-${date.getMonth()+1}-${date.getFullYear()}`;
+  document.getElementById("selectedDate").value = selectedDate;
+
+  updateSelectedText();
+  loadTimeSlots();
+};
+    calendar.appendChild(day);
+  }
+}
+
+function prevMonth() {
+  date.setMonth(date.getMonth() - 1);
+  renderCalendar();
+}
+
+function nextMonth() {
+  date.setMonth(date.getMonth() + 1);
+  renderCalendar();
+}
+
+/* Time Slots */
+function loadTimeSlots() {
+  const times = ["10:00 AM","11:00 AM","12:00 PM","2:00 PM","3:00 PM","5:00 PM"];
+  const container = document.getElementById("timeSlots");
+  container.innerHTML = "";
+
+  times.forEach(t => {
+    let btn = document.createElement("button");
+    btn.innerText = t;
+
+    btn.onclick = () => {
+      selectedTime = t;
+      document.getElementById("selectedTime").value = t;
+
+      document.querySelectorAll(".times button").forEach(b => b.style.background="white");
+      btn.style.background = "#007BFF";
+      btn.style.color = "white";
+
+      updateSelectedText();
+    };
+
+    container.appendChild(btn);
+  });
+}
+
+/* Selected Text */
+function updateSelectedText() {
+  document.getElementById("selectedText").innerText =
+    selectedDate + " " + selectedTime;
+}
+
+
+
+/* Init */
+renderCalendar();
+loadTimeSlots();
+</script>
+
+<button onclick="toggleMusic()" id="musicBtn">🔊</button>
+<div class="floating-icons">
+
+  <a href="https://wa.me/919987570309" class="whatsapp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<a href="#" class="wechat">
+  <i class="fab fa-weixin"></i>
+</a>
+</div>
+<script>
+document.getElementById("meetingForm").addEventListener("submit", function(e) {
+    alert("Booking Confirmed ✅");
+    setTimeout(() => {
+        window.location.href = "thankyou.html";
+    }, 500);
+});
+</script>
+ 
+
+<script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/04/09/06/20260409060544-DG066HXA.js" defer></script>
+    
+</body>
+</html>
