@@ -2170,19 +2170,30 @@ flex-direction:column;
 /* HERO SECTION (🔥 MAIN PART) */
 /* HERO SECTION (🔥 MAIN PART) */
 .interior-hero{
+  position:relative;
+  min-height:100vh;
   display:flex;
   justify-content:center;
   align-items:center;
   text-align:center;
-  padding:140px 20px;
+  overflow:hidden;
+}
 
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
-    
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-  margin-top: 0px;
+.interior-video{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:-2;
+}
+
+.interior-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.55);
+  z-index:-1;
 }
 
 /* CONTENT */
@@ -2367,6 +2378,149 @@ flex-direction:column;
   background:#19a7c9;
   color:#fff;
   transform:translateX(5px);
+}
+
+.luxury-showcase{
+  position:relative;
+  min-height:100vh;
+  overflow:hidden;
+}
+
+.showcase-image img{
+  width:100%;
+  height:100vh;
+  object-fit:cover;
+  transform:scale(1.2);
+  transition:1.5s;
+}
+
+.luxury-showcase.active img{
+  transform:scale(1);
+}
+
+.showcase-content{
+  position:absolute;
+  left:8%;
+  top:50%;
+  transform:translateY(-50%);
+  max-width:600px;
+  color:#fff;
+}
+
+.text-motion-section{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#111;
+  overflow:hidden;
+}
+
+.motion-title{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.motion-title span{
+  font-size:7vw;
+  font-weight:800;
+  color:white;
+  transition:.5s;
+  cursor:pointer;
+}
+
+.motion-title span:hover{
+  transform:translateX(40px);
+  letter-spacing:10px;
+  color:#c9a46c;
+}
+.interior-marquee-showcase{
+  padding:100px 0;
+  background:#0f0f0f;
+  overflow:hidden;
+}
+
+.interior-marquee-track{
+  display:flex;
+  gap:30px;
+  width:max-content;
+
+  animation: interiorScroll 30s linear infinite;
+}
+
+.interior-marquee-item{
+  min-width:350px;
+  position:relative;
+  overflow:hidden;
+  border-radius:20px;
+}
+
+.interior-marquee-item img{
+  width:350px;
+  height:450px;
+  object-fit:cover;
+  transition:.5s;
+}
+
+.interior-marquee-item:hover img{
+  transform:scale(1.08);
+}
+
+.interior-marquee-item h3{
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  color:white;
+  font-size:24px;
+}
+@keyframes interiorScroll{
+  0%{
+    transform:translateX(0);
+  }
+  100%{
+    transform:translateX(-50%);
+  }
+}
+
+.trio-advantages{
+  padding:120px 20px;
+  background:#111;
+  text-align:center;
+  color:white;
+}
+
+.trio-advantages h2{
+  font-size:50px;
+  margin-bottom:70px;
+}
+
+.advantages-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  max-width:1200px;
+  margin:auto;
+}
+
+.adv-card{
+  background:#1b1b1b;
+  padding:50px 20px;
+  border-radius:20px;
+  transition:.4s;
+}
+
+.adv-card:hover{
+  transform:translateY(-15px);
+}
+
+.adv-card h3{
+  font-size:60px;
+  color:#c9a46c;
+}
+
+.adv-card p{
+  font-size:18px;
 }
 /* SECTION */
 .why-trio-new{
