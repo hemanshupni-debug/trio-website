@@ -64,7 +64,7 @@ const translations = {
     interior:"Interior",
     about:"About",
     contact:"Contact", 
-    title: "Global Leaders in Brand Environments",
+    title:"Global Leaders in Exhibition Industry",
     subtitle: "End to End Design, Build, Installation & Dismantle",
     quote: "Get Quote",
     creative: "Creative Exhibition Stall Design & Execution",
