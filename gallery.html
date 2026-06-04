@@ -6,6 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Project Gallery</title>
  <link rel="stylesheet" href="style.css">
+ 
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
 
 body{
@@ -120,47 +124,48 @@ body{
 .nav-btn:hover{
     background:rgba(255,255,255,.4);
 }
-
 </style>
 </head>
 <body>
 
-<!-- NAVBAR SAME -->
 <header>
-  <img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo">
-  
-  
+  <img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo" alt="Trio Exhibition Logo">
+
   <!-- 🔥 Hamburger -->
   <div class="hamburger" onclick="toggleMenu()">
     ☰
   </div>
-  <nav>
-    <a href="index.html">Home</a>
+
+  <nav id="nav-menu">
+    <a href="index.html" data-key="home">Home</a>
 
     <div class="nav-item dropdown">
-      <a href="services.html" class="nav-link">Services</a>
+    <a href="#" class="nav-link" onclick="toggleDropdown(event)">Services</a>
 
       <div class="mega-menu">
         <div class="menu-column">
-          <a href="services.html">All Services</a>
-          <a href="design.html">Design</a>
-          <a href="stand.html">Exhibition stand </a>
+      <a href="services.html">All Services</a>
+          
+          <a href="Interior.html">Interior</a>
+          <a href="design.html">design</a>
+          <a href="stand.html">Exhibition stand</a>
           <a href="Exhibition.html">Exhibition Booth</a>
         </div>
 
         <div class="menu-column">
           <a href="miami.html">Miami Booth</a>
           <a href="thailand.html">Thailand Booth</a>
-          <a href="dubai.html">Dubai Booth</a>
+          <a href="dubai.html">dubai Booth</a>
+
         </div>
       </div>
     </div>
-
-    <a href="work.html">Our Work</a>
-    <a href="Interior.html" data-key="Interior">Interior</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-     <a href="#" id="lang-en">EN</a> | 
+      
+     <a href="work.html" data-key="work">Our Work</a>
+    <a href="Interior.html" data-key="interior">Interior</a>
+    <a href="about.html" data-key="about">About</a>
+    <a href="contact.html" data-key="contact">Contact</a>
+    <a href="#" id="lang-en">EN</a> | 
     <a href="#" id="lang-cn">CN</a>
   </nav>
 </header>
@@ -200,7 +205,7 @@ const galleries = {
         "trio-website/Projects/Angel Fisa 2024 Brazil/4..JPG"
     ],
        dubai: [
-        "trio-website/Projects/Arab lab Dubai/1.png",
+        "trio-website/Projects/Arab lab Dubai/1...png",
         "trio-website/Projects/Arab lab Dubai/2.jpg",
         "trio-website/Projects/Arab lab Dubai/3.jpg",
         "trio-website/Projects/Arab lab Dubai/4.jpg"
@@ -228,6 +233,59 @@ const galleries = {
         "trio-website/Projects/SCOPE FI India Bangalore/2.jpg",
         "trio-website/Projects/SCOPE FI India Bangalore/3.png",
         "trio-website/Projects/SCOPE FI India Bangalore/4.jpg"
+    ],
+     iran: [
+        "trio-website/Projects/IRAN Automacanis Show 2024/1.png",
+        "trio-website/Projects/IRAN Automacanis Show 2024/2.png",
+        "trio-website/Projects/IRAN Automacanis Show 2024/3.png",
+        
+    ],
+    mumbai: [
+        "trio-website/Projects/Hyundai Stall Weild Expo Mumbai/1.jpg",
+        "trio-website/Projects/Hyundai Stall Weild Expo Mumbai/2.jpg",
+        "trio-website/Projects/Hyundai Stall Weild Expo Mumbai/3.jpg",
+        "trio-website/Projects/Hyundai Stall Weild Expo Mumbai/4.jpg"
+    ],
+     mumbai2: [
+        "trio-website/Projects/Motwani Mumabi/1.png",
+        "trio-website/Projects/Motwani Mumabi/2.JPG",
+        "trio-website/Projects/Motwani Mumabi/3.JPG",
+        "trio-website/Projects/Motwani Mumabi/4.JPG"
+    ],
+     mumbai3: [
+        "trio-website/Projects/204 sqmt Arkema Stall Paint India Mumbai/1.png",
+        "trio-website/Projects/204 sqmt Arkema Stall Paint India Mumbai/2.JPG",
+        "trio-website/Projects/204 sqmt Arkema Stall Paint India Mumbai/3..JPG",
+        "trio-website/Projects/204 sqmt Arkema Stall Paint India Mumbai/4.png"
+    ],
+     bangalore: [
+        "trio-website/Projects/BCh Bangalore wire and cable expo 2024/1.JPG",
+        "trio-website/Projects/BCh Bangalore wire and cable expo 2024/2.JPG",
+        "trio-website/Projects/BCh Bangalore wire and cable expo 2024/3.JPG",
+        "trio-website/Projects/BCh Bangalore wire and cable expo 2024/4.JPG"
+    ],
+    delhi: [
+        "trio-website/Projects/COMEN MEDICAL Delhi 2023/1.JPG",
+        "trio-website/Projects/COMEN MEDICAL Delhi 2023/2.JPG",
+        "trio-website/Projects/COMEN MEDICAL Delhi 2023/3.JPEG",
+        "trio-website/Projects/COMEN MEDICAL Delhi 2023/4.JPEG"
+    ],
+     mumbai4: [
+        "trio-website/Projects/400 Sqmt Korea Pavilion Jio Cosmopro 2024/1.jpg",
+        "trio-website/Projects/400 Sqmt Korea Pavilion Jio Cosmopro 2024/2.jpg",
+        "trio-website/Projects/400 Sqmt Korea Pavilion Jio Cosmopro 2024/3.jpg",
+        "trio-website/Projects/400 Sqmt Korea Pavilion Jio Cosmopro 2024/4.jpg"
+    ],
+      brazil1: [
+        "trio-website/Projects/Angel Yeast Brazil Stall Fipan/1.JPG",
+        "trio-website/Projects/Angel Yeast Brazil Stall Fipan/2.JPG",
+        "trio-website/Projects/Angel Yeast Brazil Stall Fipan/3.JPG",
+        
+    ],
+      mumbai5: [
+        "trio-website/Projects/AT & M/1.png",
+        "trio-website/Projects/AT & M/2.JPG",
+        
     ],
 };
 
@@ -305,6 +363,7 @@ document.addEventListener("keydown", function(e){
 
 </script>
 <!-- FOOTER -->
+<!-- FOOTER -->
 <footer class="footer ">
   <div class="footer-container">
 
@@ -365,6 +424,29 @@ document.addEventListener("keydown", function(e){
     </div>
   </div>
 </footer>
+
+<audio id="bgMusic" loop>
+  <source src="/mantra (1).mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="toggleMusic()" id="musicBtn">🔊</button>
+<div class="floating-icons">
+
+  <a href="https://wa.me/919987570309" class="whatsapp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<a href="https://u.wechat.com/kIDDhS_7Wh-srL7FaBTdwcM?s=2" class="wechat" target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-weixin"></i>
+</a>
+</div>
+<script src="script.js"></script>
+
+
+  
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/04/09/06/20260409060544-DG066HXA.js" defer></script>
+
 </body>
 </html>
 
