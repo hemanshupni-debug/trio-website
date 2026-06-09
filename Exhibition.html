@@ -9,38 +9,47 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-<img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo">
+   
+<header>
+  <img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo" alt="Trio Exhibition Logo">
 
-<nav>
-<a href="index.html" data-key="home">Home</a>
-<div class="nav-item dropdown">
-  <a href="services.html" class="nav-link">Services</a>
-
-  <div class="mega-menu">
-    
-    <div class="menu-column">
-      <a href="services.html">All Services</a>
-      <a href="design.html">design</a>
-      <a href="stand.html">Exhibition stand </a>
-      <a href="Exhibition.html">Exhibition Booth</a>
-    </div>
-
-    <div class="menu-column">
-      <a href="miami.html">Miami Booth</a>
-      <a href="thailand.html">Thailand Booth</a>
-      <a href="dubai.html">dubai Booth</a>
-    </div>
-
+  <!-- 🔥 Hamburger -->
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
   </div>
-</div>
-<a href="work.html" data-key="work">Our Work</a>
-<a href="Interior.html" data-key="Interior">Interior</a>
-<a href="about.html" data-key="about">About</a>
-<a href="contact.html" data-key="contact">Contact</a>
-<a href="#" id="lang-en">EN</a> | 
-<a href="#" id="lang-cn">CN</a>
-</nav>
+
+  <nav id="nav-menu">
+    <a href="index.html" data-key="home">Home</a>
+
+    <div class="nav-item dropdown">
+    <a href="#" class="nav-link" onclick="toggleDropdown(event)">Services</a>
+
+      <div class="mega-menu">
+        <div class="menu-column">
+      <a href="services.html">All Services</a>
+          
+          <a href="Interior.html">Interior</a>
+          <a href="design.html">design</a>
+          <a href="stand.html">Exhibition stand</a>
+          <a href="Exhibition.html">Exhibition Booth</a>
+        </div>
+
+        <div class="menu-column">
+          <a href="miami.html">Miami Booth</a>
+          <a href="thailand.html">Thailand Booth</a>
+          <a href="dubai.html">dubai Booth</a>
+
+        </div>
+      </div>
+    </div>
+      
+     <a href="work.html" data-key="work">Our Work</a>
+    <a href="Interior.html" data-key="interior">Interior</a>
+    <a href="about.html" data-key="about">About</a>
+    <a href="contact.html" data-key="contact">Contact</a>
+    <a href="#" id="lang-en">EN</a> | 
+    <a href="#" id="lang-cn">CN</a>
+  </nav>
 </header>
 <!-- EXHIBITION SECTION -->
 <section class="expo-section">
@@ -274,12 +283,12 @@
   <i class="fab fa-whatsapp"></i>
 </a>
 
-<a href="#" class="wechat">
+<a href="https://u.wechat.com/kIDDhS_7Wh-srL7FaBTdwcM?s=2" class="wechat" target="_blank" rel="noopener noreferrer">
   <i class="fab fa-weixin"></i>
 </a>
 </div>
  
-
+<script src="script.js"></script>
 <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2026/04/09/06/20260409060544-DG066HXA.js" defer></script>
     

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
  <meta name="description" content="Trio Exhibitions provides 3D exhibition stall design, custom booth building, and turnkey exhibition solutions in India including Mumbai, Delhi, and Bangalore.">
@@ -11,36 +13,45 @@
 <body>
 
 <header>
-<img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo">
-<nav>
-<a href="index.html" data-key="home">Home</a>
-<div class="nav-item dropdown">
- <a href="#" class="nav-link" onclick="toggleDropdown(event)">Services</a>
+  <img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo" alt="Trio Exhibition Logo">
 
-  <div class="mega-menu">
-
-    <div class="menu-column">
-      <a href="services.html">All Services</a>
-      <a href="design.html">design</a>
-      <a href="stand.html">Exhibition stand</a>
-      <a href="Exhibition.html">Exhibition Booth</a>
-    </div>
-
-    <div class="menu-column">
-      <a href="miami.html">Miami Booth</a>
-      <a href="thailand.html">Thailand Booth</a>
-      <a href="dubai.html">dubai Booth</a>
-    </div>
-
+  <!-- 🔥 Hamburger -->
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
   </div>
-</div>
-<a href="work.html" data-key="work">Our Work</a>
-<a href="Interior.html" data-key="Interior">Interior</a>
-<a href="about.html" data-key="about">About</a>
-<a href="contact.html" data-key="contact">Contact</a>
-<a href="#" id="lang-en">EN</a> | 
-<a href="#" id="lang-cn">CN</a>
-</nav>
+
+  <nav id="nav-menu">
+    <a href="index.html" data-key="home">Home</a>
+
+    <div class="nav-item dropdown">
+    <a href="#" class="nav-link" onclick="toggleDropdown(event)">Services</a>
+
+      <div class="mega-menu">
+        <div class="menu-column">
+      <a href="services.html">All Services</a>
+          
+          <a href="Interior.html">Interior</a>
+          <a href="design.html">design</a>
+          <a href="stand.html">Exhibition stand</a>
+          <a href="Exhibition.html">Exhibition Booth</a>
+        </div>
+
+        <div class="menu-column">
+          <a href="miami.html">Miami Booth</a>
+          <a href="thailand.html">Thailand Booth</a>
+          <a href="dubai.html">dubai Booth</a>
+
+        </div>
+      </div>
+    </div>
+      
+     <a href="work.html" data-key="work">Our Work</a>
+    <a href="Interior.html" data-key="interior">Interior</a>
+    <a href="about.html" data-key="about">About</a>
+    <a href="contact.html" data-key="contact">Contact</a>
+    <a href="#" id="lang-en">EN</a> | 
+    <a href="#" id="lang-cn">CN</a>
+  </nav>
 </header>
 <section class="why-trio">
   <h2>Why Choose TRIO?</h2>
@@ -281,7 +292,7 @@ With TRIO, you don’t just get a booth design — you get a complete exhibition
   <i class="fab fa-whatsapp"></i>
 </a>
 
-<a href="#" class="wechat">
+<a href="https://u.wechat.com/kIDDhS_7Wh-srL7FaBTdwcM?s=2" class="wechat" target="_blank" rel="noopener noreferrer">
   <i class="fab fa-weixin"></i>
 </a>
 </div>

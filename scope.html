@@ -2,45 +2,54 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Scope Project</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <!-- NAVBAR -->
+
 <header>
-<img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo">
+  <img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo" alt="Trio Exhibition Logo">
 
-<nav>
-<a href="index.html" data-key="home">Home</a>
-<div class="nav-item dropdown">
-  <a href="services.html" class="nav-link">Services</a>
-
-  <div class="mega-menu">
-    
-    <div class="menu-column">
-      <a href="services.html">All Services</a>
-      
-      <a href="design.html">design</a>
-      <a href="stand.html">Exhibition stand </a>
-      <a href="Exhibition.html">Exhibition Booth</a>
-    </div>
-
-    <div class="menu-column">
-      <a href="miami.html">Miami Booth</a>
-      <a href="thailand.html">Thailand Booth</a>
-      <a href="dubai.html">dubai Booth</a>
-    </div>
-
+  <!-- 🔥 Hamburger -->
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
   </div>
-</div>
-<a href="work.html" data-key="work">Our Work</a>
-<a href="Interior.html" data-key="Interior">Interior</a>
-<a href="about.html" data-key="about">About</a>
-<a href="contact.html" data-key="contact">Contact</a>
-<a href="#" id="lang-en">EN</a> | 
-<a href="#" id="lang-cn">CN</a>
-</nav>
+
+  <nav id="nav-menu">
+    <a href="index.html" data-key="home">Home</a>
+
+    <div class="nav-item dropdown">
+    <a href="#" class="nav-link" onclick="toggleDropdown(event)">Services</a>
+
+      <div class="mega-menu">
+        <div class="menu-column">
+      <a href="services.html">All Services</a>
+          
+          <a href="Interior.html">Interior</a>
+          <a href="design.html">design</a>
+          <a href="stand.html">Exhibition stand</a>
+          <a href="Exhibition.html">Exhibition Booth</a>
+        </div>
+
+        <div class="menu-column">
+          <a href="miami.html">Miami Booth</a>
+          <a href="thailand.html">Thailand Booth</a>
+          <a href="dubai.html">dubai Booth</a>
+
+        </div>
+      </div>
+    </div>
+      
+     <a href="work.html" data-key="work">Our Work</a>
+    <a href="Interior.html" data-key="interior">Interior</a>
+    <a href="about.html" data-key="about">About</a>
+    <a href="contact.html" data-key="contact">Contact</a>
+    <a href="#" id="lang-en">EN</a> | 
+    <a href="#" id="lang-cn">CN</a>
+  </nav>
 </header>
 <section class="project-detail">
 
@@ -63,15 +72,17 @@
 
     <!-- IMAGES -->
     <div class="project-gallery">
-      <img src="stall2.jpeg">
-      <img src="stall3.jpeg">
-      <img src="stall4.jpeg">
-      <img src="stall5.jpeg">
+      <img src="trio-website/Projects/SCOPE Fi india Mumbai 2023/1.JPG">
+      <img src="trio-website/Projects/SCOPE Fi india Mumbai 2023/2.JPG">
+      <img src="trio-website/Projects/SCOPE Fi india Mumbai 2023/3.JPG">
+      <img src="trio-website/Projects/SCOPE Fi india Mumbai 2023/4.JPG">
     </div>
 
   </div>
 
-</section><footer class="footer ">
+</section>
+<!-- FOOTER -->
+<footer class="footer ">
   <div class="footer-container">
 
     <!-- LEFT -->
@@ -124,15 +135,26 @@
 
   <!-- BOTTOM -->
   <div class="footer-bottom">
-    <p>© 2026 TRIO EXHIBITIONS . ALL right reserved.</p>
+    <p>© 2026 TRIO EXHIBITIONS. ALL right reserved.</p>
     <div>
       <a href="terms.html">Terms of Use</a>
       <a href="privacy.html">Privacy Policy</a>
     </div>
   </div>
 </footer>
- 
 
+<button onclick="toggleMusic()" id="musicBtn">🔊</button>
+<div class="floating-icons">
+
+  <a href="https://wa.me/919987570309" class="whatsapp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<a href="https://u.wechat.com/kIDDhS_7Wh-srL7FaBTdwcM?s=2" class="wechat" target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-weixin"></i>
+</a>
+</div>
+<script src="script.js"></script>
 <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2026/04/09/06/20260409060544-DG066HXA.js" defer></script>
     
