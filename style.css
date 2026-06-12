@@ -417,8 +417,9 @@ text-decoration:none;
 
 /* MOBILE */
 @media(max-width:768px){
-.overlay h1{
-font-size:28px;
+.hero-overlay h1{
+font: size 26px;
+   line-height:1.2;
 }
 }
 .hero-slider{
@@ -438,6 +439,8 @@ height:100%;
 object-fit:cover;
 opacity:0;
 animation:fade 16s infinite;
+  object-position:center ;
+
 }
 
 /* timing */
@@ -3313,12 +3316,14 @@ h3{font-size:18px;}
     padding: 15px;
     text-align: center;
   }
-
-  .logo{
-    width: 180px;
-    margin-bottom: 15px;
+@media (max-width: 768px) {
+  .logo {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    display: block;
   }
-
+}
   nav{
     display: flex;
     flex-wrap: wrap;
@@ -3503,4 +3508,10 @@ h3{font-size:18px;}
     font-weight:700;
   }
 
+}
+@media (max-width: 768px) {
+  .hero-content {
+    top: 42%;
+    transform: translateY(-42%);
+  }
 }
