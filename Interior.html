@@ -328,6 +328,55 @@
 </section>
 
 </section>
+<section class="ai-design-section">
+
+<h2>AI Interior Design Planner</h2>
+
+<form
+action="https://formspree.io/f/xaqlnaee"
+method="POST"
+class="ai-form">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<select name="room_type">
+  <option>Room Type</option>
+  <option>Living Room</option>
+  <option>Bedroom</option>
+  <option>Kitchen</option>
+  <option>Office</option>
+</select>
+
+<input type="text" name="area" placeholder="Area (Sq Ft)">
+
+<select name="budget">
+  <option>Budget</option>
+  <option>₹1-5 Lakh</option>
+  <option>₹5-10 Lakh</option>
+  <option>₹10-20 Lakh</option>
+  <option>₹20 Lakh+</option>
+</select>
+
+<select name="style">
+  <option>Style</option>
+  <option>Modern</option>
+  <option>Luxury</option>
+  <option>Minimalist</option>
+  <option>Classic</option>
+</select>
+
+
+
+
+<button type="submit">
+Get Free Design Consultation
+</button>
+
+</form>
+
+</section>
 <footer class="footer ">
   <div class="footer-container">
 
@@ -404,6 +453,26 @@
 </a>
 </div>
 <script src="script.js"></script>
+
+<script>
+const form = document.querySelector('.ai-form');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  await fetch('https://formspree.io/f/xaqlnaee', {
+    method: 'POST',
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  window.location.href = 'interior-thankyou.html';
+});
+</script>
 
 
   

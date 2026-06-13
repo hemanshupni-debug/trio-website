@@ -93,7 +93,7 @@
             <p>trioexhibition@gmail.com</p>
 
             <p class="heading">FOR A QUOTE</p>
-            <p>sales@trioexhibits.com</p>
+            <p>sales@trioexhibitions.com</p>
         </div>
 
         <!-- Middle Column -->
@@ -242,8 +242,9 @@ db.collection("review").onSnapshot((snapshot)=>{
   snapshot.forEach(doc=>{
     let data = doc.data();
 
-    
-    container.innerHTML += `
+   const stars = "⭐".repeat(data.rating);
+
+container.innerHTML += `
 <div class="testimonial-container">
 
   <div class="frame-left"></div>
@@ -255,8 +256,15 @@ db.collection("review").onSnapshot((snapshot)=>{
     </div>
 
     <div class="testimonial-card">
+
+      <div class="review-stars">
+        ${stars}
+      </div>
+
       <p>"${data.message}"</p>
+
       <h4>${data.name}, ${data.country}</h4>
+
     </div>
 
   </div>
