@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  
+ 
 <header>
   <img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo" alt="Trio Exhibition Logo">
 
@@ -23,25 +23,35 @@
     <a href="index.html" data-key="home">Home</a>
 
     <div class="nav-item dropdown">
-    <a href="#" class="nav-link" onclick="toggleDropdown(event)">Services</a>
+    <a href="#" class="nav-link" data-key="services" onclick="toggleDropdown(event)">
+  Services
+</a>
 
-      <div class="mega-menu">
-        <div class="menu-column">
-      <a href="services.html">All Services</a>
-          
-          <a href="Interior.html">Interior</a>
-          <a href="design.html">design</a>
-          <a href="stand.html">Exhibition stand</a>
-          <a href="Exhibition.html">Exhibition Booth</a>
-        </div>
+ <div class="mega-menu">
+  <div class="menu-column">
 
-        <div class="menu-column">
-          <a href="miami.html">Miami Booth</a>
-          <a href="thailand.html">Thailand Booth</a>
-          <a href="dubai.html">dubai Booth</a>
+    <a href="services.html" data-key="all_services">All Services</a>
 
-        </div>
-      </div>
+    <a href="Interior.html" data-key="interior_menu">Interior</a>
+
+    <a href="design.html" data-key="design_menu">Design</a>
+
+    <a href="stand.html" data-key="exhibition_stand">Exhibition Stand</a>
+
+    <a href="Exhibition.html" data-key="exhibition_booth">Exhibition Booth</a>
+
+  </div>
+
+  <div class="menu-column">
+
+    <a href="miami.html" data-key="miami_booth">Miami Booth</a>
+
+    <a href="thailand.html" data-key="thailand_booth">Thailand Booth</a>
+
+    <a href="dubai.html" data-key="dubai_booth">Dubai Booth</a>
+
+  </div>
+</div>
     </div>
       
      <a href="work.html" data-key="work">Our Work</a>
@@ -61,13 +71,18 @@
   <div class="interior-overlay"></div>
 
   <div class="interior-left">
-    <h1 class="interior-title">Interior Design</h1>
+  <h1 class="interior-title" data-key="interior_title">
+Interior Design
+</h1>
 
-    <p class="interior-text">
-      Step into a world where the art of interior design is meticulously crafted
-      to bring together timeless elegance and cutting-edge modern innovation.
-    </p>
-    <button class="interior-btn">Start Project</button>
+<p class="interior-text" data-key="interior_text">
+Step into a world where the art of interior design is meticulously crafted
+to bring together timeless elegance and cutting-edge modern innovation.
+</p>
+
+<button class="interior-btn" data-key="start_project">
+Start Project
+</button>
 
     <div class="interior-stats">
       <div>
@@ -86,118 +101,133 @@
   </div>
     </section>
   <section class="interior-services">
+<h2 class="section-title" data-key="interior_services">
+Our Interior Services
+</h2>
 
-  <h2 class="section-title">Our Interior Services</h2>
-  <p class="section-subtitle">
-    We create modern, elegant and functional interior spaces tailored to your needs.
-  </p>
+<p class="section-subtitle" data-key="interior_services_desc">
+We create modern, elegant and functional interior spaces tailored to your needs.
+</p>
 
-  <div class="services-grid">
+ <div class="services-grid">
 
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-      <h3>Residential Design</h3>
-      <p>Beautiful and comfortable home interiors crafted with perfection.</p>
-    </div>
-
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
-      <h3>Commercial Spaces</h3>
-      <p>Professional and stylish office & workspace interiors.</p>
-    </div>
-
-    <div class="service-card">
-      <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0">
-      <h3>3D Visualization</h3>
-      <p>See your dream space before it becomes reality.</p>
-    </div>
-
+  <div class="service-card">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+    <h3 data-key="residential_design">Residential Design</h3>
+    <p data-key="residential_design_text">
+      Beautiful and comfortable home interiors crafted with perfection.
+    </p>
   </div>
+
+  <div class="service-card">
+    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
+    <h3 data-key="commercial_spaces">Commercial Spaces</h3>
+    <p data-key="commercial_spaces_text">
+      Professional and stylish office & workspace interiors.
+    </p>
+  </div>
+
+  <div class="service-card">
+    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0">
+    <h3 data-key="visualization_3d">3D Visualization</h3>
+    <p data-key="visualization_3d_text">
+      See your dream space before it becomes reality.
+    </p>
+  </div>
+
+</div>
 
 </section>
 
     <section class="projects-section">
 
-  <h2 class="section-title">Our Recent Projects</h2>
-  <p class="section-subtitle">
-    Explore some of our latest interior design transformations.
-  </p>
+<h2 class="section-title" data-key="recent_projects">
+  Our Recent Projects
+</h2>
 
-  <div class="projects-grid">
+<p class="section-subtitle" data-key="recent_projects_desc">
+  Explore some of our latest interior design transformations.
+</p>
 
-    <div class="project-card">
-      <img src="luxury1.webp">
-      <div class="project-overlay">
-        <h3>Luxury Living Room</h3>
-        <p>Modern & Elegant Design</p>
-      </div>
+<div class="projects-grid">
+
+  <div class="project-card">
+    <img src="luxury1.webp">
+    <div class="project-overlay">
+      <h3 data-key="living_room">Luxury Living Room</h3>
+      <p data-key="living_room_desc">Modern & Elegant Design</p>
     </div>
-
-    <div class="project-card">
-      <img src="off1.jpeg">
-      <div class="project-overlay">
-        <h3>Office Workspace</h3>
-        <p>Professional Interior</p>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="bed1.jpg">
-      <div class="project-overlay">
-        <h3>Bedroom Design</h3>
-        <p>Comfort & Style</p>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="kitchen1.webp">
-      <div class="project-overlay">
-        <h3>Kitchen Interior</h3>
-        <p>Clean & Functional</p>
-      </div>
-    </div>
-
   </div>
+
+  <div class="project-card">
+    <img src="off1.jpeg">
+    <div class="project-overlay">
+      <h3 data-key="office_workspace">Office Workspace</h3>
+      <p data-key="office_workspace_desc">Professional Interior</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="bed1.jpg">
+    <div class="project-overlay">
+      <h3 data-key="bedroom_design">Bedroom Design</h3>
+      <p data-key="bedroom_design_desc">Comfort & Style</p>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <img src="kitchen1.webp">
+    <div class="project-overlay">
+      <h3 data-key="kitchen_interior">Kitchen Interior</h3>
+      <p data-key="kitchen_interior_desc">Clean & Functional</p>
+    </div>
+  </div>
+
+</div>
 <div class="view-more">
-  <a href="all-projects.html">
+  <a href="all-projects.html" data-key="view_all_projects">
     ➝ View All Projects
   </a>
 </div>
+
 </section>
 
 <section class="luxury-showcase reveal">
 
   <div class="showcase-image">
-   <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f" alt="Luxury Interior">
+    <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f" alt="Luxury Interior">
   </div>
 
   <div class="showcase-content">
-    <span>TRIO INTERIORS</span>
 
-    <h2>
+    <span data-key="trio_interiors">TRIO INTERIORS</span>
+
+    <h2 data-key="luxury_title">
       Designing Spaces <br>
       That Inspire Living
     </h2>
 
-    <p>
+    <p data-key="luxury_desc">
       From luxury residences to modern commercial environments,
       we create interiors that combine functionality,
       elegance and timeless design.
     </p>
 
-    <a href="contact.html">Start Your Project →</a>
-  </div>
+    <a href="contact.html" data-key="start_project">
+      Start Your Project →
+    </a>
 
+  </div>
 </section>
 
 </div>
 <section class="text-motion-section">
 
   <h2 class="motion-title">
-    <span>LUXURY</span>
-    <span>INTERIOR</span>
-    <span>DESIGN</span>
-    <span>EXPERIENCE</span>
+    <span data-key="luxury_word">LUXURY</span>
+    <span data-key="interior_word">INTERIOR</span>
+    <span data-key="design_word">DESIGN</span>
+    <span data-key="experience_word">EXPERIENCE</span>
   </h2>
 
 </section>
@@ -207,82 +237,84 @@
 
     <div class="interior-marquee-item">
       <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
-      <h3>Luxury Homes</h3>
+      <h3 data-key="luxury_homes">Luxury Homes</h3>
     </div>
 
     <div class="interior-marquee-item">
       <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72">
-      <h3>Corporate Offices</h3>
+      <h3 data-key="corporate_offices">Corporate Offices</h3>
     </div>
 
     <div class="interior-marquee-item">
       <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
-      <h3>Hotels</h3>
+      <h3 data-key="hotels">Hotels</h3>
     </div>
 
     <div class="interior-marquee-item">
       <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
-      <h3>Restaurants</h3>
+      <h3 data-key="restaurants">Restaurants</h3>
     </div>
 
     <div class="interior-marquee-item">
       <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8">
-      <h3>Retail Stores</h3>
+      <h3 data-key="retail_stores">Retail Stores</h3>
     </div>
 
     <div class="interior-marquee-item">
       <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227">
-      <h3>Villas</h3>
+      <h3 data-key="villas">Villas</h3>
     </div>
-      <div class="interior-marquee-item">
-  <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
-  <h3>Modern Apartments</h3>
-</div>
 
-<div class="interior-marquee-item">
-  <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
-  <h3>Designer Kitchens</h3>
-</div>
+    <div class="interior-marquee-item">
+      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+      <h3 data-key="modern_apartments">Modern Apartments</h3>
+    </div>
 
-<div class="interior-marquee-item">
-  <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
-  <h3>Luxury Bedrooms</h3>
-</div>
+    <div class="interior-marquee-item">
+      <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
+      <h3 data-key="designer_kitchens">Designer Kitchens</h3>
+    </div>
 
-<div class="interior-marquee-item">
-  <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
-  <h3>Living Rooms</h3>
-</div>
+    <div class="interior-marquee-item">
+      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+      <h3 data-key="luxury_bedrooms">Luxury Bedrooms</h3>
+    </div>
 
-<div class="interior-marquee-item">
-  <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2">
-  <h3>Meeting Rooms</h3>
-</div>
+    <div class="interior-marquee-item">
+      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+      <h3 data-key="living_rooms">Living Rooms</h3>
+    </div>
 
-<div class="interior-marquee-item">
-  <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24">
-  <h3>Cafes</h3>
-</div>
+    <div class="interior-marquee-item">
+      <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2">
+      <h3 data-key="meeting_rooms">Meeting Rooms</h3>
+    </div>
 
-<div class="interior-marquee-item">
-  <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267">
-  <h3>Penthouses</h3>
-</div>
+    <div class="interior-marquee-item">
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24">
+      <h3 data-key="cafes">Cafes</h3>
+    </div>
 
-<div class="interior-marquee-item">
-  <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118">
-  <h3>Showrooms</h3>
-</div>
+    <div class="interior-marquee-item">
+      <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267">
+      <h3 data-key="penthouses">Penthouses</h3>
+    </div>
 
-<div class="interior-marquee-item">
-  <img src="https://images.unsplash.com/photo-1494526585095-c41746248156">
-  <h3>Luxury Bathrooms</h3>
-</div>
+    <div class="interior-marquee-item">
+      <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118">
+      <h3 data-key="showrooms">Showrooms</h3>
+    </div>
 
-<div class="interior-marquee-item">
-  <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750">
-  <h3>Premium Villas</h3>
-</div>
+    <div class="interior-marquee-item">
+      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156">
+      <h3 data-key="luxury_bathrooms">Luxury Bathrooms</h3>
+    </div>
+
+    <div class="interior-marquee-item">
+      <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750">
+      <h3 data-key="premium_villas">Premium Villas</h3>
+    </div>
+
   </div>
 
 </section>
@@ -313,46 +345,48 @@
     </div>
 
   </div>
+<section class="interior-cta">
 
-  <section class="interior-cta">
+  <h2 data-key="dream_space_title">
+    Let's Design Your Dream Space
+  </h2>
 
-  <h2>Let's Design Your Dream Space</h2>
-
-  <p>
+  <p data-key="dream_space_desc">
     Luxury interiors crafted with creativity,
     precision and timeless elegance.
   </p>
 
-  <a href="contact.html">Start Your Project</a>
+  <a href="contact.html" data-key="start_project_cta">
+    Start Your Project
+  </a>
 
 </section>
-
 </section>
 <section class="ai-design-section">
 
-<h2>AI Interior Design Planner</h2>
+<h2 data-key="ai_planner_title">AI Interior Design Planner</h2>
 
 <form
 action="https://formspree.io/f/xaqlnaee"
 method="POST"
 class="ai-form">
 
-<input type="text" name="name" placeholder="Your Name" required>
+<input type="text" name="name" data-key-placeholder="your_name" placeholder="Your Name" required>
 
-<input type="email" name="email" placeholder="Email Address" required>
+<input type="email" name="email" data-key-placeholder="email_address" placeholder="Email Address" required>
 
 <select name="room_type">
-  <option>Room Type</option>
-  <option>Living Room</option>
-  <option>Bedroom</option>
-  <option>Kitchen</option>
-  <option>Office</option>
+  <option data-key="room_type">Room Type</option>
+  <option data-key="living_room">Living Room</option>
+  <option data-key="bedroom">Bedroom</option>
+  <option data-key="kitchen">Kitchen</option>
+  <option data-key="office">Office</option>
 </select>
 
-<input type="text" name="area" placeholder="Area (Sq Ft)">
+<input type="text" name="area" data-key-placeholder="area_sqft" placeholder="Area (Sq Ft)">
 
 <select name="budget">
-  <option>Budget</option>
+  <option data-key="budget">Budget</option>
   <option>₹1-5 Lakh</option>
   <option>₹5-10 Lakh</option>
   <option>₹10-20 Lakh</option>
@@ -360,35 +394,33 @@ class="ai-form">
 </select>
 
 <select name="style">
-  <option>Style</option>
-  <option>Modern</option>
-  <option>Luxury</option>
-  <option>Minimalist</option>
-  <option>Classic</option>
+  <option data-key="style">Style</option>
+  <option data-key="modern">Modern</option>
+  <option data-key="luxury">Luxury</option>
+  <option data-key="minimalist">Minimalist</option>
+  <option data-key="classic">Classic</option>
 </select>
 
-
-
-
-<button type="submit">
-Get Free Design Consultation
+<button type="submit" data-key="free_consultation">
+  Get Free Design Consultation
 </button>
 
 </form>
 
 </section>
-<footer class="footer ">
+<footer class="footer">
   <div class="footer-container">
 
     <!-- LEFT -->
     <div class="footer-col">
       <h2>TRIO EXHIBITIONS</h2>
-      <p>
+
+      <p data-key="footer_desc">
         We create premium exhibition booths with creative design,
         flawless production and complete project management.
       </p>
 
-      <p class="address">
+      <p class="address" data-key="footer_address">
         Mumbai, India<br>
         Exhibition Services Worldwide
       </p>
@@ -408,32 +440,36 @@ Get Free Design Consultation
 
     <!-- MIDDLE -->
     <div class="footer-col">
-      <h3>Quick Links</h3>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="work.html">Our Work</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <h3 data-key="quick_links">Quick Links</h3>
+
+      <a href="index.html" data-key="home">Home</a>
+      <a href="services.html" data-key="services">Services</a>
+      <a href="work.html" data-key="work">Our Work</a>
+      <a href="about.html" data-key="about">About</a>
+      <a href="contact.html" data-key="contact">Contact</a>
     </div>
 
     <!-- RIGHT -->
     <div class="footer-col">
-      <h3>Trade Show Cities</h3>
-      <p>India</p>
-      <p>Dubai</p>
-      <p>Thailand</p>
-      <p>china</p>
-      <p>USA</p>
+      <h3 data-key="trade_cities">Trade Show Cities</h3>
+
+      <p data-key="india">India</p>
+      <p data-key="dubai">Dubai</p>
+      <p data-key="thailand">Thailand</p>
+      <p data-key="china">China</p>
+      <p data-key="usa">USA</p>
     </div>
 
   </div>
 
-  <!-- BOTTOM -->
   <div class="footer-bottom">
-    <p>© 2026 TRIO EXHIBITIONS . ALL right reserved.</p>
+    <p data-key="copyright">
+      © 2026 TRIO EXHIBITIONS . ALL rights reserved.
+    </p>
+
     <div>
-      <a href="terms.html">Terms of Use</a>
-      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html" data-key="terms">Terms of Use</a>
+      <a href="privacy.html" data-key="privacy">Privacy Policy</a>
     </div>
   </div>
 </footer>

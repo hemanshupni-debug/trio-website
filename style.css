@@ -3627,3 +3627,7 @@ h3{font-size:18px;}
   margin-bottom:12px;
   letter-spacing:3px;
 }
+.bpChatContainer{
+    z-index: 2147483647 !important;
+    position: fixed !important;
+}
