@@ -535,6 +535,57 @@ logistics_title:
 "Logistics",
 logistics_desc:
 "Transport & handling.",
+our_services:
+"Our Services",
+
+booth_design:
+"Booth Design",
+design_3d:
+"3D Design",
+
+fabrication:
+"Fabrication",
+installation:
+"Installation",
+
+logistics:
+"Logistics",
+storage:
+"Storage",
+faqs:
+"FAQs",
+faq_custom_booth_question:
+"Why choose custom booth?",
+
+faq_custom_booth_answer:
+"Custom booths attract more visitors and improve branding.",
+
+faq_full_service_question:
+"Do you provide full service?",
+
+faq_full_service_answer:
+"Yes, TRIO provides complete exhibition solutions.",
+thailand_booths_title:
+"Custom Exhibition Booths in Thailand",
+thailand_booths_desc:
+"Creative booth solutions for exhibitions across Thailand",
+our_work_thailand:
+"Our Work in Thailand",
+why_exhibit_thailand:
+"Why Exhibit in Thailand with TRIO?",
+
+why_exhibit_thailand_desc:
+"We create engaging and cost-effective booth experiences in Thailand.",
+creative_booth_ideas:
+"Creative Booth Ideas",
+affordable_solutions:
+"Affordable Solutions",
+full_project_management:
+"Full Project Management",
+on_time_execution:
+"On-time Execution",
+local_support:
+"Local Support",
   },
 
   cn: {
@@ -1052,10 +1103,54 @@ logistics_title:
 "物流",
 logistics_desc:
 "运输与现场协调服务。",
+our_services:
+"我们的服务",
+booth_design:
+"展台设计",
+design_3d:
+"3D 展示设计",
+fabrication:
+"制作与搭建",
+installation:
+"安装服务",
+logistics:
+"物流管理",
+storage:
+"仓储服务",
+faqs:
+"常见问题",
 
+faq_custom_booth_question:
+"为什么选择定制展台？",
+faq_custom_booth_answer:
+"定制展台能够吸引更多访客，并有效提升品牌形象。",
+faq_full_service_question:
+"你们提供一站式服务吗？",
+faq_full_service_answer:
+"是的，TRIO 提供完整的展览解决方案。",
+thailand_booths_title:
+"泰国定制展览展台",
+thailand_booths_desc:
+"为泰国各地展览会提供创新展台解决方案",
+our_work_thailand:
+"我们在泰国的项目案例",
+why_exhibit_thailand:
+"为什么选择 TRIO 在泰国参展？",
 
+why_exhibit_thailand_desc:
+"我们在泰国打造具有吸引力且高性价比的展台体验。",
 
+creative_booth_ideas:
+"创意展台设计方案",
 
+affordable_solutions:
+"经济高效的解决方案",
+full_project_management:
+"全程项目管理服务",
+on_time_execution:
+"准时执行与交付",
+local_support:
+"本地支持服务",
   }
 };
 
