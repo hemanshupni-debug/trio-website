@@ -72,31 +72,32 @@
 <!-- LEFT CONTENT -->
 <div class="left">
 
-<h1>Exhibition Design</h1>
+<h1 data-key="exhibition_design">Exhibition Design</h1>
 
-<p>
-At TRIO Exhibitions, we specialize in creating impactful exhibition booth designs 
-that help brands stand out globally. From concept to execution, we deliver complete 
+<p data-key="design_desc1">
+At TRIO Exhibitions, we specialize in creating impactful exhibition booth designs
+that help brands stand out globally. From concept to execution, we deliver complete
 solutions tailored to your business goals.
 </p>
-
-<p>
-Our expert team focuses on creativity, functionality, and brand storytelling to 
+<p data-key="design_desc2">
+Our expert team focuses on creativity, functionality, and brand storytelling to
 ensure your exhibition presence leaves a lasting impression.
 </p>
 
-<h3>Building Exhibits For Global Brands</h3>
+<h3 data-key="global_brands">
+Building Exhibits For Global Brands
+</h3>
 
-<p>
+<p data-key="global_brands_desc">
 We have successfully delivered exhibition booths across Dubai, USA, Thailand, 
 and India. Our designs combine innovation and practicality to maximize visitor engagement.
 </p>
 
 <ul>
-<li>✔️ Custom Exhibition Booth Design</li>
-<li>✔️ Complete Project Management</li>
-<li>✔️ Fabrication & Installation</li>
-<li>✔️ Worldwide Execution</li>
+  <li data-key="custom_booth_design">✔️ Custom Exhibition Booth Design</li>
+  <li data-key="project_management">✔️ Complete Project Management</li>
+  <li data-key="fabrication_installation">✔️ Fabrication & Installation</li>
+  <li data-key="worldwide_execution">✔️ Worldwide Execution</li>
 </ul>
 
 </div>
@@ -107,28 +108,45 @@ and India. Our designs combine innovation and practicality to maximize visitor e
 <form action="https://formspree.io/f/xaqlnaee" method="POST" class="contact-form">
 
 <div class="form-row">
-<input type="text" name="first_name" placeholder="First name" required>
-<input type="text" name="last_name" placeholder="Last name" required>
+ <input type="text" name="first_name"
+         data-placeholder="first_name"
+         placeholder="First name" required>
+
+  <input type="text" name="last_name"
+         data-placeholder="last_name"
+         placeholder="Last name" required>
 </div>
 
 <div class="form-row">
-<input type="email" name="email" placeholder="Email" required>
-<input type="text" name="phone" placeholder="Phone number">
+  <input type="email" name="email"
+         data-placeholder="email_placeholder"
+         placeholder="Email" required>
+
+  <input type="text" name="phone"
+         data-placeholder="phone_number"
+         placeholder="Phone number">
 </div>
 
 <div class="form-row">
-<input type="text" name="company" placeholder="Company name">
-<select name="service">
-<option>Reason for contacting us</option>
-<option>Exhibition Design</option>
-<option>Booth Fabrication</option>
-<option>Installation</option>
-</select>
+  <input type="text" name="company"
+         data-placeholder="company_name"
+         placeholder="Company name">
+  <select name="service">
+    <option data-key="reason_contacting">Reason for contacting us</option>
+    <option data-key="exhibition_design_option">Exhibition Design</option>
+    <option data-key="booth_fabrication_option">Booth Fabrication</option>
+    <option data-key="installation_option">Installation</option>
+  </select>
 </div>
+<textarea
+  name="message"
+  placeholder="Tell us about your project..."
+  data-key-placeholder="project_message"
+  required>
+</textarea>
 
-<textarea name="message" placeholder="Tell us about your project..." required></textarea>
 
-<button type="submit">Submit</button>
+<button type="submit" data-key="submit">Submit</button>
 
 </form>
 
@@ -140,12 +158,14 @@ and India. Our designs combine innovation and practicality to maximize visitor e
   <!-- BLOCK 1 -->
   <div class="trio-row">
     <div class="trio-text">
-      <h2>Exhibition Design That Builds Brands</h2>
-      <p>
+      <h2 data-key="exhibition_design_title">
+    Exhibition Design That Builds Brands
+  </h2>
+      <p  data-key="exhibition_design_desc1">
         At TRIO Exhibitions, we specialize in delivering world-class exhibition booth designs that help brands stand out globally. 
         Our approach combines creativity, functionality, and strategic planning to ensure every booth creates a lasting impression.
       </p>
-      <p>
+      <p data-key="exhibition_design_desc2">
         From concept development to execution, we focus on delivering high-quality solutions tailored to your business goals. 
         Our expert team ensures every detail aligns with your brand identity and audience expectations.
       </p>
@@ -158,12 +178,12 @@ and India. Our designs combine innovation and practicality to maximize visitor e
   <!-- BLOCK 2 -->
   <div class="trio-row reverse">
     <div class="trio-text">
-      <h2>Global Exhibition Expertise</h2>
-      <p>
+      <h2 data-key="global_expertise_title">Global Exhibition Expertise</h2>
+      <p  data-key="global_expertise_desc1">
         TRIO has successfully delivered projects across Dubai, USA, Thailand, and India. Our global presence allows us to understand 
         different market needs and provide customized booth solutions.
       </p>
-      <p>
+      <p data-key="global_expertise_desc2">
         We manage everything from fabrication to installation, ensuring smooth execution and premium quality standards worldwide.
       </p>
     </div>
@@ -175,14 +195,18 @@ and India. Our designs combine innovation and practicality to maximize visitor e
   <!-- BLOCK 3 -->
   <div class="trio-row">
     <div class="trio-text">
-      <h2>Creative & Functional Booth Design</h2>
-      <p>
-        Our designs are not just visually appealing but also strategically planned to maximize visitor engagement. 
-        We create interactive and immersive experiences that connect your brand with your audience.
-      </p>
-      <p>
-        With strong focus on space utilization, lighting, and brand storytelling, we ensure your booth attracts and retains visitors.
-      </p>
+    <h2 data-key="creative_functional_title">
+  Creative & Functional Booth Design
+</h2>
+
+<p data-key="creative_functional_desc1">
+  Our designs are not just visually appealing but also strategically planned to maximize visitor engagement.
+  We create interactive and immersive experiences that connect your brand with your audience.
+</p>
+
+<p data-key="creative_functional_desc2">
+  With strong focus on space utilization, lighting, and brand storytelling, we ensure your booth attracts and retains visitors.
+</p>
     </div>
     <div class="trio-img">
       <img src="stall 2.jpeg" alt="">
@@ -192,14 +216,17 @@ and India. Our designs combine innovation and practicality to maximize visitor e
   <!-- BLOCK 4 -->
   <div class="trio-row reverse">
     <div class="trio-text">
-      <h2>End-to-End Project Management</h2>
-      <p>
-        TRIO provides complete exhibition solutions including planning, designing, fabrication, logistics, and on-site installation. 
-        Our team ensures everything runs smoothly from start to finish.
-      </p>
-      <p>
-        We focus on delivering projects on time while maintaining the highest quality standards to ensure your success at every exhibition.
-      </p>
+     <h2 data-key="end_to_end_project_management">
+  End-to-End Project Management
+</h2>
+
+<p data-key="end_to_end_project_management_desc1">
+  TRIO provides complete exhibition solutions including planning, designing, fabrication, logistics, and on-site installation.
+</p>
+
+<p data-key="end_to_end_project_management_desc2">
+  We focus on delivering projects on time while maintaining the highest quality standards to ensure your success at every exhibition.
+</p>
     </div>
     <div class="trio-img">
       <img src="stall1.jpg" alt="">
