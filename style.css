@@ -376,6 +376,9 @@ opacity:1;
 .work-overlay h3{
 font-size:22px;
 margin-bottom:5px;
+color:#FFD700;
+font-weight:700;
+text-shadow:0 2px 10px rgba(0,0,0,0.5);
 }
 
 .work-overlay p{
@@ -1245,16 +1248,17 @@ margin: auto;
 }
 
 /* IMAGE FIX */
-.faq-image img {
-width: 500px;
-border-radius: 15px;
+.faq-img{
+  width:450px;
+}
+.faq-img video{
+  width:100%;
+  height:500px;
+  object-fit:contain;
+  background:#000;
+  border-radius:10px;
+}
 
-}
-.faq-img iframe{
-  width: 100%;
-  height: 400px;
-  border-radius: 10px;
-}
 /* TITLE */
 .faq-content h2 {
 font-size: 36px;
@@ -3630,4 +3634,60 @@ h3{font-size:18px;}
 .bpChatContainer{
     z-index: 2147483647 !important;
     position: fixed !important;
+}
+/* Main Cursor */
+.cursor{
+  position:fixed;
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  pointer-events:none;
+  z-index:999999;
+
+  backdrop-filter:blur(10px);
+  background:rgba(200,169,106,.2);
+  border:1px solid rgba(200,169,106,.5);
+
+  box-shadow:
+  0 0 20px rgba(200,169,106,.8),
+  0 0 40px rgba(200,169,106,.5);
+
+  transform:translate(-50%,-50%);
+}
+
+/* Sparkles */
+.sparkle{
+  position:fixed;
+  pointer-events:none;
+  color:#C8A96A;
+  font-size:14px;
+  z-index:999998;
+  animation:sparkle 1s linear forwards;
+}
+
+@keyframes sparkle{
+  to{
+    opacity:0;
+    transform:translateY(-20px) scale(0);
+  }
+}
+
+/* Click Explosion */
+.explosion{
+  position:fixed;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#C8A96A;
+  pointer-events:none;
+  z-index:999998;
+}
+@media(max-width:768px){
+  .cursor{
+    display:none;
+  }
+
+  body{
+    cursor:auto;
+  }
 }

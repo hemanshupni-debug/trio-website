@@ -586,6 +586,202 @@ on_time_execution:
 "On-time Execution",
 local_support:
 "Local Support",
+whats_included:
+"What's Included",
+concept_title:
+"Concept",
+concept_desc:
+"Unique booth concepts for your brand.",
+production_title:
+"Production",
+production_desc:
+"Strong and durable build quality.",
+
+setup_title:
+"Setup",
+setup_desc:
+"Quick and efficient installation.",
+
+support_title:
+"Support",
+support_desc:
+"On-ground assistance during event.",
+our_services:
+"Our Services",
+
+booth_design:
+"Booth Design",
+design_3d:
+"3D Design",
+fabrication:
+"Fabrication",
+installation:
+"Installation",
+logistics:
+"Logistics",
+
+storage:
+"Storage",
+dubai_booths_title:
+"Custom Exhibition Booths in Dubai",
+dubai_booths_desc:
+"Premium booth design & execution for global exhibitions",
+our_work_dubai:
+"Our Work in Dubai",
+why_choose_trio_dubai:
+"Why Choose TRIO in Dubai?",
+why_choose_trio_dubai_desc:
+"We deliver high-end exhibition booths tailored for Dubai’s premium exhibitions.",
+luxury_booth_designs:
+"Luxury Booth Designs",
+
+advanced_3d_concepts:
+"Advanced 3D Concepts",
+complete_fabrication:
+"Complete Fabrication",
+on_site_installation:
+"On-site Installation",
+
+fast_delivery:
+"Fast Delivery",
+whats_included:
+"What's Included",
+design_title:
+"Design",
+design_desc:
+"Creative and modern booth layouts.",
+build_title:
+"Build",
+build_desc:
+"High quality materials & finishing.",
+installation_title:
+"Installation",
+installation_desc:
+"Quick and smooth setup.",
+logistics_title:
+"Logistics",
+logistics_desc:
+"Complete transport handling.",
+our_services: "Our Services",
+
+booth_design: "Booth Design",
+
+design_3d: "3D Design",
+
+fabrication: "Fabrication",
+
+installation: "Installation",
+
+logistics: "Logistics",
+
+storage: "Storage",
+our_story: "Our Story",
+
+our_story_desc:
+"TRIO Events is a Mumbai-based exhibition company specializing in custom booth design and global exhibitions.",
+about_title: "About Us",
+
+about_desc:
+"We design and build exhibition booths that make brands stand out globally.",
+about_trio_title:
+"About Trio Exhibition: Global Leaders in Brand Environments",
+// ENGLISH
+
+about_trio_desc1:
+"The Inspiration: The Power of Three. The name Trio Exhibition is inspired by the divine energy of Lord Shiva, symbolizing the harmonious execution of three core brand pillars: Events, Exhibitions, and Promotions.",
+
+about_trio_desc2:
+"We believe that a brand’s success depends on the parallel growth of these interrelated functions. By mastering the synergy between creative design and technical execution, we ensure that your brand doesn't just occupy space—it commands attention.",
+
+about_trio_desc3:
+"India's Premier One-Stop Exhibition Stand Contractor. Trio Exhibition is recognized as a leading full-service exhibition design company and turnkey stand contractor in India.",
+
+about_trio_desc4:
+"We specialize in delivering world-class, custom-built exhibition stands and high-impact retail environment displays.",
+
+about_trio_desc5:
+"Beyond fabrication, Trio Exhibition is renowned for Functional Space Planning. We bridge the gap between aesthetic brilliance and strategic floor management, ensuring every square meter of your trade show booth is optimized for lead generation and visitor flow.",
+
+about_trio_desc6:
+"Expertise That Goes The Extra Mile. Operating in today’s competitive global market requires more than just construction; it requires a strategic partner.",
+
+about_trio_desc7:
+"Trio is powered by a highly skilled team with nearly two decades of industry experience.",
+
+about_trio_desc8:
+"Customized Wooden Pavilions: Bespoke designs that reflect your brand’s unique identity.",
+
+about_trio_desc9:
+"Technical Precision: Experts in Maxima, Octanorm, and advanced modular structures.",
+
+about_trio_desc10:
+"In-House Production: A massive 9,000 sq. ft. fabrication facility that ensures quality control and cost-efficiency.",
+
+about_trio_desc11:
+"Cost-Effective Solutions: Delivering designs that exceed expectations without exceeding budgets.",
+
+about_trio_desc12:
+"A Local Footprint with a Global Reach. Headquartered with a strong presence in every major Indian metro—including Mumbai, Delhi, and Bangalore—we provide seamless execution across the entire country.",
+
+about_trio_desc13:
+"However, our vision is global. Backed by a proven track record in the international arena, Trio Exhibition has established an extensive network of Associate Partners across Asia, the Middle East, Europe, and the UK.",
+
+about_trio_desc14:
+"This global channel allows us to offer international exhibitors a home-ground advantage, providing local-rate execution with world-class design standards.",
+core_values: "Our Core Values",
+
+core_values_sub:
+"The principles that drive TRIO Exhibitions to deliver world-class experiences.",
+
+creative_design_title: "Creative Design",
+creative_design_desc:
+"We craft unique booth concepts that stand out and attract attention.",
+
+client_partnership_title: "Client Partnership",
+client_partnership_desc:
+"We work closely with clients to understand and deliver their vision.",
+
+quality_execution_title: "Quality Execution",
+quality_execution_desc:
+"From build to finish, we ensure precision and top-quality workmanship.",
+
+global_reach_title: "Global Reach",
+global_reach_desc:
+"We deliver exhibition solutions across international markets.",
+
+fast_delivery_title: "Fast Delivery",
+fast_delivery_desc:
+"Timely execution with efficient planning and flawless coordination.",
+
+result_focused_title: "Result Focused",
+result_focused_desc:
+"We design booths that generate engagement and business results.",
+years_experience: "Years Experience",
+
+clients: "Clients",
+
+projects: "Projects",
+faq_title1: "Frequently Asked",
+faq_title2: "Questions",
+faq_q1: "1. What services do you provide?",
+faq_a1: "We provide 3D design, fabrication, installation, logistics and complete exhibition solutions.",
+
+faq_q2: "2. Which countries do you operate in?",
+faq_a2: "We operate globally across India, UAE, USA, Europe and more.",
+
+faq_q3: "3. Do you create custom stands?",
+faq_a3: "Yes, we create fully customized stands tailored to your brand.",
+
+faq_q4: "4. Do you handle logistics?",
+faq_a4: "Yes, we handle shipping, installation and dismantling.",
+lets_work_together_desc:
+"Whether you prefer calls, emails, or live chat, we’re here to assist you. Reach out to us and let’s create something extraordinary together. TRIO Exhibitions provides exhibition stand design, booth fabrication, installation, and turnkey exhibition solutions across Delhi, Mumbai, Bangalore, and worldwide.",
+lets_work_together: "Let’s Work Together",
+mumbai:
+"Mumbai Office",
+
+mumbai_address:
+"📍 TRIO Events Exhibitions and Promotions, Gala No. 18, Ground Floor, Gautam Udyog Bhawan, LIC Building, Behind Dena Bank, LBS Marg, Bhandup Station, Bhandup West, Mumbai – 400078, Maharashtra, India.",
   },
 
   cn: {
@@ -1151,6 +1347,201 @@ on_time_execution:
 "准时执行与交付",
 local_support:
 "本地支持服务",
+whats_included:
+"服务内容包括",
+concept_title:
+"创意概念",
+concept_desc:
+"为您的品牌打造独特的展台创意方案。",
+production_title:
+"制作搭建",
+production_desc:
+"高品质、坚固耐用的展台制作。",
+
+setup_title:
+"安装搭建",
+
+setup_desc:
+"快速高效的现场安装服务。",
+
+support_title:
+"现场支持",
+support_desc:
+"展会期间提供现场支持与协助。",
+our_services:
+"我们的服务",
+booth_design:
+"展台设计",
+design_3d:
+"3D 设计",
+fabrication:
+"展台制作",
+installation:
+"安装服务",
+logistics:
+"物流运输",
+storage:
+"仓储服务",
+dubai_booths_title:
+"迪拜定制展览展台",
+dubai_booths_desc:
+"为全球展览会提供高端展台设计与执行服务",
+our_work_dubai:
+"我们在迪拜的项目案例",
+why_choose_trio_dubai:
+"为什么选择 TRIO 参加迪拜展会？",
+why_choose_trio_dubai_desc:
+"我们为迪拜高端展览会提供量身定制的高品质展台解决方案。",
+luxury_booth_designs:
+"高端豪华展台设计",
+advanced_3d_concepts:
+"先进的 3D 创意设计",
+
+complete_fabrication:
+"完整展台制作服务",
+on_site_installation:
+"现场安装搭建服务",
+fast_delivery:
+"快速准时交付",
+whats_included:
+"服务内容包括",
+design_title:
+"设计方案",
+design_desc:
+"富有创意且现代化的展台布局设计。",
+
+build_title:
+"展台搭建",
+build_desc:
+"采用高品质材料与精细工艺制作。",
+installation_title:
+"安装服务",
+installation_desc:
+"快速高效的现场安装搭建。",
+logistics_title:
+"物流运输",
+logistics_desc:
+"提供完整的运输与物流管理服务。",
+our_services: "我们的服务",
+
+booth_design: "展台设计",
+
+design_3d: "3D设计",
+
+fabrication: "展台制作",
+
+installation: "安装搭建",
+
+logistics: "物流运输",
+
+storage: "仓储服务",
+our_story: "我们的故事",
+
+our_story_desc:
+"TRIO Events 是一家总部位于孟买的展览公司，专注于定制展台设计和全球展览服务。",
+about_title: "关于我们",
+
+about_desc:
+"我们设计和搭建展览展台，帮助品牌在全球范围内脱颖而出。",
+about_trio_title:
+"关于 Trio Exhibition：品牌展示环境的全球领导者",
+// CHINESE
+
+about_trio_desc1:
+"灵感来源：三位一体的力量。Trio Exhibition 这一名称源于湿婆神的神圣能量，象征着品牌三大核心支柱——活动、展览和推广——的和谐协作。",
+
+about_trio_desc2:
+"我们相信，品牌的成功取决于这些相互关联领域的共同发展。通过将创意设计与技术执行完美结合，我们确保您的品牌不仅占据空间，更能吸引关注并脱颖而出。",
+
+about_trio_desc3:
+"印度领先的一站式展台承包商。Trio Exhibition 被公认为印度领先的全方位展览设计公司和交钥匙展台承包商。",
+
+about_trio_desc4:
+"我们专注于打造世界级定制展台和高影响力零售展示环境。",
+
+about_trio_desc5:
+"除了展台制作之外，Trio Exhibition 还以功能性空间规划而闻名。我们将卓越的美学设计与战略空间管理相结合，确保展位的每一平方米都能最大化潜在客户开发和访客流量。",
+
+about_trio_desc6:
+"超越期待的专业实力。在当今竞争激烈的全球市场中，仅靠施工远远不够，更需要值得信赖的战略合作伙伴。",
+
+about_trio_desc7:
+"Trio 拥有近二十年行业经验的高技能专业团队。",
+
+about_trio_desc8:
+"定制木结构展馆：量身打造的设计方案，充分体现您的品牌独特形象。",
+
+about_trio_desc9:
+"技术精度：精通 Maxima、Octanorm 及先进模块化结构系统。",
+
+about_trio_desc10:
+"自有生产体系：拥有 9,000 平方英尺的大型制作工厂，确保质量控制和成本效益。",
+
+about_trio_desc11:
+"高性价比解决方案：提供超出客户期望且符合预算的设计方案。",
+
+about_trio_desc12:
+"立足本地，服务全球。总部及业务覆盖印度主要城市，包括孟买、德里和班加罗尔，为全国客户提供无缝执行服务。",
+
+about_trio_desc13:
+"与此同时，我们拥有全球化视野。凭借丰富的国际项目经验，Trio Exhibition 已在亚洲、中东、欧洲和英国建立了广泛的合作伙伴网络。",
+
+about_trio_desc14:
+"这一全球网络使我们能够为国际参展商提供本地化执行服务，以本地成本享受世界级设计标准和专业展览解决方案。",
+core_values: "我们的核心价值观",
+
+core_values_sub:
+"这些原则推动 TRIO Exhibitions 持续提供世界级的展览体验。",
+
+creative_design_title: "创意设计",
+creative_design_desc:
+"我们打造独特的展台概念设计，使品牌脱颖而出并吸引更多关注。",
+
+client_partnership_title: "客户合作",
+client_partnership_desc:
+"我们与客户紧密合作，深入了解并实现他们的愿景。",
+
+quality_execution_title: "卓越执行",
+quality_execution_desc:
+"从制作到完工，我们始终确保精准度和高品质工艺。",
+
+global_reach_title: "全球覆盖",
+global_reach_desc:
+"我们为国际市场提供专业的展览解决方案。",
+
+fast_delivery_title: "快速交付",
+fast_delivery_desc:
+"通过高效规划和无缝协调，确保项目按时完成。",
+
+result_focused_title: "成果导向",
+result_focused_desc:
+"我们设计的展台能够提升互动效果并创造商业价值。",
+years_experience: "年行业经验",
+
+clients: "客户",
+
+projects: "项目",
+faq_title1: "常见",
+faq_title2: "问题",
+faq_q1: "1. 你们提供哪些服务？",
+faq_a1: "我们提供3D设计、展台制作、安装搭建、物流运输以及完整的展览解决方案。",
+
+faq_q2: "2. 你们在哪些国家开展业务？",
+faq_a2: "我们的业务覆盖全球，包括印度、阿联酋、美国、欧洲等多个国家和地区。",
+
+faq_q3: "3. 你们提供定制展台服务吗？",
+faq_a3: "是的，我们根据您的品牌需求提供完全定制化的展台设计与搭建服务。",
+
+faq_q4: "4. 你们负责物流运输吗？",
+faq_a4: "是的，我们负责运输、安装以及展会结束后的拆除服务。",
+lets_work_together_desc:
+"无论您喜欢电话、电子邮件还是在线聊天，我们都随时为您提供帮助。欢迎与我们联系，共同打造卓越的展览体验。TRIO Exhibitions 提供展台设计、展台制作、安装搭建及交钥匙展览解决方案，服务覆盖德里、孟买、班加罗尔及全球市场。",
+lets_work_together: "让我们携手合作",
+mumbai:
+"孟买办公室",
+
+mumbai_address:
+"📍 TRIO Events Exhibitions and Promotions，印度马哈拉施特拉邦孟买班杜普西区，LBS Marg路，Dena Bank后方，LIC大楼，Gautam Udyog Bhawan一层18号单元，邮编 400078。"
   }
 };
 
@@ -1234,12 +1625,109 @@ document.querySelectorAll('.dropdown > a').forEach(item => {
   });
 });
 
-
 function toggleDropdown(e){
-e.preventDefault();
-e.target.parentElement.classList.toggle("open");
+  e.preventDefault();
+  e.currentTarget.parentElement.classList.toggle("open");
 }
 
+const cursor=document.querySelector(".cursor");
 
+let mouseX=0;
+let mouseY=0;
 
+let posX=0;
+let posY=0;
 
+/* Smooth Cursor */
+document.addEventListener("mousemove",(e)=>{
+  mouseX=e.clientX;
+  mouseY=e.clientY;
+
+  // Sparkles
+  const sparkle=document.createElement("div");
+  sparkle.classList.add("sparkle");
+  sparkle.innerHTML="✦";
+
+  sparkle.style.left=e.clientX+"px";
+  sparkle.style.top=e.clientY+"px";
+
+  document.body.appendChild(sparkle);
+
+  setTimeout(()=>{
+    sparkle.remove();
+  },1000);
+});
+
+function animate(){
+
+  posX+=(mouseX-posX)*0.12;
+  posY+=(mouseY-posY)*0.12;
+
+  cursor.style.left=posX+"px";
+  cursor.style.top=posY+"px";
+
+  requestAnimationFrame(animate);
+}
+animate();
+
+/* Magnetic Buttons */
+document.querySelectorAll("button,a").forEach(btn=>{
+
+  btn.addEventListener("mousemove",(e)=>{
+
+    const rect=btn.getBoundingClientRect();
+
+    const x=e.clientX-rect.left-rect.width/2;
+    const y=e.clientY-rect.top-rect.height/2;
+
+    btn.style.transform=
+    `translate(${x*0.2}px,${y*0.2}px)`;
+  });
+
+  btn.addEventListener("mouseleave",()=>{
+    btn.style.transform="translate(0,0)";
+  });
+
+});
+
+/* Click Explosion */
+document.addEventListener("click",(e)=>{
+
+  for(let i=0;i<12;i++){
+
+    const particle=document.createElement("div");
+
+    particle.classList.add("explosion");
+
+    particle.style.left=e.clientX+"px";
+    particle.style.top=e.clientY+"px";
+
+    document.body.appendChild(particle);
+
+    const angle=Math.random()*360;
+    const distance=60+Math.random()*50;
+
+    particle.animate([
+      {
+        transform:"translate(0,0)",
+        opacity:1
+      },
+      {
+        transform:
+        `translate(
+        ${Math.cos(angle)*distance}px,
+        ${Math.sin(angle)*distance}px
+        )`,
+        opacity:0
+      }
+    ],{
+      duration:700
+    });
+
+    setTimeout(()=>{
+      particle.remove();
+    },700);
+
+  }
+
+});
