@@ -782,7 +782,136 @@ mumbai:
 
 mumbai_address:
 "📍 TRIO Events Exhibitions and Promotions, Gala No. 18, Ground Floor, Gautam Udyog Bhawan, LIC Building, Behind Dena Bank, LBS Marg, Bhandup Station, Bhandup West, Mumbai – 400078, Maharashtra, India.",
+  expertise: "OUR EXPERTISE",
+  expertise_title: "Creative Exhibition Stall Design & Execution",
+  expertise_desc: "We transform ideas into immersive exhibition experiences through strategic design, precision fabrication, and flawless execution.",
+
+  design: "Design",
+  design_text: "Innovative exhibition concepts tailored to your brand identity.",
+
+  production: "Production",
+  production_text: "Premium fabrication using high-quality materials and finishes.",
+
+  planning: "Planning",
+  planning_text: "Detailed planning and coordination for smooth project delivery.",
+
+  execution: "Execution",
+  execution_text: "Seamless installation and on-time completion across global venues.",
+
+  creativity: "Creativity",
+  creativity_text: "Unique visual storytelling that attracts and engages visitors.",
+
+  teamwork: "Team Work",
+  teamwork_text: "Experienced professionals working together to deliver excellence.",
+  
+  process_tag: "OUR PROCESS",
+  process_title: "From Concept To Reality",
+  process_desc: "We manage every stage of your exhibition project with precision and creativity.",
+
+  meeting_title: "Meeting & Research",
+  meeting_text: "Understanding your objectives, audience and exhibition goals.",
+
+  design_title: "Design & Concept",
+  design_process_text: "Creating immersive 3D booth concepts tailored to your brand.",
+
+  production_title: "Production",
+  production_process_text: "Premium fabrication using world-class materials and finishes.",
+
+  installation_title: "Installation",
+  installation_text: "On-site setup, supervision and flawless execution.",
+
+  schedule_btn: "Schedule Meeting →",
+    cta_badge: "LET'S BUILD SOMETHING AMAZING",
+
+  cta_title: "Ready To Create A Stunning Exhibition Experience?",
+
+  cta_desc: "From concept design to complete execution, our team delivers world-class exhibition stalls that attract attention and drive results.",
+
+  cta_email: "📧 Email Us",
+
+  cta_call: "📞 Call Now",
+ why_choose_us: "WHY CHOOSE US",
+
+  info_title: "Complete Exhibition Stand Design & Project Management",
+
+  info_desc: "We create exceptional exhibition experiences through innovative design, premium fabrication, and flawless execution. From concept development to final installation, every detail is managed with precision.",
+
+  creative_design: "Creative Design",
+  creative_design_text: "Custom stand concepts that reflect your brand identity and attract visitors.",
+
+  project_management: "Project Management",
+  project_management_text: "End-to-end coordination ensuring smooth execution and timely delivery.",
+
+  premium_fabrication: "Premium Fabrication",
+  premium_fabrication_text: "High-quality materials and craftsmanship for a professional finish.",
+
+  onsite_support: "On-site Support",
+  onsite_support_text: "Installation, supervision, and dismantling handled by experts.",
+  client_feedback: "CLIENT FEEDBACK",
+client_title: "What Our Clients Say",
+client_desc: "We take pride in delivering exceptional exhibition stands and memorable brand experiences for our clients worldwide.",
+give_review: "Give Review →",
+
+review1_text: "Excellent execution and premium quality fabrication. The team delivered our Korea Pavilion project on time with outstanding attention to detail.",
+review1_client: "Korea Pavilion",
+review1_location: "Jio World Cosmoprof, Mumbai",
+
+review2_text: "Professional project management and creative stand design. The Germany Pavilion attracted significant visitor engagement.",
+review2_client: "Germany Pavilion",
+review2_location: "International Exhibition",
+
+review3_text: "Excellent booth execution with strong branding elements. The Brazil exhibition stand perfectly represented our vision.",
+review3_client: "Angel Yeast Brazil",
+review3_location: "FIPAN Brazil",
+
+review4_text: "Outstanding design creativity and smooth installation. Everything was delivered exactly as planned.",
+review4_client: "Arab Lab Dubai",
+review4_location: "Dubai Exhibition",
+
+review5_text: "Great coordination from concept development to final setup. Visitors appreciated the innovative presentation.",
+review5_client: "KERUNDE",
+review5_location: "Pet Show Thailand",
+
+review6_text: "Reliable execution, quality fabrication and excellent support. The exhibition stand helped us attract more visitors.",
+review6_client: "Hirin",
+review6_location: "Philippines Exhibition",
+
+review7_text: "Exceptional stand design and flawless execution. The booth generated strong visitor traffic throughout the event.",
+review7_client: "AT & M",
+review7_location: "Mumbai Exhibition",
+
+review8_text: "The team delivered a modern and impactful pavilion that perfectly reflected our brand identity and objectives.",
+review8_client: "Germany Pavilion",
+review8_location: "International Trade Show",
+
+review9_text: "Professional planning, excellent fabrication quality, and timely installation made the entire experience stress-free.",
+review9_client: "Angel Fisa Brazil",
+review9_location: "Brazil Expo 2024",
+
+review10_text: "Creative concepts combined with precise execution helped us stand out among hundreds of exhibitors.",
+review10_client: "Korea Pavilion",
+review10_location: "Jio World Cosmoprof",
+footer_desc: "通过创新设计、优质制作和卓越执行，为全球客户打造世界级展台、展馆及品牌展示体验。",
+
+footer_location: "印度·孟买",
+footer_service: "全球展览服务",
+
+quick_links: "快速链接",
+
+global_presence: "全球业务覆盖",
+
+india: "印度",
+dubai: "迪拜",
+thailand: "泰国",
+china: "中国",
+usa: "美国",
+
+copyright: "© 2026 TRIO EXHIBITIONS 版权所有",
+
+terms: "使用条款",
+privacy: "隐私政策"
   },
+
 
   cn: {
     home : "首页",
@@ -1541,7 +1670,164 @@ mumbai:
 "孟买办公室",
 
 mumbai_address:
-"📍 TRIO Events Exhibitions and Promotions，印度马哈拉施特拉邦孟买班杜普西区，LBS Marg路，Dena Bank后方，LIC大楼，Gautam Udyog Bhawan一层18号单元，邮编 400078。"
+"📍 TRIO Events Exhibitions and Promotions，印度马哈拉施特拉邦孟买班杜普西区，LBS Marg路，Dena Bank后方，LIC大楼，Gautam Udyog Bhawan一层18号单元，邮编 400078。",
+ expertise: "我们的专业能力",
+
+  expertise_title: "创意展览展台设计与执行",
+
+  expertise_desc:
+    "我们通过战略设计、精密制作和卓越执行，将创意转化为沉浸式展览体验。",
+
+  design: "设计",
+  design_text:
+    "根据您的品牌形象打造创新的展览概念。",
+
+  production: "制作",
+  production_text:
+    "采用高品质材料和精湛工艺进行专业制作。",
+
+  planning: "规划",
+  planning_text:
+    "周密的规划与协调，确保项目顺利交付。",
+
+  execution: "执行",
+  execution_text:
+    "在全球各地实现无缝安装与准时完成。",
+
+  creativity: "创意",
+  creativity_text:
+    "独特的视觉叙事，吸引并打动参观者。",
+
+  teamwork: "团队合作",
+  teamwork_text:
+    "经验丰富的专业团队协作，追求卓越成果。",
+      expertise: "我们的专业能力",
+  expertise_title: "创意展览展台设计与执行",
+  expertise_desc: "我们通过战略设计、精密制作和卓越执行，将创意转化为沉浸式展览体验。",
+
+  design: "创意设计",
+  design_text: "根据品牌定位打造创新且具有吸引力的展览方案。",
+
+  production: "展台制作",
+  production_text: "采用优质材料与精湛工艺，确保卓越品质。",
+
+  planning: "项目规划",
+  planning_text: "提供全面规划与协调，确保项目顺利实施。",
+
+  execution: "项目执行",
+  execution_text: "全球范围内高效安装与准时交付。",
+
+  creativity: "创意策划",
+  creativity_text: "通过独特的视觉表达吸引并打动参观者。",
+
+  teamwork: "团队协作",
+  teamwork_text: "经验丰富的专业团队共同打造卓越成果。",
+    process_tag: "我们的流程",
+  process_title: "从创意到落地",
+  process_desc: "我们以专业与创意管理展览项目的每一个阶段。",
+
+  meeting_title: "沟通与调研",
+  meeting_text: "深入了解您的目标、受众及参展需求。",
+
+  design_title: "设计与创意",
+  design_process_text: "为您的品牌打造沉浸式3D展台设计方案。",
+
+  production_title: "制作搭建",
+  production_process_text: "采用世界级材料与工艺进行高品质制作。",
+
+  installation_title: "安装执行",
+  installation_text: "现场搭建、监督管理与完美执行。",
+
+  schedule_btn: "预约会议 →",
+   cta_badge: "让我们共同打造卓越展览",
+
+  cta_title: "准备打造令人惊艳的展览体验吗？",
+
+  cta_desc: "从创意设计到全面执行，我们的团队为您提供世界级展台解决方案，吸引观众并创造价值。",
+
+  cta_email: "📧 联系邮箱",
+
+  cta_call: "📞 立即致电",
+    why_choose_us: "为什么选择我们",
+
+  info_title: "一站式展台设计与项目管理服务",
+
+  info_desc: "我们通过创新设计、优质制作和卓越执行，为客户打造非凡的展览体验。从创意构思到最终搭建，每一个细节都经过精心管理。",
+
+  creative_design: "创意设计",
+  creative_design_text: "量身定制展台方案，充分展现品牌形象并吸引观众。",
+
+  project_management: "项目管理",
+  project_management_text: "全流程协调管理，确保项目顺利执行并准时交付。",
+
+  premium_fabrication: "高端制作",
+  premium_fabrication_text: "采用优质材料与精湛工艺，打造专业级展台效果。",
+
+  onsite_support: "现场支持",
+  onsite_support_text: "专业团队负责搭建、监督及撤展服务。",
+client_feedback: "客户反馈",
+client_title: "客户如何评价我们",
+client_desc: "我们致力于为全球客户打造卓越展台和难忘的品牌展示体验。",
+give_review: "提交评价 →",
+
+review1_text: "卓越的执行能力和高品质制作。团队按时完成韩国馆项目，细节处理非常出色。",
+review1_client: "韩国馆",
+review1_location: "孟买 Jio World Cosmoprof",
+
+review2_text: "专业的项目管理和创意展台设计。德国馆吸引了大量观众关注。",
+review2_client: "德国馆",
+review2_location: "国际展览会",
+
+review3_text: "展台执行效果出色，品牌展示非常成功，完美呈现了我们的愿景。",
+review3_client: "安琪酵母巴西",
+review3_location: "巴西 FIPAN",
+
+review4_text: "设计创意突出，安装过程顺利，一切都按照计划完美完成。",
+review4_client: "迪拜 Arab Lab",
+review4_location: "迪拜展览会",
+
+review5_text: "从概念设计到最终搭建，团队协作非常出色，观众对展示效果赞不绝口。",
+review5_client: "KERUNDE",
+review5_location: "泰国宠物展",
+
+review6_text: "执行可靠，制作精良，服务支持优秀。展台帮助我们吸引了更多潜在客户。",
+review6_client: "Hirin",
+review6_location: "菲律宾展览会",
+
+review7_text: "卓越的展台设计与完美执行，为活动期间带来了大量访客。",
+review7_client: "AT & M",
+review7_location: "孟买展览会",
+
+review8_text: "团队打造了现代化且极具影响力的展馆，充分体现了我们的品牌形象。",
+review8_client: "德国馆",
+review8_location: "国际贸易展",
+
+review9_text: "专业规划、高品质制作和准时安装，让整个参展过程轻松顺畅。",
+review9_client: "Angel Fisa 巴西",
+review9_location: "巴西博览会 2024",
+
+review10_text: "创意设计与精准执行的结合，使我们在众多参展商中脱颖而出。",
+review10_client: "韩国馆",
+review10_location: "Jio World Cosmoprof",
+footer_desc: "通过创新设计、优质制作和卓越执行，为全球客户打造世界级展台、展馆及品牌展示体验。",
+
+footer_location: "印度·孟买",
+footer_service: "全球展览服务",
+
+quick_links: "快速链接",
+
+global_presence: "全球业务覆盖",
+
+india: "印度",
+dubai: "迪拜",
+thailand: "泰国",
+china: "中国",
+usa: "美国",
+
+copyright: "© 2026 TRIO EXHIBITIONS 版权所有",
+
+terms: "使用条款",
+privacy: "隐私政策"
   }
 };
 
