@@ -822,16 +822,40 @@ grid-template-columns:1fr;
 
 /* MOBILE */
 @media(max-width:768px){
+   .footer{
+      padding:50px 25px;
+  }
+
   .footer-container{
-    flex-direction:column;
-    text-align:center;
+      display:grid;
+      grid-template-columns:1fr;
+      gap:35px;
+      text-align:center;
+  }
+
+  .footer-col{
+      width:100%;
+  }
+
+  .socials{
+      justify-content:center;
   }
 
   .footer-bottom{
-    flex-direction:column;
-    gap:10px;
-    text-align:center;
+      flex-direction:column;
+      gap:15px;
+      text-align:center;
   }
+
+  .footer-bottom div{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+  }
+.footer a{
+    display:inline-block;
+}
+
 }
 html{
   scroll-behavior: smooth;
