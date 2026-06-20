@@ -891,25 +891,47 @@ review9_location: "Brazil Expo 2024",
 review10_text: "Creative concepts combined with precise execution helped us stand out among hundreds of exhibitors.",
 review10_client: "Korea Pavilion",
 review10_location: "Jio World Cosmoprof",
-footer_desc: "通过创新设计、优质制作和卓越执行，为全球客户打造世界级展台、展馆及品牌展示体验。",
+germany_tag: "TRIO EXHIBITIONS GERMANY",
+germany_title: "Custom Exhibition Booth Solutions in Germany",
+germany_desc: "We design, build and manage world-class exhibition stands across Germany's leading trade fairs. From concept development to final installation, TRIO delivers complete turnkey booth solutions.",
 
-footer_location: "印度·孟买",
-footer_service: "全球展览服务",
+booths_delivered: "Booths Delivered",
+on_time_installation: "On-Time Installation",
+design_visualization: "Design Visualization",
+project_support: "Project Support",
 
-quick_links: "快速链接",
+process_design: "Design",
+process_design_desc: "Creative booth concepts aligned with your brand identity.",
 
-global_presence: "全球业务覆盖",
+process_fabrication: "Fabrication",
+process_fabrication_desc: "Premium quality production with precision detailing.",
 
-india: "印度",
-dubai: "迪拜",
-thailand: "泰国",
-china: "中国",
-usa: "美国",
+process_installation: "Installation",
+process_installation_desc: "Professional on-site setup and dismantling support.",
 
-copyright: "© 2026 TRIO EXHIBITIONS 版权所有",
+process_logistics: "Logistics",
+process_logistics_desc: "Safe transport, warehousing and exhibition handling.",
 
-terms: "使用条款",
-privacy: "隐私政策"
+offer_tag: "WHAT WE OFFER",
+services_title: "Our Exhibition Services",
+
+service_booth_design: "Booth Design",
+service_booth_design_desc: "Creative exhibition stand concepts.",
+
+service_3d_design: "3D Design",
+service_3d_design_desc: "Realistic visualization before production.",
+
+service_fabrication: "Fabrication",
+service_fabrication_desc: "High-quality booth manufacturing.",
+
+service_installation: "Installation",
+service_installation_desc: "Fast setup and dismantling.",
+
+service_logistics: "Logistics",
+service_logistics_desc: "Worldwide transportation support.",
+
+service_storage: "Storage",
+service_storage_desc: "Secure warehouse management.",
   },
 
 
@@ -1827,7 +1849,67 @@ usa: "美国",
 copyright: "© 2026 TRIO EXHIBITIONS 版权所有",
 
 terms: "使用条款",
-privacy: "隐私政策"
+privacy: "隐私政策",
+germany_tag: "TRIO 德国展览",
+germany_title: "德国定制展览展台解决方案",
+germany_desc: "我们为德国主要贸易展会设计、搭建和管理世界级展览展台。从创意设计到最终安装，TRIO 提供完整的一站式展台解决方案。",
+
+booths_delivered: "已交付展台",
+on_time_installation: "准时安装",
+design_visualization: "3D设计展示",
+project_support: "项目支持",
+
+process_design: "设计",
+process_design_desc: "符合品牌形象的创意展台设计方案。",
+
+process_fabrication: "制作",
+process_fabrication_desc: "高品质生产与精细工艺。",
+
+process_installation: "安装",
+process_installation_desc: "专业现场安装与拆卸支持。",
+
+process_logistics: "物流",
+process_logistics_desc: "安全运输、仓储及展会物流管理。",
+
+offer_tag: "我们的服务",
+services_title: "我们的展览服务",
+
+service_booth_design: "展台设计",
+service_booth_design_desc: "创意展览展台设计方案。",
+
+service_3d_design: "3D设计",
+service_3d_design_desc: "生产前真实效果可视化。",
+
+service_fabrication: "展台制作",
+service_fabrication_desc: "高品质展台制造。",
+
+service_installation: "安装服务",
+service_installation_desc: "快速安装与拆卸。",
+
+service_logistics: "物流服务",
+service_logistics_desc: "全球运输支持。",
+
+service_storage: "仓储服务",
+service_storage_desc: "安全仓储管理。",
+footer_desc: "通过创新设计、优质制作和卓越执行，为全球客户打造世界级展台、展馆及品牌展示体验。",
+
+footer_location: "印度·孟买",
+footer_service: "全球展览服务",
+
+quick_links: "快速链接",
+
+global_presence: "全球业务覆盖",
+
+india: "印度",
+dubai: "迪拜",
+thailand: "泰国",
+china: "中国",
+usa: "美国",
+
+copyright: "© 2026 TRIO EXHIBITIONS 版权所有",
+
+terms: "使用条款",
+privacy: "隐私政策",
   }
 };
 
@@ -2017,3 +2099,19 @@ document.addEventListener("click",(e)=>{
   }
 
 });
+const reviews = document.querySelectorAll(".review-slide");
+let currentReview = 0;
+
+setInterval(() => {
+
+  reviews[currentReview].classList.remove("active");
+
+  currentReview++;
+
+  if(currentReview >= reviews.length){
+    currentReview = 0;
+  }
+
+  reviews[currentReview].classList.add("active");
+
+}, 4000);
