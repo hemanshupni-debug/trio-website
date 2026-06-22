@@ -607,40 +607,50 @@ font: size 26px;
 }
 }
 .hero-slider{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-display:none;
-z-index:0;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:0;
+    overflow:hidden;
+    display: none;
 }
 
 .hero-slider img{
-position:absolute;
-width:100%;
-height:100%;
-object-fit:cover;
-opacity:0;
-animation:fade 16s infinite;
-  object-position:center ;
-
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    opacity:0;
+    animation:slider 30s infinite;
 }
 
-/* timing */
 .hero-slider img:nth-child(1){animation-delay:0s;}
-.hero-slider img:nth-child(2){animation-delay:4s;}
-.hero-slider img:nth-child(3){animation-delay:8s;}
-.hero-slider img:nth-child(4){animation-delay:12s;}
-
-@keyframes fade{
-0%{opacity:0;}
-10%{opacity:1;}
-30%{opacity:1;}
-40%{opacity:0;}
-100%{opacity:0;}
+.hero-slider img:nth-child(2){animation-delay:6s;}
+.hero-slider img:nth-child(3){animation-delay:12s;}
+.hero-slider img:nth-child(4){animation-delay:18s;}
+.hero-slider img:nth-child(5){animation-delay:24s;}
+@keyframes slider{
+    0%{
+        opacity:0;
+    }
+    5%{
+        opacity:1;
+    }
+    20%{
+        opacity:1;
+    }
+    25%{
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+    }
 }
-
 /* overlay upar rahe */
 .about{
     padding:120px 8%;
@@ -2923,7 +2933,7 @@ box-shadow:0 5px 20px rgba(0,0,0,.08);
 
 .stat h3{
 font-size:42px;
-color:#eaebec;
+color:#0d0d0e;
 }
 
 .booth-types{
@@ -2943,7 +2953,7 @@ gap:25px;
 }
 
 .type-card{
-background:#fff;
+background:#ffffff;
 padding:30px;
 border-radius:12px;
 box-shadow:0 5px 20px rgba(0,0,0,.08);
@@ -2960,7 +2970,7 @@ gap:25px;
 }
 
 .process-card{
-background:#fff;
+background:#0f0f0f;
 padding:35px;
 border-radius:12px;
 box-shadow:0 5px 20px rgba(0,0,0,.08);
@@ -2970,14 +2980,14 @@ text-align:center;
 .process-card span{
 font-size:42px;
 font-weight:bold;
-color:#00cfff;
+color:#121313;
 }
 
 .expo-cta{
 padding:100px 20px;
 text-align:center;
 background:linear-gradient(135deg,#0d3b66,#00cfff);
-color:#fff;
+color:#000000;
 }
 
 .expo-cta h2{
