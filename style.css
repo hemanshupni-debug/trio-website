@@ -4857,7 +4857,7 @@ h3{font-size:18px;}
     letter-spacing:3px;
     font-size:14px;
     margin-bottom:20px;
-    color:#00d4ff;
+    color:#d4af37;
 }
 
 .maxima-hero-content h1{
@@ -5115,10 +5115,13 @@ h3{font-size:18px;}
     margin-bottom:20px;
     border-radius:15px;
     transition:.5s;
+     filter:grayscale(30%);
 }
 
 .maxima-gallery-grid img:hover{
-    transform:scale(1.03);
+    filter:none;
+    transform:scale(1.08);
+
 }
 
 /* Process */
@@ -5234,6 +5237,50 @@ h3{font-size:18px;}
     font-size:34px;
 }
 
+}
+.maxima-faq-section{
+    padding:120px 8%;
+    background:#f8f8f8;
+}
+
+.maxima-faq-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.maxima-faq-heading span{
+    color:#00d4ff;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+.maxima-faq-heading h2{
+    font-size:48px;
+    margin-top:10px;
+}
+
+.maxima-faq-item{
+    background:#fff;
+    padding:30px;
+    margin-bottom:20px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.maxima-faq-item:hover{
+    transform:translateY(-5px);
+}
+
+.maxima-faq-item h3{
+    color:#00d4ff;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.maxima-faq-item p{
+    color:#666;
+    line-height:1.8;
 }
 /* ==========================
 FURNITURE RENTAL PAGE
@@ -5380,10 +5427,12 @@ width:100%;
 margin-bottom:20px;
 border-radius:15px;
 transition:.5s;
+filter:brightness(.8);
 }
 
 .furni-gallery-grid img:hover{
-transform:scale(1.04);
+ filter:brightness(1);
+ transform:scale(1.08);
 }
 
 .furni-stats{
@@ -5484,6 +5533,87 @@ font-size:42px;
 font-size:34px;
 }
 
+}
+.furni-faq{
+    padding:120px 8%;
+    background:#f8f8f8;
+}
+
+.furni-faq h2{
+    text-align:center;
+    font-size:48px;
+    margin-bottom:60px;
+}
+
+.furni-faq-item{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    margin-bottom:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.furni-faq-item:hover{
+    transform:translateY(-5px);
+}
+
+.furni-faq-item h3{
+    color:#00d4ff;
+    margin-bottom:12px;
+    font-size:22px;
+}
+
+.furni-faq-item p{
+    line-height:1.8;
+    color:#666;
+}
+.pavilion-insights{
+padding:120px 8%;
+background:#f8f8f8;
+}
+
+.pavilion-insights-wrap{
+max-width:1000px;
+margin:auto;
+}
+
+.pavilion-question{
+background:#fff;
+margin-bottom:20px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.pavilion-question summary{
+padding:22px 25px;
+cursor:pointer;
+font-size:18px;
+font-weight:600;
+list-style:none;
+position:relative;
+}
+
+.pavilion-question summary::-webkit-details-marker{
+display:none;
+}
+
+.pavilion-question summary::after{
+content:"+";
+position:absolute;
+right:25px;
+font-size:24px;
+}
+
+.pavilion-question[open] summary::after{
+content:"−";
+}
+
+.pavilion-question p{
+padding:0 25px 25px;
+line-height:1.8;
+color:#666;
 }
 /* ==========================
    COUNTRY PAVILION PAGE
@@ -6219,4 +6349,52 @@ font-size:34px;
 font-size:38px;
 }
 
+}
+.warehouse-knowledge{
+padding:120px 8%;
+background:#f8f8f8;
+}
+
+.warehouse-knowledge-wrap{
+max-width:1000px;
+margin:auto;
+}
+
+.warehouse-query{
+background:#fff;
+margin-bottom:20px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.warehouse-query summary{
+padding:22px 25px;
+cursor:pointer;
+font-size:18px;
+font-weight:600;
+list-style:none;
+position:relative;
+}
+
+.warehouse-query summary::-webkit-details-marker{
+display:none;
+}
+
+.warehouse-query summary::after{
+content:"+";
+position:absolute;
+right:25px;
+font-size:24px;
+font-weight:700;
+}
+
+.warehouse-query[open] summary::after{
+content:"−";
+}
+
+.warehouse-query p{
+padding:0 25px 25px;
+line-height:1.8;
+color:#666;
 }

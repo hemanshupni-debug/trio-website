@@ -2115,3 +2115,8 @@ setInterval(() => {
   reviews[currentReview].classList.add("active");
 
 }, 4000);
+gsap.from(".maxima-stat-box h2",{
+  innerText:0,
+  duration:3,
+  snap:{innerText:1}
+});
