@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Give Review</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
+<header>
+  <img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo" alt="Trio Exhibitions logo - exhibition stall design company in Mumbai">
+ 
+  <!-- 🔥 Hamburger -->
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+ 
+  <nav id="nav-menu">
+    <a href="index.html" data-key="home">Home</a>
+     <a href="about.html" data-key="about">About</a>
+    <div class="nav-item dropdown">
+    <a href="#" class="nav-link" data-key="services" onclick="toggleDropdown(event)">
+  Services
+</a>
+ 
+ <div class="mega-menu">
+  <div class="menu-column">
+ 
+    <a href="services.html" data-key="all_services">All Services</a>
+ 
+    <a href="Interior.html" data-key="interior_menu">Interior</a>
+ 
+    <a href="design.html" data-key="design_menu">Design</a>
+ 
+    <a href="stand.html" data-key="exhibition_stand">Exhibition Stand Fabrication</a>
+ 
+    <a href="Exhibition.html" data-key="exhibition_booth">Exhibition 3d Stand Design</a>
+     
+    <a href="maxima-and-octonorm-system.html" data-key="Maxima and Octonorm">Maxima and Octonorm</a>
+    
+    <a href="country-pavilion.html" data-key="Country pavilion">Country Pavilion</a>
+    <a href="furniture-on-rental.html" data-key="furniture-on-rental">Furniture on Rental</a>
+    <a href="in-house-production-warehouse.html" data-key="in-house-production-warehouse">In-house-production-warehouse</a>
+  </div>
+ 
+  <div class="menu-column">
+ 
+    <a href="miami.html" data-key="miami_booth">Germany Booth</a>
+ 
+    <a href="thailand.html" data-key="thailand_booth">Thailand Booth</a>
+ 
+    <a href="dubai.html" data-key="dubai_booth">Dubai Booth</a>
+ 
+  </div>
+</div>
+    </div>
+      
+     <a href="work.html" data-key="work">Our Work</a>
+    <a href="Interior.html" data-key="interior">Interior</a>
+   
+    <a href="contact.html" data-key="contact">Contact</a>
+    <a href="#" id="lang-en">EN</a> | 
+    <a href="#" id="lang-cn">CN</a>
+  </nav>
+</header>
 <div class="review-form">
   <h2>Submit Your Review</h2>
 
@@ -81,6 +139,98 @@ document.getElementById("reviewForm").addEventListener("submit", async function(
   }
 });
 </script>
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-col">
+      <h2>TRIO EXHIBITIONS</h2>
+
+      <p data-key="footer_desc">
+        Creating world-class exhibition stands, pavilions and brand experiences through innovative design, premium fabrication and flawless execution.
+      </p>
+
+      <p class="address">
+        <span data-key="footer_location">Mumbai, India</span><br>
+        <span data-key="footer_service">Exhibition Services Worldwide</span>
+      </p>
+
+      <div class="socials">
+        <a href="https://instagram.com/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://facebook.com/" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+
+        <a href="https://pinterest.com/" target="_blank">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- MIDDLE -->
+    <div class="footer-col">
+      <h3 data-key="quick_links">Quick Links</h3>
+
+      <a href="index.html" data-key="home">Home</a>
+      <a href="services.html" data-key="services">Services</a>
+      <a href="work.html" data-key="our_work">Our Work</a>
+      <a href="about.html" data-key="about">About</a>
+       <a href="Interior.html" data-key="interior">Interior</a>
+      <a href="contact.html" data-key="contact">Contact</a>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-col">
+      <h3 data-key="global_presence">Global Presence</h3>
+
+      <p data-key="india">India</p>
+      <p data-key="dubai">Dubai</p>
+      <p data-key="thailand">Thailand</p>
+      <p data-key="china">China</p>
+      <p data-key="usa">USA</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p data-key="copyright">
+      © 2026 TRIO EXHIBITIONS. All Rights Reserved.
+    </p>
+
+    <div>
+      <a href="terms.html" data-key="terms">Terms of Use</a>
+      <a href="privacy.html" data-key="privacy">Privacy Policy</a>
+    </div>
+  </div>
+
+</footer>
+<div class="cursor"></div>
+<audio id="bgMusic" loop>
+  <source src="mp...mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="toggleMusic()" id="musicBtn">🔊</button>
+<div class="floating-icons">
+
+  <a href="https://wa.me/919987570309" class="whatsapp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<a href="https://u.wechat.com/kIDDhS_7Wh-srL7FaBTdwcM?s=2" class="wechat" target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-weixin"></i>
+</a>
+</div>
+<script src="script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/04/09/06/20260409060544-DG066HXA.js" defer></script>
 
 </body>
 </html>
