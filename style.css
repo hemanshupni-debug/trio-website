@@ -4,6 +4,13 @@ padding:0;
 box-sizing:border-box;
 }
 
+/* FIX: prevents mobile white-line / horizontal scroll bug.
+   This must live OUTSIDE any @media block so it always applies. */
+html, body{
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: #f9f9f9;
@@ -131,7 +138,7 @@ padding:10px 20px;
 border:none;
 margin-left:10px;
 border-radius: 6px;
-transform:0.3s;
+transition:0.3s; /* FIX: was invalid "transform:0.3s;" */
 }
 .secondary:hover{
     transform: scale(1.05);
@@ -195,7 +202,7 @@ overflow: hidden;
     gap: 60px;
     width: max-content;
 
-    animation: scroll 50s linear infinite; /* 🔥 ye main cheez hai */
+    animation: scroll 50s linear infinite;
     will-change: transform;
 }
 
@@ -567,7 +574,7 @@ transform:scale(1.1);
     }
 }
 
-/* CONTACT */
+/* CONTACT (Home page CTA – cyan/blue gradient version) */
 .contact{
 padding:60px;
 text-align:center;
@@ -602,7 +609,7 @@ text-decoration:none;
 /* MOBILE */
 @media(max-width:768px){
 .hero-overlay h1{
-font: size 26px;
+font-size: 26px; /* FIX: was invalid "font: size 26px;" */
    line-height:1.2;
 }
 }
@@ -1218,6 +1225,10 @@ html{
 a, a:hover, a:focus {
   text-decoration: none;
 }
+/* NOTE: The two ".contact" blocks below both target class "contact".
+   The second definition (contact-section / grid layout) will win where both
+   are loaded on the same page. Consider renaming one, e.g. ".contact-cta"
+   vs ".contact-page", if they are meant to look different. */
 .contact {
   padding: 120px 0;
   background: linear-gradient(to right, #00cfff, #0066ff);
@@ -1298,8 +1309,8 @@ a, a:hover, a:focus {
     width:95%;
     margin:auto;
     display:grid;
-    grid-template-columns:300px 420px 1fr;
-    gap:50px;
+    grid-template-columns:320px 1fr;
+    gap:60px;
     align-items:start;
 }
 
@@ -1336,32 +1347,47 @@ a, a:hover, a:focus {
     transition: .3s;
 }
 
-.contact-column a:hover {
-    color: #d4af37;
-}
-.office{
+.contact-column{
     width:100%;
-    margin-bottom:30px;
-    padding-bottom:20px;
+}
+
+.office-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:35px;
+    padding:30px 0;
     border-bottom:1px solid #eee;
 }
 
-.office p{
-    line-height:1.8;
-    word-break:normal;
-    overflow-wrap:break-word;
+.office{
+    flex:1;
 }
+
 .office h4{
     color:#d4af37;
-    font-size:18px;
-    margin-bottom:10px;
+    font-size:20px;
+    margin-bottom:12px;
     font-weight:700;
 }
 
-.contact-map img {
-    width: 350px;
-    opacity: 0.9;
-    background: transparent;
+.office p{
+    color:#555;
+    line-height:1.9;
+    margin:0;
+}
+
+.office-map{
+    width:340px;
+    flex-shrink:0;
+}
+
+.office-map iframe{
+    width:100%;
+    height:200px;
+    border:0;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
 }
 /* NAVBAR */
 .navbar {
@@ -1618,7 +1644,7 @@ z-index: 10;
   transition:.4s;
 }
 
-/* ICON (🔥 important) */
+/* ICON (important) */
 .value-card i{
   width:90px;
   height:90px;
@@ -1655,7 +1681,7 @@ z-index: 10;
   line-height: 1.6;
 }
 
-/* HOVER EFFECT 🔥 */
+/* HOVER EFFECT */
 .value-card:hover{
   transform:translateY(-15px);
   box-shadow:0 25px 60px rgba(0,0,0,.3);
@@ -1956,7 +1982,7 @@ ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-/* DUBAI */
+/* DUBAI (renamed to avoid clashing with Thailand/Germany .process-section, .process-card, .services-grid, .service-box) */
 .dubai-section{
   padding:100px 8%;
   background:#f8f9fc;
@@ -2021,11 +2047,99 @@ ul {
   font-weight:600;
 }
 
+.dubai-process-section{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+
+.dubai-process-card{
+  background:#fff;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.dubai-process-card span{
+  width:50px;
+  height:50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#d4af37;
+  color:#fff;
+  border-radius:50%;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.dubai-process-card h4{
+  color:#1b2d4d;
+  margin-bottom:10px;
+}
+
+.dubai-process-card p{
+  color:#666;
+  line-height:1.7;
+}
+
+.dubai-services-premium{
+  padding:100px 8%;
+}
+
+.dubai-services-premium .title{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.dubai-services-premium .title span{
+  color:#d4af37;
+  font-weight:600;
+  letter-spacing:1px;
+}
+
+.dubai-services-premium .title h2{
+  font-size:42px;
+  color:#1b2d4d;
+  margin-top:10px;
+}
+
+.dubai-services-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.dubai-service-box{
+  background:#fff;
+  padding:40px;
+  text-align:center;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.dubai-service-box:hover{
+  transform:translateY(-8px);
+}
+
+.dubai-service-box i{
+  font-size:40px;
+  color:#d4af37;
+  margin-bottom:20px;
+}
+
+.dubai-service-box h4{
+  color:#1b2d4d;
+}
+
+/* Mobile */
+
 @media(max-width:992px){
 
   .dubai-grid-stats,
-  .process-section,
-  .services-grid{
+  .dubai-process-section,
+  .dubai-services-grid{
     grid-template-columns:repeat(2,1fr);
   }
 
@@ -2038,14 +2152,14 @@ ul {
   }
 
   .dubai-grid-stats,
-  .process-section,
-  .services-grid{
+  .dubai-process-section,
+  .dubai-services-grid{
     grid-template-columns:1fr;
   }
 
 }
 
-/* THAILAND */
+/* THAILAND (renamed) */
 .thailand-section{
   padding:100px 8%;
   background:#f8f9fc;
@@ -2110,20 +2224,20 @@ ul {
   font-weight:600;
 }
 
-.process-section{
+.thailand-process-section{
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:25px;
 }
 
-.process-card{
+.thailand-process-card{
   background:#fff;
   padding:30px;
   border-radius:20px;
   box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 
-.process-card span{
+.thailand-process-card span{
   width:50px;
   height:50px;
   display:flex;
@@ -2136,44 +2250,44 @@ ul {
   margin-bottom:20px;
 }
 
-.process-card h4{
+.thailand-process-card h4{
   color:#1b2d4d;
   margin-bottom:10px;
 }
 
-.process-card p{
+.thailand-process-card p{
   color:#666;
   line-height:1.7;
 }
 
-.services-premium{
+.thailand-services-premium{
   padding:100px 8%;
 }
 
-.services-premium .title{
+.thailand-services-premium .title{
   text-align:center;
   margin-bottom:60px;
 }
 
-.services-premium .title span{
+.thailand-services-premium .title span{
   color:#d4af37;
   font-weight:600;
   letter-spacing:1px;
 }
 
-.services-premium .title h2{
+.thailand-services-premium .title h2{
   font-size:42px;
   color:#1b2d4d;
   margin-top:10px;
 }
 
-.services-grid{
+.thailand-services-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:25px;
 }
 
-.service-box{
+.thailand-service-box{
   background:#fff;
   padding:40px;
   text-align:center;
@@ -2182,17 +2296,17 @@ ul {
   transition:.3s;
 }
 
-.service-box:hover{
+.thailand-service-box:hover{
   transform:translateY(-8px);
 }
 
-.service-box i{
+.thailand-service-box i{
   font-size:40px;
   color:#d4af37;
   margin-bottom:20px;
 }
 
-.service-box h4{
+.thailand-service-box h4{
   color:#1b2d4d;
 }
 
@@ -2201,8 +2315,8 @@ ul {
 @media(max-width:992px){
 
   .thailand-grid-stats,
-  .process-section,
-  .services-grid{
+  .thailand-process-section,
+  .thailand-services-grid{
     grid-template-columns:repeat(2,1fr);
   }
 
@@ -2211,13 +2325,13 @@ ul {
 @media(max-width:768px){
 
   .thailand-head h2,
-  .services-premium .title h2{
+  .thailand-services-premium .title h2{
     font-size:30px;
   }
 
   .thailand-grid-stats,
-  .process-section,
-  .services-grid{
+  .thailand-process-section,
+  .thailand-services-grid{
     grid-template-columns:1fr;
   }
 
@@ -3049,14 +3163,14 @@ padding:80px 8%;
 background:#fff;
 }
 
-.stat{
+.expo-stats .stat{
 text-align:center;
 padding:30px;
 border-radius:12px;
 box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
-.stat h3{
+.expo-stats .stat h3{
 font-size:42px;
 color:#0d0d0e;
 }
@@ -3088,13 +3202,13 @@ box-shadow:0 5px 20px rgba(0,0,0,.08);
 padding:100px 8%;
 }
 
-.process-grid{
+.expo-process-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:25px;
 }
 
-.process-card{
+.expo-process-grid .process-card{
 background:#0f0f0f;
 padding:35px;
 border-radius:12px;
@@ -3102,7 +3216,7 @@ box-shadow:0 5px 20px rgba(0,0,0,.08);
 text-align:center;
 }
 
-.process-card span{
+.expo-process-grid .process-card span{
 font-size:42px;
 font-weight:bold;
 color:#121313;
@@ -3144,7 +3258,7 @@ grid-template-columns:1fr 1fr;
 grid-template-columns:1fr;
 }
 
-.process-grid{
+.expo-process-grid{
 grid-template-columns:1fr;
 }
 
@@ -3255,8 +3369,7 @@ flex-direction:column;
     left: 20px ;
     right: auto ;
 }
-/* HERO SECTION (🔥 MAIN PART) */
-/* HERO SECTION (🔥 MAIN PART) */
+/* HERO SECTION */
 .interior-hero{
   position:relative;
   min-height:100vh;
@@ -3357,7 +3470,7 @@ flex-direction:column;
 }
 
 /* GRID */
-.services-grid{
+.interior-services-grid{
   display:flex;
   justify-content:center;
   gap:30px;
@@ -3766,12 +3879,15 @@ flex-direction:column;
 
 /* CARD */
 .testi-item{
-  min-width:100%;   /* ✅ IMPORTANT FIX */
+  min-width:100%;   /* IMPORTANT FIX */
   padding:40px 20px;
   text-align:center;
 }
 
-/* AUTO SLIDE ANIMATION (SMOOTH) */
+/* AUTO SLIDE ANIMATION (SMOOTH)
+   NOTE: this keyframe is hard-coded for exactly 4 testimonial items.
+   If the number of .testi-item cards changes, update the percentages
+   and translateX steps below (or better, drive this with JS instead). */
 @keyframes slide{
   0%, 20% { transform: translateX(0); }
 
@@ -3808,11 +3924,11 @@ flex-direction:column;
   color:#ddd;
 }
 
-/* 🔥 BONUS (hover pe pause) */
+/* BONUS (hover pe pause) */
 .testi-slider:hover .testi-track{
   animation-play-state: paused;
 }
-* Desktop */
+/* Desktop */
 #nav-menu {
   display: flex;
   gap: 20px;
@@ -3828,18 +3944,12 @@ flex-direction:column;
 }
 @media (max-width:768px){
 
-/* 🔥 RESET */
+/* RESET (overflow-x fix moved to top of file, global scope) */
 *{
   box-sizing:border-box;
 }
 
-html,body{
-  overflow-x:hidden;
-  margin:0;
-  padding:0;
-}
-
-/* 🔥 HEADER */
+/* HEADER */
 header{
   position:fixed;
   top:0;
@@ -3850,7 +3960,7 @@ header{
 
   display:flex;
   align-items:center;
-  justify-content:space-between;  /* 🔥 main */
+  justify-content:space-between;
 
   padding:0 15px;
   z-index:9999;
@@ -3860,7 +3970,7 @@ header{
    margin-right:auto;
 }
 
-/* 🔥 HAMBURGER */
+/* HAMBURGER */
 .hamburger{
   display:block;
   font-size:28px;
@@ -3891,14 +4001,14 @@ header{
   border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
-/* 🔥 DROPDOWN FIX (MAIN ISSUE FIXED) */
+/* DROPDOWN FIX */
 .dropdown{
   width:100%;
 }
 
 .mega-menu{
   display:none;
-  position:relative;   /* 🔥 FIX */
+  position:relative;
   width:100%;
   background:#111;
   padding:10px;
@@ -3911,12 +4021,12 @@ header{
   display:block;
 }
 
-/* ❌ REMOVE HOVER */
+/* REMOVE HOVER */
 .dropdown:hover .mega-menu{
   display:none;
 }
 
-/* 🔥 HERO FIX */
+/* HERO FIX */
 .hero{
   margin-top:70px;
   height:75vh;
@@ -3930,7 +4040,7 @@ header{
   font-size:14px;
 }
 
-/* 🔥 FLEX FIX */
+/* FLEX FIX */
 .design-section,
 .booth-container,
 .expo-row,
@@ -3944,31 +4054,31 @@ header{
   text-align:center;
 }
 
-/* 🔥 WIDTH FIX */
+/* WIDTH FIX */
 .left,.right,
 .booth-left,.booth-right{
   width:100%;
 }
 
-/* 🔥 GRID FIX */
+/* GRID FIX */
 .gallery,
 .projects-grid{
   grid-template-columns:1fr;
 }
 
-/* 🔥 CARD WIDTH */
+/* CARD WIDTH */
 .card,
 .service-card{
   width:90%;
   margin:auto;
 }
 
-/* 🔥 TEXT */
+/* TEXT */
 h1{font-size:26px;}
 h2{font-size:22px;}
 h3{font-size:18px;}
 
-/* 🔥 FOOTER */
+/* FOOTER */
 .footer-container{
   flex-direction:column;
   text-align:center;
@@ -4267,8 +4377,8 @@ h3{font-size:18px;}
 
 @media(max-width:768px){
   .interior-hero{
-    margin-top: 70px;  /* navbar height ke equal */
-    padding: 100px 20px;  /* thoda kam karo */
+    margin-top: 70px;
+    padding: 100px 20px;
   }
 }
 @media(max-width:768px){
@@ -4607,8 +4717,8 @@ h3{font-size:18px;}
     font-weight:700;
   }
 
-} 
-/* ✅ CONTACT MEDIA YAHI CLOSE HOGA */
+}
+/* CONTACT MEDIA YAHI CLOSE HOGA */
  .executive-showcase{
     padding:80px 0;
     background:#f8f8f8;
@@ -4933,60 +5043,60 @@ h3{font-size:18px;}
     color:#c8a45d;
 }
 
-.process-section{
+.germany-process-section{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:25px;
     margin-top:80px;
 }
 
-.process-card{
+.germany-process-card{
     background:#f8f9fa;
     padding:30px;
     border-radius:20px;
     position:relative;
 }
 
-.process-card span{
+.germany-process-card span{
     font-size:55px;
     font-weight:700;
     color:rgba(200,164,93,.15);
 }
 
-.process-card h4{
+.germany-process-card h4{
     margin:10px 0;
     font-size:24px;
 }
 
-.process-card p{
+.germany-process-card p{
     color:#666;
     line-height:1.7;
 }
 
 /* SERVICES */
 
-.services-premium{
+.germany-services-premium{
     padding:100px 20px;
     background:#f8fafc;
 }
 
-.services-premium .title{
+.germany-services-premium .title{
     text-align:center;
     margin-bottom:60px;
 }
 
-.services-premium span{
+.germany-services-premium span{
     color:#c8a45d;
     letter-spacing:2px;
     font-weight:600;
 }
 
-.services-premium h2{
+.germany-services-premium h2{
     font-size:42px;
     margin-top:10px;
 }
 
-.services-grid{
+.germany-services-grid{
     max-width:1200px;
     margin:auto;
     display:grid;
@@ -4994,7 +5104,7 @@ h3{font-size:18px;}
     gap:30px;
 }
 
-.service-box{
+.germany-service-box{
     background:#fff;
     padding:40px 30px;
     border-radius:20px;
@@ -5003,22 +5113,22 @@ h3{font-size:18px;}
     transition:.4s;
 }
 
-.service-box:hover{
+.germany-service-box:hover{
     transform:translateY(-10px);
 }
 
-.service-box i{
+.germany-service-box i{
     font-size:40px;
     color:#c8a45d;
     margin-bottom:20px;
 }
 
-.service-box h4{
+.germany-service-box h4{
     margin-bottom:10px;
     font-size:24px;
 }
 
-.service-box p{
+.germany-service-box p{
     color:#666;
     line-height:1.7;
 }
@@ -5026,8 +5136,8 @@ h3{font-size:18px;}
 @media(max-width:768px){
 
 .germany-grid,
-.process-section,
-.services-grid{
+.germany-process-section,
+.germany-services-grid{
     grid-template-columns:1fr;
 }
 
@@ -5035,7 +5145,7 @@ h3{font-size:18px;}
     font-size:34px;
 }
 
-.services-premium h2{
+.germany-services-premium h2{
     font-size:34px;
 }
 
@@ -5047,7 +5157,7 @@ h3{font-size:18px;}
 .maxima-hero{
     height:100vh;
     position:relative;
-    background:url("FIPIN BRAZIL BANNER.jpg") center/cover no-repeat;
+    background:url("imptex.png") center/cover no-repeat;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -8409,4 +8519,21 @@ body{
 .instagram-follow a:hover{
     transform:translateY(-5px) scale(1.03);
     box-shadow:0 18px 40px rgba(0,0,0,.22);
+}
+
+/* ===========================================
+   ACCESSIBILITY: reduced motion support
+   Added — respects users who have "reduce motion"
+   turned on at the OS/browser level (vestibular
+   disorders, motion sensitivity, battery saving).
+=========================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
