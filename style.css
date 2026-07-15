@@ -4719,10 +4719,11 @@ h3{font-size:18px;}
 
 }
 /* CONTACT MEDIA YAHI CLOSE HOGA */
- .executive-showcase{
+
+
+.executive-showcase{
     padding:80px 0;
     background:#f8f8f8;
-    overflow:hidden;
 }
 
 .executive-heading{
@@ -4739,69 +4740,36 @@ h3{font-size:18px;}
     color:#666;
 }
 
-.executive-wrapper{
+.executive-slider{
     width:100%;
-    overflow:hidden;
+    padding:10px 0;
 }
 
-.executive-marquee{
-    display:flex;
-    gap:25px;
-    width:max-content;
-    animation:executiveMove 30s linear infinite;
+.swiper-slide{
+    width:280px !important;
 }
 
-.executive-wrapper:hover .executive-marquee{
-    animation-play-state:paused;
-}
-
-.executive-box{
-    width:280px;
-    flex:0 0 auto;
-    background:#fff;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-}
-
-.executive-box img{
+.swiper-slide img{
     width:100%;
     height:340px;
     object-fit:cover;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
     display:block;
+    transition:.4s;
 }
 
-.executive-content{
-    padding:20px;
-    text-align:center;
-}
-
-.executive-content h3{
-    margin:0;
-    font-size:22px;
-}
-
-.executive-content p{
-    margin-top:8px;
-    color:#666;
-}
-
-@keyframes executiveMove{
-    from{
-        transform:translateX(0);
-    }
-    to{
-        transform:translateX(-50%);
-    }
+.swiper-slide img:hover{
+    transform:scale(1.05);
 }
 
 @media(max-width:768px){
 
-    .executive-box{
-        width:220px;
+    .swiper-slide{
+        width:220px !important;
     }
 
-    .executive-box img{
+    .swiper-slide img{
         height:280px;
     }
 
