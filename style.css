@@ -3988,6 +3988,8 @@ header{
     top:70px;
     left:0;
     padding:15px;
+        overflow-y: auto;
+    max-height: calc(100vh - 70px);
   }
 
   #nav-menu.active{
@@ -4007,16 +4009,17 @@ header{
 }
 
 .mega-menu{
-  display:none;
-  position:relative;
-  width:100%;
-  background:#111;
-  padding:10px;
-  opacity:1;
-  visibility:visible;
-  transform:none;
+    display:none;
+    position:relative;
+    width:100%;
+    max-width:100%;
+    background:#111;
+    padding:10px;
+    opacity:1;
+    visibility:visible;
+    transform:none;
+    box-sizing:border-box;
 }
-
 .dropdown.open .mega-menu{
   display:block;
 }
@@ -4546,15 +4549,7 @@ h3{font-size:18px;}
     padding: 6px;
   }
 
-  .mega-menu{
-    position: static;
-    width: 100%;
-    flex-direction: column;
-  }
 
-  .menu-column{
-    width: 100%;
-  }
 
   .trio-container,
   .booth-container,
