@@ -1986,9 +1986,14 @@ faqs.forEach(item => {
 
 document.querySelectorAll('.dropdown > a').forEach(item => {
   item.addEventListener('click', function(e) {
-    if(window.innerWidth <= 768){
+    const parent = this.parentElement;
+    const hasSubmenu = parent.querySelector('.mega-menu, .dropdown-menu, .sub-menu');
+ 
+    // Only intercept the click if this item actually has a submenu to open.
+    // Plain links (like "Dubai") navigate normally, even on mobile.
+    if(window.innerWidth <= 768 && hasSubmenu){
       e.preventDefault();
-      this.parentElement.classList.toggle('active');
+      parent.classList.toggle('active');
     }
   });
 });
@@ -2115,8 +2120,26 @@ setInterval(() => {
   reviews[currentReview].classList.add("active");
 
 }, 4000);
-gsap.from(".maxima-stat-box h2",{
-  innerText:0,
-  duration:3,
-  snap:{innerText:1}
-});
+if (typeof gsap !== "undefined") {
+  gsap.from(".maxima-stat-box h2", {
+    innerText: 0,
+    duration: 3,
+    snap: { innerText: 1 }
+  });
+}
+function openWechatQR(e){
+    e.preventDefault();
+    document.getElementById("wechatModal").style.display="flex";
+}
+
+function closeWechatQR(){
+    document.getElementById("wechatModal").style.display="none";
+}
+
+// Close when clicking outside
+window.onclick = function(e){
+    const modal = document.getElementById("wechatModal");
+    if(e.target == modal){
+        modal.style.display="none";
+    }
+}

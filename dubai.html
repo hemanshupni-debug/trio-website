@@ -132,86 +132,96 @@
   </div>
 
 </div>
-
-<div class="process-section">
-
-  <div class="process-card">
-    <span>01</span>
-    <h4 data-key="design_title">Design</h4>
-    <p data-key="design_desc">
-      Creative and modern booth layouts.
-    </p>
-  </div>
-
-  <div class="process-card">
-    <span>02</span>
-    <h4 data-key="build_title">Build</h4>
-    <p data-key="build_desc">
-      High quality materials & finishing.
-    </p>
-  </div>
-
-  <div class="process-card">
-    <span>03</span>
-    <h4 data-key="installation_title">Installation</h4>
-    <p data-key="installation_desc">
-      Quick and smooth setup.
-    </p>
-  </div>
-
-  <div class="process-card">
-    <span>04</span>
-    <h4 data-key="logistics_title">Logistics</h4>
-    <p data-key="logistics_desc">
-      Complete transport handling.
-    </p>
-  </div>
-
 </div>
+</section>
+<section class="vision-route">
+
+    <div class="vision-track">
+
+        <div class="vision-block">
+            <div class="vision-index">01</div>
+            <h4 data-key="design_title">Design</h4>
+            <p data-key="design_desc">
+                Creative and modern booth layouts.
+            </p>
+        </div>
+
+        <div class="vision-block">
+            <div class="vision-index">02</div>
+            <h4 data-key="build_title">Build</h4>
+            <p data-key="build_desc">
+                High quality materials & finishing.
+            </p>
+        </div>
+
+        <div class="vision-block">
+            <div class="vision-index">03</div>
+            <h4 data-key="installation_title">Installation</h4>
+            <p data-key="installation_desc">
+                Quick and smooth setup.
+            </p>
+        </div>
+
+        <div class="vision-block">
+            <div class="vision-index">04</div>
+            <h4 data-key="logistics_title">Logistics</h4>
+            <p data-key="logistics_desc">
+                Complete transport handling.
+            </p>
+        </div>
+
+    </div>
 
 </section>
 
 
-<section class="services-premium">
+<section class="orbit-hub">
 
-<div class="title">
-  <span data-key="our_services">OUR SERVICES</span>
-  <h2 data-key="our_services">Our Services</h2>
-</div>
+    <div class="orbit-title">
 
-<div class="services-grid">
+        <span data-key="our_services">
+            OUR SERVICES
+        </span>
 
-  <div class="service-box">
-    <i class="fas fa-pencil-ruler"></i>
-    <h4 data-key="booth_design">Booth Design</h4>
-  </div>
+        <h2 data-key="our_services">
+            Our Services
+        </h2>
 
-  <div class="service-box">
-    <i class="fas fa-cube"></i>
-    <h4 data-key="design_3d">3D Design</h4>
-  </div>
+    </div>
 
-  <div class="service-box">
-    <i class="fas fa-tools"></i>
-    <h4 data-key="fabrication">Fabrication</h4>
-  </div>
+    <div class="orbit-grid">
 
-  <div class="service-box">
-    <i class="fas fa-screwdriver-wrench"></i>
-    <h4 data-key="installation">Installation</h4>
-  </div>
+        <div class="orbit-card">
+            <i class="fas fa-pencil-ruler"></i>
+            <h4 data-key="booth_design">Booth Design</h4>
+        </div>
 
-  <div class="service-box">
-    <i class="fas fa-truck"></i>
-    <h4 data-key="logistics">Logistics</h4>
-  </div>
+        <div class="orbit-card">
+            <i class="fas fa-cube"></i>
+            <h4 data-key="design_3d">3D Design</h4>
+        </div>
 
-  <div class="service-box">
-    <i class="fas fa-warehouse"></i>
-    <h4 data-key="storage">Storage</h4>
-  </div>
+        <div class="orbit-card">
+            <i class="fas fa-tools"></i>
+            <h4 data-key="fabrication">Fabrication</h4>
+        </div>
 
-</div>
+        <div class="orbit-card">
+            <i class="fas fa-screwdriver-wrench"></i>
+            <h4 data-key="installation">Installation</h4>
+        </div>
+
+        <div class="orbit-card">
+            <i class="fas fa-truck"></i>
+            <h4 data-key="logistics">Logistics</h4>
+        </div>
+
+        <div class="orbit-card">
+            <i class="fas fa-warehouse"></i>
+            <h4 data-key="storage">Storage</h4>
+        </div>
+
+    </div>
 
 </section>
 
@@ -299,9 +309,15 @@
   <i class="fab fa-whatsapp"></i>
 </a>
 
-<a href="https://u.wechat.com/kIDDhS_7Wh-srL7FaBTdwcM?s=2" class="wechat" target="_blank" rel="noopener noreferrer">
-  <i class="fab fa-weixin"></i>
+<a href="#" class="wechat" onclick="openWechatQR(event)">
+    <i class="fab fa-weixin"></i>
 </a>
+
+<!-- QR Modal -->
+<div id="wechatModal" class="wechat-modal">
+    <span class="close-btn" onclick="closeWechatQR()">&times;</span>
+    <img src="trio-website/Projects/image/wechat.jpg" alt="WeChat QR Code">
+</div>
 </div>
 <script src="script.js"></script>
 <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>

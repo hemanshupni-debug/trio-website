@@ -142,43 +142,45 @@
 </div>
 
 </section>
-<section class="expo-process">
+<section class="workflow-zone">
 
-<h2>Our Process</h2>
+    <h2 data-key="service_flow_heading">
+        Our Process
+    </h2>
 
-<div class="process-grid">
+    <div class="workflow-layout">
 
-<div class="process-card">
-<span>01</span>
-<h3>Consultation</h3>
-</div>
+        <div class="workflow-box">
+            <span>01</span>
+            <h3 data-key="meeting_stage">Consultation</h3>
+        </div>
 
-<div class="process-card">
-<span>02</span>
-<h3>Concept Design</h3>
-</div>
+        <div class="workflow-box">
+            <span>02</span>
+            <h3 data-key="planning_phase">Concept Design</h3>
+        </div>
 
-<div class="process-card">
-<span>03</span>
-<h3>3D Visualization</h3>
-</div>
+        <div class="workflow-box">
+            <span>03</span>
+            <h3 data-key="preview_stage">3D Visualization</h3>
+        </div>
 
-<div class="process-card">
-<span>04</span>
-<h3>Fabrication</h3>
-</div>
+        <div class="workflow-box">
+            <span>04</span>
+            <h3 data-key="manufacturing_stage">Fabrication</h3>
+        </div>
 
-<div class="process-card">
-<span>05</span>
-<h3>Installation</h3>
-</div>
+        <div class="workflow-box">
+            <span>05</span>
+            <h3 data-key="execution_stage">Installation</h3>
+        </div>
 
-<div class="process-card">
-<span>06</span>
-<h3>Support</h3>
-</div>
+        <div class="workflow-box">
+            <span>06</span>
+            <h3 data-key="service_completion">Support</h3>
+        </div>
 
-</div>
+    </div>
 
 </section>
 <section class="expo-cta">
@@ -272,9 +274,15 @@ Get Free Consultation
   <i class="fab fa-whatsapp"></i>
 </a>
 
-<a href="https://u.wechat.com/kIDDhS_7Wh-srL7FaBTdwcM?s=2" class="wechat" target="_blank" rel="noopener noreferrer">
-  <i class="fab fa-weixin"></i>
+<a href="#" class="wechat" onclick="openWechatQR(event)">
+    <i class="fab fa-weixin"></i>
 </a>
+
+<!-- QR Modal -->
+<div id="wechatModal" class="wechat-modal">
+    <span class="close-btn" onclick="closeWechatQR()">&times;</span>
+    <img src="trio-website/Projects/image/wechat.jpg" alt="WeChat QR Code">
+</div>
 </div>
  
 <script src="script.js"></script>

@@ -652,9 +652,15 @@ Apply →
   <a href="https://wa.me/919987570309" class="whatsapp">
   <i class="fab fa-whatsapp"></i>
 </a>
-<a href="https://u.wechat.com/kIDDhS_7Wh-srL7FaBTdwcM?s=2" class="wechat" target="_blank" rel="noopener noreferrer">
-  <i class="fab fa-weixin"></i>
+<a href="#" class="wechat" onclick="openWechatQR(event)">
+    <i class="fab fa-weixin"></i>
 </a>
+
+<!-- QR Modal -->
+<div id="wechatModal" class="wechat-modal">
+    <span class="close-btn" onclick="closeWechatQR()">&times;</span>
+    <img src="trio-website/Projects/image/wechat.jpg" alt="WeChat QR Code">
+</div>
 </div>
 <script src="script.js"></script>
 

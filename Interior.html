@@ -116,33 +116,53 @@ Our Interior Services
 We create modern, elegant and functional interior spaces tailored to your needs.
 </p>
 
- <div class="services-grid">
+<section class="elite-space-section">
 
-  <div class="service-card">
-    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-    <h3 data-key="residential_design">Residential Design</h3>
-    <p data-key="residential_design_text">
-      Beautiful and comfortable home interiors crafted with perfection.
-    </p>
-  </div>
+    <div class="elite-space-grid">
 
-  <div class="service-card">
-    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
-    <h3 data-key="commercial_spaces">Commercial Spaces</h3>
-    <p data-key="commercial_spaces_text">
-      Professional and stylish office & workspace interiors.
-    </p>
-  </div>
+        <div class="elite-space-card">
 
-  <div class="service-card">
-    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0">
-    <h3 data-key="visualization_3d">3D Visualization</h3>
-    <p data-key="visualization_3d_text">
-      See your dream space before it becomes reality.
-    </p>
-  </div>
- 
-</div>
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Residential Interior">
+
+            <h3 data-key="elite_home_title">
+                Residential Design
+            </h3>
+
+            <p data-key="elite_home_desc">
+                Beautiful and comfortable home interiors crafted with perfection.
+            </p>
+
+        </div>
+
+        <div class="elite-space-card">
+
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d" alt="Commercial Interior">
+
+            <h3 data-key="elite_office_title">
+                Commercial Spaces
+            </h3>
+
+            <p data-key="elite_office_desc">
+                Professional and stylish office & workspace interiors.
+            </p>
+
+        </div>
+
+        <div class="elite-space-card">
+
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0" alt="3D Visualization">
+
+            <h3 data-key="elite_visual_title">
+                3D Visualization
+            </h3>
+
+            <p data-key="elite_visual_desc">
+                See your dream space before it becomes reality.
+            </p>
+
+        </div>
+
+    </div>
  <div class="instagram-follow">
     <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/" target="_blank">
         <i class="fab fa-instagram"></i>
@@ -233,7 +253,7 @@ We create modern, elegant and functional interior spaces tailored to your needs.
   </div>
 </section>
 
-</div>
+
 <section class="text-motion-section">
 
   <h2 class="motion-title">
@@ -358,6 +378,7 @@ We create modern, elegant and functional interior spaces tailored to your needs.
     </div>
 
   </div>
+  </section>
 <section class="interior-cta">
 
   <h2 data-key="dream_space_title">
@@ -506,9 +527,15 @@ class="ai-form">
   <a href="https://wa.me/919987570309" class="whatsapp">
   <i class="fab fa-whatsapp"></i>
 </a>
-<a href="https://u.wechat.com/kIDDhS_7Wh-srL7FaBTdwcM?s=2" class="wechat" target="_blank" rel="noopener noreferrer">
-  <i class="fab fa-weixin"></i>
+<a href="#" class="wechat" onclick="openWechatQR(event)">
+    <i class="fab fa-weixin"></i>
 </a>
+
+<!-- QR Modal -->
+<div id="wechatModal" class="wechat-modal">
+    <span class="close-btn" onclick="closeWechatQR()">&times;</span>
+    <img src="trio-website/Projects/image/wechat.jpg" alt="WeChat QR Code">
+</div>
 </div>
 <script src="script.js"></script>
 
