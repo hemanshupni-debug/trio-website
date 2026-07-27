@@ -2143,3 +2143,22 @@ window.onclick = function(e){
         modal.style.display="none";
     }
 }
+document.querySelectorAll(".pv-faq-question").forEach(question => {
+
+    question.addEventListener("click", () => {
+
+        const currentCard = question.parentElement;
+
+        document.querySelectorAll(".pv-faq-card").forEach(card => {
+
+            if(card !== currentCard){
+                card.classList.remove("active");
+            }
+
+        });
+
+        currentCard.classList.toggle("active");
+
+    });
+
+});

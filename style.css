@@ -9887,3 +9887,825 @@ background-repeat: no-repeat;
     }
 
 }
+/*==================================================
+    Photography & Videography Hero
+==================================================*/
+
+.photo-hero{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+    background:
+        linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+        url("trio-website/Projects/image/photo.jpg") center/cover no-repeat;
+}
+
+.photo-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(180deg,
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.75));
+    z-index:1;
+}
+
+.photo-hero-content{
+    position:relative;
+    z-index:2;
+    width:90%;
+    max-width:900px;
+    color:#fff;
+}
+
+.photo-tag{
+    display:inline-block;
+    padding:8px 22px;
+    border:1px solid #d4af37;
+    color:#d4af37;
+    border-radius:40px;
+    letter-spacing:3px;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:30px;
+    text-transform:uppercase;
+}
+
+.photo-hero h1{
+    font-size:68px;
+    font-weight:700;
+    line-height:1.1;
+    margin-bottom:25px;
+    color:#fff;
+}
+
+.photo-hero h1 span{
+    color:#d4af37;
+}
+
+.photo-hero p{
+    max-width:760px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.9;
+    color:#e5e5e5;
+}
+
+.photo-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:45px;
+    flex-wrap:wrap;
+}
+
+.photo-btn,
+.photo-btn-outline{
+    padding:16px 38px;
+    text-decoration:none;
+    font-weight:600;
+    border-radius:50px;
+    transition:.4s;
+}
+
+.photo-btn{
+    background:#d4af37;
+    color:#000;
+}
+
+.photo-btn:hover{
+    background:#fff;
+    color:#000;
+    transform:translateY(-5px);
+}
+
+.photo-btn-outline{
+    border:2px solid #d4af37;
+    color:#fff;
+}
+
+.photo-btn-outline:hover{
+    background:#d4af37;
+    color:#000;
+    transform:translateY(-5px);
+}
+
+.photo-scroll{
+    position:absolute;
+    bottom:40px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:3;
+}
+
+.photo-scroll span{
+    display:block;
+    width:30px;
+    height:50px;
+    border:2px solid #fff;
+    border-radius:20px;
+    position:relative;
+}
+
+.photo-scroll span::before{
+    content:"";
+    position:absolute;
+    top:10px;
+    left:50%;
+    transform:translateX(-50%);
+    width:5px;
+    height:10px;
+    background:#d4af37;
+    border-radius:10px;
+    animation:scrollMove 2s infinite;
+}
+
+@keyframes scrollMove{
+
+    0%{
+        opacity:0;
+        top:10px;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0;
+        top:28px;
+    }
+
+}
+
+/*==========================
+ Responsive
+==========================*/
+
+@media(max-width:991px){
+
+    .photo-hero{
+        min-height:90vh;
+    }
+
+    .photo-hero h1{
+        font-size:48px;
+    }
+
+    .photo-hero p{
+        font-size:16px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .photo-hero{
+        min-height:85vh;
+        padding:100px 20px;
+    }
+
+    .photo-hero h1{
+        font-size:34px;
+    }
+
+    .photo-tag{
+        font-size:11px;
+        letter-spacing:2px;
+    }
+
+    .photo-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .photo-btn,
+    .photo-btn-outline{
+        width:100%;
+        max-width:260px;
+        text-align:center;
+    }
+
+}
+/*==================================================
+    Photography Services
+==================================================*/
+
+.photo-services{
+    padding:100px 8%;
+    background:#111;
+}
+
+.section-title{
+    text-align:center;
+    max-width:850px;
+    margin:0 auto 70px;
+}
+
+.section-title span{
+    color:#d4af37;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:600;
+}
+
+.section-title h2{
+    color:#fff;
+    font-size:45px;
+    margin:15px 0;
+}
+
+.section-title p{
+    color:#bdbdbd;
+    line-height:1.8;
+}
+
+.photo-services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.photo-service-card{
+    background:#1b1b1b;
+    padding:40px 30px;
+    border-radius:18px;
+    text-align:center;
+    transition:.4s;
+    border:1px solid rgba(212,175,55,.15);
+}
+
+.photo-service-card:hover{
+    transform:translateY(-12px);
+    border-color:#d4af37;
+    box-shadow:0 20px 45px rgba(212,175,55,.15);
+}
+
+.photo-service-card i{
+    width:80px;
+    height:80px;
+    line-height:80px;
+    border-radius:50%;
+    background:#d4af37;
+    color:#111;
+    font-size:32px;
+    margin-bottom:25px;
+}
+
+.photo-service-card h3{
+    color:#fff;
+    margin-bottom:18px;
+    font-size:24px;
+}
+
+.photo-service-card p{
+    color:#bfbfbf;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+    .photo-services{
+        padding:70px 20px;
+    }
+
+    .section-title h2{
+        font-size:34px;
+    }
+
+}
+/*==================================================
+    Why Choose Us
+==================================================*/
+
+.photo-why{
+    padding:100px 8%;
+    background:#0b0b0b;
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:60px;
+    align-items:center;
+}
+
+.section-subtitle{
+    color:#d4af37;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.photo-why h2{
+    color:#fff;
+    font-size:46px;
+    margin:18px 0 25px;
+    line-height:1.2;
+}
+
+.photo-why>div>p{
+    color:#bfbfbf;
+    line-height:1.9;
+    margin-bottom:35px;
+}
+
+.photo-feature-list{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.feature-item{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+}
+
+.feature-item i{
+    color:#d4af37;
+    font-size:24px;
+    margin-top:5px;
+}
+
+.feature-item h4{
+    color:#fff;
+    margin-bottom:8px;
+    font-size:20px;
+}
+
+.feature-item p{
+    color:#bdbdbd;
+    line-height:1.7;
+}
+
+.why-image-box{
+    overflow:hidden;
+    border-radius:20px;
+    border:2px solid rgba(212,175,55,.3);
+}
+
+.why-image-box img{
+    width:100%;
+    display:block;
+    transition:.5s;
+}
+
+.why-image-box:hover img{
+    transform:scale(1.08);
+}
+
+@media(max-width:992px){
+
+    .photo-why{
+        grid-template-columns:1fr;
+    }
+
+    .photo-why h2{
+        font-size:36px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .photo-why{
+        padding:70px 20px;
+    }
+
+    .photo-why h2{
+        font-size:30px;
+    }
+
+}
+/*==========================================
+        Portfolio Gallery
+==========================================*/
+
+.photo-gallery{
+    padding:100px 8%;
+    background:#111;
+}
+
+.gallery-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-auto-rows:280px;
+    gap:20px;
+
+}
+
+.gallery-item{
+
+    position:relative;
+    overflow:hidden;
+    border-radius:18px;
+    cursor:pointer;
+
+}
+
+.gallery-item.large{
+
+    grid-row:span 2;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s;
+
+}
+
+.gallery-overlay{
+
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top,
+    rgba(0,0,0,.9),
+    transparent);
+
+    display:flex;
+    align-items:flex-end;
+    padding:30px;
+    opacity:0;
+    transition:.4s;
+
+}
+
+.gallery-overlay h3{
+
+    color:#fff;
+    font-size:24px;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.12);
+
+}
+
+.gallery-item:hover .gallery-overlay{
+
+    opacity:1;
+
+}
+
+.gallery-item::after{
+
+    content:"";
+    position:absolute;
+    inset:0;
+    border:2px solid transparent;
+    transition:.4s;
+
+}
+
+.gallery-item:hover::after{
+
+    border-color:#d4af37;
+
+}
+
+@media(max-width:992px){
+
+.gallery-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+grid-auto-rows:250px;
+
+}
+
+.gallery-item.large{
+
+grid-row:span 1;
+
+}
+
+}
+.photo-process{
+    padding:100px 8%;
+    background:#0b0b0b;
+}
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top: 60px;
+}
+.process-card{
+    position: relative;
+    background:#161616;
+    border:1px solid rgba(212,175,55,.15);
+    border-radius:18px;
+    padding: 40px 30px;
+    text-align: center;
+    transition:4s;
+    overflow:hidden;
+}
+.process-card:hover{
+    transform:translate(-10px);
+    border-color: #d4af37;
+    box-shadow:0 20px 45px rgba(212,175,55,.15);
+}
+.process-number{
+    position: absolute;
+    top: 20px;
+    right:25px;
+    font-size:42px;
+    font-weight: 700;
+    color:rgba(212,175,55,.12);
+}
+.process-card i{
+    width: 80px;
+    height:80px;
+    line-height: 80px;
+    border-radius:50%;
+    background:#d4af37;
+    color:#111;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.process-card h3{
+    color:#fff;
+    margin-bottom:15px;
+    font-size:24px;
+}
+.process-card p{
+    color:#bdbdbd;
+    line-height:1.8;
+}
+@media(max-width:768px){
+    .photo-process{
+        padding:70px 20px;
+    }
+}
+/*==========================================
+        Call To Action
+==========================================*/
+
+.photo-cta{
+
+    position:relative;
+    padding:140px 8%;
+    background:url("trio-website/Projects/image/photo\ back.jpg") center/cover;
+    overflow:hidden;
+
+}
+
+.photo-cta-overlay{
+
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.75);
+
+}
+
+.photo-cta-content{
+
+    position:relative;
+    z-index:2;
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+
+}
+
+.photo-cta-content span{
+
+    color:#d4af37;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:14px;
+    font-weight:600;
+
+}
+
+.photo-cta-content h2{
+
+    color:#fff;
+    font-size:54px;
+    margin:20px 0;
+
+}
+
+.photo-cta-content p{
+
+    color:#ddd;
+    line-height:1.9;
+    margin-bottom:40px;
+
+}
+
+.photo-cta-buttons{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+.photo-cta-btn{
+
+    background:#d4af37;
+    color:#111;
+    padding:16px 40px;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.4s;
+
+}
+
+.photo-cta-btn:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.photo-cta-outline{
+
+    border:2px solid #fff;
+    color:#fff;
+    text-decoration:none;
+    padding:16px 40px;
+    border-radius:50px;
+    transition:.4s;
+
+}
+
+.photo-cta-outline:hover{
+
+    background:#fff;
+    color:#111;
+
+}
+
+@media(max-width:768px){
+
+.photo-cta{
+
+padding:90px 20px;
+
+}
+
+.photo-cta-content h2{
+
+font-size:36px;
+
+}
+
+}
+/*==========================================
+        Photography FAQ
+==========================================*/
+
+.pv-faq-section{
+    padding:100px 8%;
+    background:#0d0d0d;
+}
+
+.pv-faq-heading{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 60px;
+}
+
+.pv-subtitle{
+    display:inline-block;
+    color:#d4af37;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.pv-title{
+    color:#fff;
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.pv-description{
+    color:#bdbdbd;
+    font-size:17px;
+    line-height:1.8;
+}
+
+.pv-faq-wrapper{
+    max-width:950px;
+    margin:0 auto;
+}
+
+.pv-faq-card{
+    background:#151515;
+    border:1px solid rgba(212,175,55,.15);
+    border-radius:14px;
+    margin-bottom:18px;
+    overflow:hidden;
+    transition:.35s ease;
+}
+
+.pv-faq-card:hover{
+    border-color:#d4af37;
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(212,175,55,.12);
+}
+
+.pv-faq-question{
+    width:100%;
+    background:transparent;
+    border:none;
+    outline:none;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 28px;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:600;
+    text-align:left;
+}
+
+.pv-faq-question i{
+    color:#d4af37;
+    font-size:18px;
+    transition:.35s;
+}
+
+.pv-faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+}
+
+.pv-faq-answer p{
+    color:#bdbdbd;
+    line-height:1.9;
+    padding:0 28px 22px;
+    margin:0;
+}
+
+.pv-faq-card.active .pv-faq-answer{
+    max-height:300px;
+}
+
+.pv-faq-card.active .pv-faq-question i{
+    transform:rotate(45deg);
+}
+
+@media(max-width:991px){
+
+    .pv-faq-section{
+        padding:80px 5%;
+    }
+
+    .pv-title{
+        font-size:38px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .pv-title{
+        font-size:30px;
+    }
+
+    .pv-description{
+        font-size:15px;
+    }
+
+    .pv-faq-question{
+        font-size:16px;
+        padding:18px 20px;
+    }
+
+    .pv-faq-answer p{
+        padding:0 20px 20px;
+        font-size:15px;
+    }
+
+}

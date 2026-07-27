@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+ 
+
+<header>
+  <img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo" alt="Trio Exhibitions logo - exhibition stall design company in Mumbai">
+ 
+  <!-- 🔥 Hamburger -->
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+ 
+  <nav id="nav-menu">
+    <a href="index.html" data-key="home">Home</a>
+     <a href="about.html" data-key="about">About</a>
+    <div class="nav-item dropdown">
+    <a href="#" class="nav-link" data-key="services" onclick="toggleDropdown(event)">
+  Services
+</a>
+ 
+ <div class="mega-menu">
+  <div class="menu-column">
+ 
+    <a href="services.html" data-key="all_services">All Services</a>
+ 
+    <a href="Interior.html" data-key="interior_menu">Interior</a>
+ 
+    <a href="design.html" data-key="design_menu">Design</a>
+ 
+    <a href="stand.html" data-key="exhibition_stand">Exhibition Stand Fabrication</a>
+ 
+    <a href="Exhibition.html" data-key="exhibition_booth">Exhibition 3d Stand Design</a>
+     
+    <a href="maxima-and-octonorm-system.html" data-key="Maxima and Octonorm">Maxima and Octonorm</a>
+    
+    <a href="country-pavilion.html" data-key="Country pavilion">Country Pavilion</a>
+    <a href="furniture-on-rental.html" data-key="furniture-on-rental">Furniture on Rental</a>
+    <a href="in-house-production-warehouse.html" data-key="in-house-production-warehouse">In-house-production-warehouse</a>
+  </div>
+ 
+  <div class="menu-column">
+ 
+    <a href="miami.html" data-key="miami_booth">Germany Booth</a>
+ 
+    <a href="thailand.html" data-key="thailand_booth">Thailand Booth</a>
+ 
+    <a href="dubai.html" data-key="dubai_booth">Dubai Booth</a>
+ 
+  </div>
+</div>
+    </div>
+      
+     <a href="work.html" data-key="work">Our Work</a>
+    <a href="Interior.html" data-key="interior">Interior</a>
+   
+    <a href="contact.html" data-key="contact">Contact</a>
+    <a href="#" id="lang-en">EN</a> | 
+    <a href="#" id="lang-cn">CN</a>
+  </nav>
+</header>
+
+<section class="photo-hero">
+    <div class="photo-overlay"></div>
+    <div class="photo-hero-content">
+        <span class="photo-tag">TRIO EXHIBITIONS</span>
+        <h1>Photography<span>&</span><br>Videography Services</h1>
+        <p>Transform every exhibition into a lasting visual story with professional Photography,cinematic Videography,drone coverage,interviews,product showcases,and social media content designed to elevate your brand.</p>
+        <div class="photo-buttons">
+            <a href="#photo-services" class="photo-btn-outline">Explore Services</a>
+        </div>
+    </div>
+    <div class="photo-scroll"><span></span></div>
+</section>
+
+<section class="photo-services" id="photo-services">
+
+    <div class="section-title">
+        <span>OUR SERVICES</span>
+        <h2>Professional Photography & Videography Solutions</h2>
+        <p>
+            We create impactful visual content that captures every detail of your exhibition,
+            helping your brand engage audiences long after the event ends.
+        </p>
+    </div>
+
+    <div class="photo-services-grid">
+
+        <div class="photo-service-card">
+            <i class="fas fa-camera-retro"></i>
+            <h3>Exhibition Photography</h3>
+            <p>
+                High-resolution images capturing booth designs, products, visitors,
+                networking moments, and brand experiences.
+            </p>
+        </div>
+
+        <div class="photo-service-card">
+            <i class="fas fa-video"></i>
+            <h3>Corporate Videography</h3>
+            <p>
+                Professional event films, interviews, product demonstrations,
+                highlight videos, and promotional content.
+            </p>
+        </div>
+
+        <div class="photo-service-card">
+            <i class="fas fa-drone"></i>
+            <h3>Drone Coverage</h3>
+            <p>
+                Stunning aerial footage for exhibitions, outdoor events,
+                venue showcases, and large-scale trade shows.
+            </p>
+        </div>
+
+        <div class="photo-service-card">
+            <i class="fas fa-film"></i>
+            <h3>Promotional Reels</h3>
+            <p>
+                Creative Instagram Reels, YouTube Shorts,
+                and social media videos that maximize engagement.
+            </p>
+        </div>
+
+        <div class="photo-service-card">
+            <i class="fas fa-box-open"></i>
+            <h3>Product Showcase</h3>
+            <p>
+                Premium product photography and cinematic videos
+                designed for catalogs, websites, and advertising.
+            </p>
+        </div>
+
+        <div class="photo-service-card">
+            <i class="fas fa-microphone"></i>
+            <h3>Client Testimonials</h3>
+            <p>
+                Professional interview recordings and customer testimonials
+                that strengthen your brand credibility.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================
+     Why Choose Us
+========================================= -->
+
+<section class="photo-why">
+
+    <div class="photo-why-left">
+
+        <span class="section-subtitle">WHY CHOOSE US</span>
+
+        <h2>Creating Visual Stories That Inspire & Engage</h2>
+
+        <p>
+            Our experienced photographers and videographers specialize in capturing
+            exhibitions, trade shows, conferences, and corporate events with creativity,
+            precision, and cinematic quality. Every frame reflects your brand's
+            professionalism and success.
+        </p>
+
+        <div class="photo-feature-list">
+
+            <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <h4>Experienced Creative Team</h4>
+                    <p>Professional photographers & filmmakers with exhibition expertise.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <h4>Premium Editing</h4>
+                    <p>High-end colour grading, retouching and cinematic editing.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <h4>Fast Delivery</h4>
+                    <p>Quick turnaround without compromising quality.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <h4>Social Media Ready</h4>
+                    <p>Optimized photos and videos for websites and social platforms.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="photo-why-right">
+
+        <div class="why-image-box">
+            <img src="trio-website/Projects/image/1....png" alt="Photography Team">
+        </div>
+
+    </div>
+
+</section>
+<!--=========================================
+        Portfolio Gallery
+==========================================-->
+
+<section class="photo-gallery">
+
+    <div class="section-title">
+        <span>OUR PORTFOLIO</span>
+        <h2>Moments We've Captured</h2>
+        <p>
+            Explore our collection of exhibition photography and videography,
+            showcasing creativity, precision, and unforgettable brand experiences.
+        </p>
+    </div>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item large">
+            <img src="trio-website/Projects/image/photo2.jpg" alt="">
+            <div class="gallery-overlay">
+                <h3>Trade Show Photography</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="trio-website/Projects/image/photo3.jpg" alt="">
+            <div class="gallery-overlay">
+                <h3>Corporate Event</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="trio-website/Projects/image/photo4.jpg" alt="">
+            <div class="gallery-overlay">
+                <h3>Booth Coverage</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="trio-website/Projects/image/photo5.jpg" alt="">
+            <div class="gallery-overlay">
+                <h3>Product Shoot</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item large">
+            <img src="trio-website/Projects/image/photo7.jpg" alt="">
+            <div class="gallery-overlay">
+                <h3>Videography</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="trio-website/Projects/image/photo8.jpg" alt="">
+            <div class="gallery-overlay">
+                <h3>Drone Coverage</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!--=========================================
+        Our Process
+==========================================-->
+
+<section class="photo-process">
+
+    <div class="section-title">
+        <span>OUR PROCESS</span>
+        <h2>How We Bring Your Story to Life</h2>
+        <p>
+            From planning to final delivery, every step is carefully managed to
+            ensure stunning visuals that reflect your brand's identity.
+        </p>
+    </div>
+
+    <div class="process-grid">
+
+        <div class="process-card">
+            <div class="process-number">01</div>
+            <i class="fas fa-comments"></i>
+            <h3>Consultation</h3>
+            <p>
+                We understand your event objectives, brand identity,
+                and visual requirements before the shoot.
+            </p>
+        </div>
+
+        <div class="process-card">
+            <div class="process-number">02</div>
+            <i class="fas fa-camera"></i>
+            <h3>Photography & Filming</h3>
+            <p>
+                Our professional team captures every important moment
+                using high-end cameras and equipment.
+            </p>
+        </div>
+
+        <div class="process-card">
+            <div class="process-number">03</div>
+            <i class="fas fa-photo-video"></i>
+            <h3>Editing</h3>
+            <p>
+                Every image and video is professionally edited,
+                color graded, and optimized for maximum impact.
+            </p>
+        </div>
+
+        <div class="process-card">
+            <div class="process-number">04</div>
+            <i class="fas fa-cloud-download-alt"></i>
+            <h3>Final Delivery</h3>
+            <p>
+                Receive high-resolution images and ready-to-use videos
+                for print, web, and social media.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<!--=========================================
+        Call To Action
+==========================================-->
+
+<section class="photo-cta">
+
+    <div class="photo-cta-overlay"></div>
+
+    <div class="photo-cta-content">
+
+        <span>LET'S CREATE SOMETHING AMAZING</span>
+
+        <h2>Ready to Capture Your Next Exhibition?</h2>
+
+        <p>
+            Whether it's an exhibition, trade show, conference, product launch,
+            or corporate event, our photography and videography team is ready
+            to transform your moments into powerful visual stories.
+        </p>
+
+        <div class="photo-cta-buttons">
+
+            <a href="contact.html" class="photo-cta-btn">
+                Get Free Quote
+            </a>
+
+            <a href="tel:+919987570309" class="photo-cta-outline">
+                Call Now
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="pv-faq-section">
+
+    <div class="pv-faq-heading">
+        <span class="pv-subtitle">INFORMATION HUB</span>
+
+        <h2 class="pv-title">
+            Everything You Need to Know
+        </h2>
+
+        <p class="pv-description">
+            Discover answers to the most common questions about our photography and videography services.
+        </p>
+    </div>
+
+    <div class="pv-faq-wrapper">
+
+        <div class="pv-faq-card active">
+
+            <button class="pv-faq-question">
+                Which events do you cover?
+                <i class="fas fa-plus"></i>
+            </button>
+
+            <div class="pv-faq-answer">
+                <p>We cover exhibitions, trade fairs, conferences, product launches and corporate events.</p>
+            </div>
+
+        </div>
+<div class="pv-faq-card">
+    <button class="pv-faq-question">
+        Which events do you cover?
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="pv-faq-answer">
+        <p>We provide photography and videography services for exhibitions, trade fairs, conferences, corporate events, product launches, award ceremonies, networking events, and business expos.</p>
+    </div>
+</div>
+
+<div class="pv-faq-card">
+    <button class="pv-faq-question">
+        Do you provide photography as well as videography?
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="pv-faq-answer">
+        <p>Yes. We offer complete photography and videography solutions, including event coverage, promotional videos, interviews, and highlight films.</p>
+    </div>
+</div>
+
+<div class="pv-faq-card">
+    <button class="pv-faq-question">
+        Do you offer drone photography and aerial videography?
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="pv-faq-answer">
+        <p>Yes. Drone coverage is available for exhibitions and outdoor events where local regulations and venue permissions allow aerial filming.</p>
+    </div>
+</div>
+
+<div class="pv-faq-card">
+    <button class="pv-faq-question">
+        What equipment do you use?
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="pv-faq-answer">
+        <p>Our team works with professional cameras, cinema lenses, drones, stabilizers, gimbals, lighting equipment, and high-quality audio recording systems.</p>
+    </div>
+</div>
+
+<div class="pv-faq-card">
+    <button class="pv-faq-question">
+        Can you cover multi-day exhibitions?
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="pv-faq-answer">
+        <p>Absolutely. We provide complete coverage for single-day as well as multi-day exhibitions, conferences, and international trade shows.</p>
+    </div>
+</div>
+
+<div class="pv-faq-card">
+    <button class="pv-faq-question">
+        How long does it take to deliver the final photos and videos?
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="pv-faq-answer">
+        <p>Delivery timelines depend on the project scope, but most photography and videography projects are completed within 5–10 business days.</p>
+    </div>
+</div>
+
+<div class="pv-faq-card">
+    <button class="pv-faq-question">
+        Will the photos be edited before delivery?
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="pv-faq-answer">
+        <p>Yes. Every selected image is professionally edited, colour corrected, and optimized to deliver a polished, high-quality final result.</p>
+    </div>
+</div>
+
+<div class="pv-faq-card">
+    <button class="pv-faq-question">
+        Do you create promotional videos for social media?
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="pv-faq-answer">
+        <p>Yes. We create Instagram Reels, YouTube Shorts, LinkedIn videos, promotional films, and marketing content tailored for digital platforms.</p>
+    </div>
+</div>
+
+<div class="pv-faq-card">
+    <button class="pv-faq-question">
+        Can you record interviews and client testimonials?
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="pv-faq-answer">
+        <p>Yes. We professionally record interviews, client testimonials, keynote speakers, presentations, and brand stories with clear audio and cinematic visuals.</p>
+    </div>
+</div>
+
+<div class="pv-faq-card">
+    <button class="pv-faq-question">
+        Are your services available outside India?
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="pv-faq-answer">
+        <p>Yes. TRIO Exhibitions provides photography and videography services for exhibitions and events across India as well as selected international destinations.</p>
+    </div>
+</div>
+
+<div class="pv-faq-card">
+    <button class="pv-faq-question">
+        How can I book your photography and videography services?
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="pv-faq-answer">
+        <p>You can contact our team through the enquiry form, email, or phone. We'll discuss your event requirements and provide a customized quotation.</p>
+    </div>
+</div>
+
+<div class="pv-faq-card">
+    <button class="pv-faq-question">
+        Why choose TRIO Exhibitions for event photography and videography?
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="pv-faq-answer">
+        <p>With years of experience in exhibitions and corporate events, we deliver premium-quality visuals, creative storytelling, professional editing, and reliable on-time delivery for every project.</p>
+    </div>
+</div>
+    </div>
+
+</section>
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-col">
+      <h2>TRIO EXHIBITIONS</h2>
+
+      <p data-key="footer_desc">
+        Creating world-class exhibition stands, pavilions and brand experiences through innovative design, premium fabrication and flawless execution.
+      </p>
+
+      <p class="address">
+        <span data-key="footer_location">Mumbai, India</span><br>
+        <span data-key="footer_service">Exhibition Services Worldwide</span>
+      </p>
+
+    <div class="socials">
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/trio_exhibition?utm_source=qr" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/share/1MKccLoUGe/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/hemanshu-trivedi-7180b6ba?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+</div>
+    </div>
+
+    <!-- MIDDLE -->
+    <div class="footer-col">
+      <h3 data-key="quick_links">Quick Links</h3>
+
+      <a href="index.html" data-key="home">Home</a>
+      <a href="services.html" data-key="services">Services</a>
+      <a href="work.html" data-key="our_work">Our Work</a>
+      <a href="about.html" data-key="about">About</a>
+       <a href="Interior.html" data-key="interior">Interior</a>
+      <a href="contact.html" data-key="contact">Contact</a>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-col">
+      <h3 data-key="global_presence">Global Presence</h3>
+
+      <p data-key="china">China</p>
+      <p data-key="india">India</p>
+      <p data-key="dubai">Dubai</p>
+      <p data-key="thailand">Thailand</p>
+      <p data-key="usa">USA</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p data-key="copyright">
+      © 2026 TRIO EXHIBITIONS. All Rights Reserved.
+    </p>
+
+    <div>
+      <a href="terms.html" data-key="terms">Terms of Use</a>
+      <a href="privacy.html" data-key="privacy">Privacy Policy</a>
+    </div>
+  </div>
+
+</footer>
+<div class="cursor"></div>
+<audio id="bgMusic" loop>
+  <source src="mp...mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="toggleMusic()" id="musicBtn">🔊</button>
+<div class="floating-icons">
+
+  <a href="https://wa.me/919987570309" class="whatsapp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<!-- WeChat Icon -->
+<a href="#" class="wechat" onclick="openWechatQR(event)">
+    <i class="fab fa-weixin"></i>
+</a>
+
+<!-- QR Modal -->
+<div id="wechatModal" class="wechat-modal">
+    <span class="close-btn" onclick="closeWechatQR()">&times;</span>
+    <img src="trio-website/Projects/image/wechat.jpg" alt="WeChat QR Code">
+</div>
+</div>
+<script src="script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/04/09/06/20260409060544-DG066HXA.js" defer></script>
+
+</body>
+</html>
