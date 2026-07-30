@@ -23,61 +23,66 @@
     margin-bottom:40px;
     color:#222;
 }
-
 .gallery-grid{
-    max-width:1400px;
-    margin:0 auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:25px;
+    position: relative;
+    z-index: 9999;
 }
 
 .gallery-item{
-    overflow:hidden;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,.15);
+    position: relative;
+    z-index: 9999;
 }
 
 .gallery-item img{
-    width:100%;
-    height:300px;
-    object-fit:cover;
-    display:block;
-    cursor:pointer;
-    transition:.4s;
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto;
 }
 
 .gallery-item img:hover{
     transform:scale(1.05);
 }
 
-/* Lightbox */
+/* ===== IMAGE VIEWER ===== */
 
-.lightbox{
+.image-viewer{
     position:fixed;
     inset:0;
-    background:rgba(0,0,0,.95);
     display:none;
     justify-content:center;
     align-items:center;
-    z-index:9999;
+    background:rgba(0,0,0,.95);
+    z-index:999999;
 }
 
-.lightbox img{
-    max-width:90%;
-    max-height:85%;
+.image-viewer.active{
+    display:flex;
 }
 
-.close-btn{
+#viewerImg{
+    max-width:90vw;
+    max-height:90vh;
+    object-fit:contain;
+    border-radius:12px;
+    background:#fff;
+    padding:10px;
+}
+
+.viewer-close{
     position:absolute;
     top:20px;
     right:35px;
     color:#fff;
-    font-size:45px;
+    font-size:50px;
     cursor:pointer;
+    transition:.3s;
 }
 
-.nav-btn{
+.viewer-close:hover{
+    color:#d4af37;
+}
+
+.viewer-btn{
     position:absolute;
     top:50%;
     transform:translateY(-50%);
@@ -89,13 +94,19 @@
     color:#fff;
     font-size:32px;
     cursor:pointer;
+    transition:.3s;
 }
 
-.prev{
+.viewer-btn:hover{
+    background:#d4af37;
+    color:#000;
+}
+
+.viewer-prev{
     left:30px;
 }
 
-.next{
+.viewer-next{
     right:30px;
 }
 
@@ -111,6 +122,30 @@
 
     .gallery-item img{
         height:220px;
+    }
+
+    .viewer-btn{
+        width:50px;
+        height:50px;
+        font-size:24px;
+    }
+
+    .viewer-prev{
+        left:10px;
+    }
+
+    .viewer-next{
+        right:10px;
+    }
+
+    .viewer-close{
+        right:20px;
+        font-size:42px;
+    }
+
+    #viewerImg{
+        max-width:95vw;
+        max-height:85vh;
     }
 }
 
@@ -177,22 +212,27 @@
     <div class="gallery-grid" id="galleryGrid"></div>
 
 </section>
+<!-- Image Viewer -->
+<div id="imageViewer" class="image-viewer">
 
-<div class="lightbox" id="lightbox">
+    <span class="viewer-close" onclick="closeViewer()">&times;</span>
 
-    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    <button class="viewer-btn viewer-prev" onclick="changeViewerImage(-1)">
+        &#10094;
+    </button>
 
-    <button class="nav-btn prev" onclick="changeImage(-1)">❮</button>
+    <img id="viewerImg" src="" alt="Gallery Image">
 
-    <img id="lightbox-img">
-
-    <button class="nav-btn next" onclick="changeImage(1)">❯</button>
+    <button class="viewer-btn viewer-next" onclick="changeViewerImage(1)">
+        &#10095;
+    </button>
 
 </div>
 <script>
 
 const params = new URLSearchParams(window.location.search);
 const project = params.get("project");
+
 
 const galleries = {
 
@@ -337,69 +377,98 @@ const galleries = {
       "trio-website/Projects/Octonorm Stall Branding/2.jpg",
       "trio-website/Projects/Octonorm Stall Branding/3.jpg",
     ],
-    
+    octonorm6:[
+      
+    ]
 };
+
+
 document.getElementById("gallery-title").innerText =
-project ? project.toUpperCase() : "maxima octonorm gallery";
+project ? project.toUpperCase() : "MAXIMA OCTONORM GALLERY";
 
 const grid = document.getElementById("galleryGrid");
 
 let currentImages = [];
 let currentIndex = 0;
 
-if(galleries[project]){
+if (galleries[project]) {
 
     currentImages = galleries[project];
 
-    galleries[project].forEach((img,index)=>{
+    currentImages.forEach((img, index) => {
 
-        grid.innerHTML += `
-            <div class="gallery-item">
-                <img src="${img}" onclick="openLightbox(${index})">
-            </div>
-        `;
+        const item = document.createElement("div");
+        item.className = "gallery-item";
+
+        const image = document.createElement("img");
+        image.src = img;
+        image.alt = "Gallery Image";
+
+        image.addEventListener("click", function (e) {
+            e.stopPropagation();
+            openViewer(index);
+        });
+
+        item.appendChild(image);
+        grid.appendChild(item);
 
     });
 
 }
 
-function openLightbox(index){
+// Open Viewer
+function openViewer(index) {
 
     currentIndex = index;
 
-    document.getElementById("lightbox").style.display="flex";
-    document.getElementById("lightbox-img").src=currentImages[currentIndex];
+    document.getElementById("viewerImg").src = currentImages[currentIndex];
+    document.getElementById("imageViewer").classList.add("active");
+
 }
 
-function closeLightbox(){
+// Close Viewer
+function closeViewer() {
 
-    document.getElementById("lightbox").style.display="none";
+    document.getElementById("imageViewer").classList.remove("active");
+
 }
 
-function changeImage(step){
+// Next / Previous
+function changeViewerImage(step) {
 
     currentIndex += step;
 
-    if(currentIndex < 0){
+    if (currentIndex < 0) {
         currentIndex = currentImages.length - 1;
     }
 
-    if(currentIndex >= currentImages.length){
+    if (currentIndex >= currentImages.length) {
         currentIndex = 0;
     }
 
-    document.getElementById("lightbox-img").src =
-    currentImages[currentIndex];
+    document.getElementById("viewerImg").src = currentImages[currentIndex];
+
 }
 
-document.addEventListener("keydown",function(e){
+// Close on Background Click
+document.getElementById("imageViewer").addEventListener("click", function (e) {
 
-    if(e.key==="ArrowRight") changeImage(1);
-    if(e.key==="ArrowLeft") changeImage(-1);
-    if(e.key==="Escape") closeLightbox();
+    if (e.target.id === "imageViewer") {
+        closeViewer();
+    }
 
 });
 
+// Keyboard Controls
+document.addEventListener("keydown", function (e) {
+
+    if (!document.getElementById("imageViewer").classList.contains("active")) return;
+
+    if (e.key === "ArrowRight") changeViewerImage(1);
+    if (e.key === "ArrowLeft") changeViewerImage(-1);
+    if (e.key === "Escape") closeViewer();
+
+});
 </script>
 <footer class="footer">
 

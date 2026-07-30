@@ -4399,27 +4399,32 @@ h3{font-size:18px;}
 .trio-project-showcase{
     max-width:1400px;
     margin:0 auto;
-    padding:40px 20px;
+    padding:80px 20px;
 }
 
 .trio-project-showcase h1{
     text-align:center;
     font-size:48px;
     margin-bottom:50px;
+    color:#222;
 }
 
 .trio-project-grid{
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:25px;
+    display:grid !important;
+    grid-template-columns:repeat(4,minmax(0,1fr)) !important;
+    gap:25px !important;
+
+    width:100% !important;
+    transform:none !important;
 }
 
 .trio-project-box{
+    display:block;
     position:relative;
     overflow:hidden;
-    border-radius:12px;
-    display:block;
-    width:100%;
+    border-radius:15px;
+    background:#fff;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
 }
 
 .trio-project-box img{
@@ -4427,22 +4432,43 @@ h3{font-size:18px;}
     height:280px;
     object-fit:cover;
     display:block;
+    transition:.4s;
+}
+
+.trio-project-box:hover img{
+    transform:scale(1.05);
 }
 
 .trio-project-hover{
     position:absolute;
     inset:0;
-    background:rgba(0,0,0,.55);
-    color:#fff;
     display:flex;
     justify-content:center;
     align-items:center;
+    background:rgba(0,0,0,.55);
+    color:#fff;
     opacity:0;
     transition:.3s;
 }
 
 .trio-project-box:hover .trio-project-hover{
     opacity:1;
+}
+
+@media(max-width:992px){
+    .trio-project-grid{
+        grid-template-columns:repeat(2,1fr) !important;
+    }
+}
+
+@media(max-width:600px){
+    .trio-project-grid{
+        grid-template-columns:1fr !important;
+    }
+
+    .trio-project-showcase h1{
+        font-size:34px;
+    }
 }
 /* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
