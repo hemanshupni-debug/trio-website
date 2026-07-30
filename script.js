@@ -932,6 +932,18 @@ service_logistics_desc: "Worldwide transportation support.",
 
 service_storage: "Storage",
 service_storage_desc: "Secure warehouse management.",
+maxima_octonorm: "Maxima and Octonorm",
+ country_pavilion: "Country Pavilion",
+ furniture_on_rental: "Furniture on Rental",
+ in_house_production_warehouse: "In-house Production Warehouse",
+ seo_intro: "Trio Exhibitions is a leading exhibition stall design and booth fabrication company serving China, India, Dubai, Thailand, and Germany. With over 18 years of experience, we specialize in China-focused exhibition stand design, 3D space planning, and end-to-end turnkey solutions for trade shows, exhibitions, and corporate events.",
+
+  seo_body: "Our in-house team of designers, engineers, and skilled craftsmen handles every stage of your exhibition journey—from initial concept and 3D visualization to fabrication, on-site installation, and dismantling. We work with premium materials including Octonorm and Maxima structures, delivering both modular and fully custom-built exhibition stands for China trade shows and international pavilions.",
+
+  seo_venues: "We have successfully executed projects at major venues including Jio World Convention Centre Mumbai, and international pavilions such as the Korea Pavilion and Dubai Lab Expo. Whether you need a compact booth or a large-scale country pavilion for a China exhibition, Trio Exhibitions ensures your brand makes a lasting impression on the exhibition floor.",
+
+  seo_cta: `Looking for an experienced exhibition stall fabricator for your China trade show, or based in Mumbai, Delhi, or Bangalore? <a href="contact.html">Get in touch with our team</a> for a free consultation and quote.`,
+
   },
 
 
@@ -1910,6 +1922,17 @@ copyright: "© 2026 TRIO EXHIBITIONS 版权所有",
 
 terms: "使用条款",
 privacy: "隐私政策",
+  maxima_octonorm: " 和 系统",
+   country_pavilion: "国家展馆",
+    furniture_on_rental: "家具租赁",
+      in_house_production_warehouse: "内部生产与仓储",
+        seo_intro: "Trio Exhibitions 是一家领先的展览展台设计与搭建公司，服务于中国、印度、迪拜、泰国和德国。凭借18年以上的行业经验，我们专注于中国市场的展览展台设计、3D空间规划以及展会、博览会和企业活动的一站式交钥匙解决方案。",
+
+  seo_body: "我们的内部设计师、工程师和专业施工团队负责展览项目的每一个环节，从创意策划、3D效果图设计，到展台制作、现场安装及拆除。我们采用 Octonorm 和 Maxima 等优质展览系统，可提供模块化及全定制展台，满足中国展会及国际展馆的需求。",
+
+  seo_venues: "我们已成功完成多个大型展会项目，包括孟买 Jio World Convention Centre，以及韩国馆、Dubai Lab Expo 等国际展馆项目。无论您需要紧凑型展位还是大型国家馆，Trio Exhibitions 都能为您的品牌打造令人难忘的展示效果。",
+
+  seo_cta: `正在寻找经验丰富的中国展会展台搭建公司，或位于孟买、德里或班加罗尔？<a href="contact.html">立即联系我们的团队</a>，获取免费咨询与报价。`,
   }
 };
 
@@ -2105,27 +2128,35 @@ document.addEventListener("click",(e)=>{
 
 });
 const reviews = document.querySelectorAll(".review-slide");
-let currentReview = 0;
 
-setInterval(() => {
+if (reviews.length > 0) {
 
-  reviews[currentReview].classList.remove("active");
+    let currentReview = 0;
 
-  currentReview++;
+    reviews[currentReview].classList.add("active");
 
-  if(currentReview >= reviews.length){
-    currentReview = 0;
-  }
+    setInterval(() => {
 
-  reviews[currentReview].classList.add("active");
+        reviews[currentReview].classList.remove("active");
 
-}, 4000);
+        currentReview++;
+
+        if (currentReview >= reviews.length) {
+            currentReview = 0;
+        }
+
+        reviews[currentReview].classList.add("active");
+
+    }, 4000);
+
+}
+
 if (typeof gsap !== "undefined") {
-  gsap.from(".maxima-stat-box h2", {
-    innerText: 0,
-    duration: 3,
-    snap: { innerText: 1 }
-  });
+    gsap.from(".maxima-stat-box h2", {
+        innerText: 0,
+        duration: 3,
+        snap: { innerText: 1 }
+    });
 }
 function openWechatQR(e){
     e.preventDefault();
@@ -2143,22 +2174,28 @@ window.onclick = function(e){
         modal.style.display="none";
     }
 }
-document.querySelectorAll(".pv-faq-question").forEach(question => {
+const faqQuestions = document.querySelectorAll(".pv-faq-question");
 
-    question.addEventListener("click", () => {
+if (faqQuestions.length > 0) {
 
-        const currentCard = question.parentElement;
+    faqQuestions.forEach(question => {
 
-        document.querySelectorAll(".pv-faq-card").forEach(card => {
+        question.addEventListener("click", () => {
 
-            if(card !== currentCard){
-                card.classList.remove("active");
-            }
+            const currentCard = question.parentElement;
+
+            document.querySelectorAll(".pv-faq-card").forEach(card => {
+
+                if (card !== currentCard) {
+                    card.classList.remove("active");
+                }
+
+            });
+
+            currentCard.classList.toggle("active");
 
         });
 
-        currentCard.classList.toggle("active");
-
     });
 
-});
+}

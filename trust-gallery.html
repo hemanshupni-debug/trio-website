@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trust Gallery</title>
+ <link rel="stylesheet" href="style.css">
+ 
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+    .trust-gallery-section{
+    padding:120px 5% 80px;
+    background:#fff;
+}
+
+#trust-gallery-title{
+    text-align:center;
+    font-size:48px;
+    font-weight:700;
+    color:#1d2433;
+    margin-bottom:60px;
+}
+
+.trust-gallery-grid{
+    max-width:1400px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.trust-gallery-item{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+    cursor:pointer;
+}
+
+.trust-gallery-item:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+.trust-gallery-item img{
+    width:100%;
+    height:300px;
+    object-fit:contain;
+    background:#fff;
+    padding:20px;
+    transition:.4s;
+    display:block;
+}
+
+.trust-gallery-item:hover img{
+    transform:scale(1.05);
+}
+
+/* LIGHTBOX */
+
+.trust-lightbox{
+    position:fixed;
+    inset:0;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.95);
+    z-index:999999;
+}
+
+.trust-lightbox.active{
+    display:flex;
+}
+
+#trustLightboxImg{
+    max-width:90vw;
+    max-height:90vh;
+    object-fit:contain;
+    background:#fff;
+    padding:15px;
+    border-radius:12px;
+}
+
+.trust-close{
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:55px;
+    color:#fff;
+    cursor:pointer;
+}
+
+.trust-prev,
+.trust-next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:65px;
+    height:65px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.2);
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
+}
+
+.trust-prev{left:30px;}
+.trust-next{right:30px;}
+</style>
+</head>
+<body>
+
+
+<header>
+  <img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo" alt="Trio Exhibitions logo - exhibition stall design company in Mumbai">
+ 
+  <!-- 🔥 Hamburger -->
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+ 
+  <nav id="nav-menu">
+    <a href="index.html" data-key="home">Home</a>
+     <a href="about.html" data-key="about">About</a>
+    <div class="nav-item dropdown">
+    <a href="#" class="nav-link" data-key="services" onclick="toggleDropdown(event)">
+  Services
+</a>
+
+ <div class="mega-menu">
+  <div class="menu-column">
+<a href="stand.html" data-key="exhibition_stand">Exhibition Stand Fabrication</a>
+<a href="Exhibition.html" data-key="exhibition_booth">Exhibition 3d Stand Design</a>
+<a href="design.html" data-key="design_menu">Design</a>
+<a href="maxima-and-octonorm-system.html" data-key="maxima_octonorm">Maxima and Octonorm</a>
+<a href="country-pavilion.html" data-key="country_pavilion">Country Pavilion</a>
+<a href="trust.html">Trust Materials</a>
+<a href="furniture-on-rental.html" data-key="furniture_on_rental">Furniture on Rental</a>
+<a href="in-house-production-warehouse.html" data-key="in_house_production_warehouse">
+  In-house Production Warehouse
+</a>
+  
+    <a href="services.html" data-key="all_services">All Services</a>
+    <a href="Interior.html" data-key="interior_menu">Interior</a>
+  </div>
+ 
+  <div class="menu-column">
+ 
+    <a href="miami.html" data-key="miami_booth">Germany Booth</a>
+ 
+    <a href="thailand.html" data-key="thailand_booth">Thailand Booth</a>
+ 
+    <a href="dubai.html" data-key="dubai_booth">Dubai Booth</a>
+ 
+  </div>
+</div>
+    </div>
+      
+     <a href="work.html" data-key="work">Our Work</a>
+    <a href="Interior.html" data-key="interior">Interior</a>
+   
+    <a href="contact.html" data-key="contact">Contact</a>
+    <a href="#" id="lang-en">EN</a> | 
+    <a href="#" id="lang-cn">CN</a>
+  </nav>
+</header>
+<section class="trust-gallery-section">
+    <h1 id="trust-gallery-title"></h1>
+    <div id="trustGalleryGrid" class="trust-gallery-grid"></div>
+</section>
+
+<div id="trustLightbox" class="trust-lightbox">
+
+    <span id="trustClose" class="trust-close">&times;</span>
+
+    <button id="trustPrev" class="trust-prev">&#10094;</button>
+
+    <img id="trustLightboxImg">
+
+    <button id="trustNext" class="trust-next">&#10095;</button>
+
+</div>
+<script>
+    const params = new URLSearchParams(window.location.search);
+const project = params.get("project") || "TRUST";
+
+const galleries = {
+
+    TRUST:[
+     "trio-website/Projects/Trust1/1.png",
+     "trio-website/Projects/Trust1/2.jpg",
+     "trio-website/Projects/Trust1/3.jpg",
+     "trio-website/Projects/Trust1/4.png",
+    ],
+    TRUST1:[
+        "trio-website/Projects/trust2/1.jpg",
+        "trio-website/Projects/trust2/2.jpg",
+        "trio-website/Projects/trust2/3.jpg",
+        "trio-website/Projects/trust2/4.jpg",
+    ],
+    TRUST2:[
+        "trio-website/Projects/trust3/1.jpg",
+        "trio-website/Projects/trust3/2.jpg",
+        "trio-website/Projects/trust3/3.jpg",
+    ],
+    TRUST3:[
+        "trio-website/Projects/trust4/1.jpg",
+        "trio-website/Projects/trust4/2.jpg",
+        "trio-website/Projects/trust4/3.jpg",
+        "trio-website/Projects/trust4/4.jpg",
+    ],
+    
+};
+
+document.getElementById("trust-gallery-title").textContent = project;
+
+const grid=document.getElementById("trustGalleryGrid");
+const lightbox=document.getElementById("trustLightbox");
+const img=document.getElementById("trustLightboxImg");
+
+let images=galleries[project]||[];
+let index=0;
+
+images.forEach((src,i)=>{
+
+    const card=document.createElement("div");
+    card.className="trust-gallery-item";
+
+    card.innerHTML=`<img src="${src}">`;
+
+    card.onclick=function(){
+
+        index=i;
+        img.src=images[index];
+        lightbox.classList.add("active");
+
+    };
+
+    grid.appendChild(card);
+
+});
+
+document.getElementById("trustClose").onclick=()=>lightbox.classList.remove("active");
+
+document.getElementById("trustPrev").onclick=function(){
+
+    index--;
+    if(index<0) index=images.length-1;
+
+    img.src=images[index];
+
+};
+
+document.getElementById("trustNext").onclick=function(){
+
+    index++;
+    if(index>=images.length) index=0;
+
+    img.src=images[index];
+
+};
+
+lightbox.onclick=function(e){
+
+    if(e.target===lightbox){
+
+        lightbox.classList.remove("active");
+
+    }
+
+};
+
+document.addEventListener("keydown",function(e){
+
+    if(!lightbox.classList.contains("active")) return;
+
+    if(e.key==="ArrowLeft")
+        document.getElementById("trustPrev").click();
+
+    if(e.key==="ArrowRight")
+        document.getElementById("trustNext").click();
+
+    if(e.key==="Escape")
+        lightbox.classList.remove("active");
+
+});
+</script>
+
+<div class="cursor"></div>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-col">
+      <h2>TRIO EXHIBITIONS</h2>
+
+      <p data-key="footer_desc">
+        We create premium exhibition booths with creative design,
+        flawless production and complete project management.
+      </p>
+
+      <p class="address" data-key="footer_address">
+        Mumbai, India<br>
+        Exhibition Services Worldwide
+      </p>
+
+         <div class="socials">
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/trio_exhibition?utm_source=qr" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/share/1MKccLoUGe/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/hemanshu-trivedi-7180b6ba?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+</div>
+    </div>
+
+    <!-- MIDDLE -->
+    <div class="footer-col">
+      <h3 data-key="quick_links">Quick Links</h3>
+
+      <a href="index.html" data-key="home">Home</a>
+      <a href="about.html" data-key="about">About</a>
+      <a href="services.html" data-key="services">Services</a>
+      <a href="work.html" data-key="work">Our Work</a>
+
+      <a href="Interior.html" data-key="interior">Interior</a>
+      <a href="contact.html" data-key="contact">Contact</a>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-col">
+      <h3 data-key="trade_cities">Trade Show Cities</h3>
+
+      <p data-key="india">India</p>
+      <p data-key="dubai">Dubai</p>
+      <p data-key="thailand">Thailand</p>
+      <p data-key="china">China</p>
+      <p data-key="usa">USA</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p data-key="copyright">
+      © 2026 TRIO EXHIBITIONS . ALL rights reserved.
+    </p>
+
+    <div>
+      <a href="terms.html" data-key="terms">Terms of Use</a>
+      <a href="privacy.html" data-key="privacy">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<audio id="bgMusic" loop>
+  <source src="/mantra (1).mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="toggleMusic()" id="musicBtn">🔊</button>
+<div class="floating-icons">
+
+  <a href="https://wa.me/919987570309" class="whatsapp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<a href="#" class="wechat" onclick="openWechatQR(event)">
+    <i class="fab fa-weixin"></i>
+</a>
+
+<!-- QR Modal -->
+<div id="wechatModal" class="wechat-modal">
+    <span class="close-btn" onclick="closeWechatQR()">&times;</span>
+    <img src="trio-website/Projects/image/wechat.jpg" alt="WeChat QR Code">
+</div>
+</div>
+<script src="script.js"></script>
+
+
+  
+
+    <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2026/04/09/06/20260409060544-DG066HXA.js" defer></script>
+
+</body>
+</html>
+
