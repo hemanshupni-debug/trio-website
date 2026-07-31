@@ -943,6 +943,359 @@ maxima_octonorm: "Maxima and Octonorm",
   seo_venues: "We have successfully executed projects at major venues including Jio World Convention Centre Mumbai, and international pavilions such as the Korea Pavilion and Dubai Lab Expo. Whether you need a compact booth or a large-scale country pavilion for a China exhibition, Trio Exhibitions ensures your brand makes a lasting impression on the exhibition floor.",
 
   seo_cta: `Looking for an experienced exhibition stall fabricator for your China trade show, or based in Mumbai, Delhi, or Bangalore? <a href="contact.html">Get in touch with our team</a> for a free consultation and quote.`,
+   maximaTag: "TRIO EXHIBITIONS",
+        maximaTitle1: "Maxima & Octonorm",
+        maximaTitle2: "Exhibition Stall Systems",
+        maximaDescription: "Premium modular exhibition solutions designed to create impactful brand experiences across trade shows, expos, and global events.",
+        maximaBtn1: "Get Free Quote",
+        maximaBtn2: "View Projects",
+          maximaStat1: "Years Experience",
+        maximaStat2: "Projects Delivered",
+        maximaStat3: "Countries Served",
+        maximaStat4: "Custom Solutions",
+           maximaAboutTag: "ABOUT SYSTEMS",
+        maximaAboutTitle1: "What Are Maxima &",
+        maximaAboutTitle2: "Octonorm Systems?",
+        maximaAboutDesc1: "Maxima and Octonorm systems are advanced modular exhibition structures widely used for trade shows, expos, conferences, pavilions and international exhibitions.",
+        maximaAboutDesc2: "These systems provide flexibility, premium aesthetics, fast installation and cost-effective solutions for brands looking to create a strong exhibition presence.",
+           maximaBenefitsTag: "KEY BENEFITS",
+        maximaBenefitsTitle: "Why Choose Trio Exhibitions?",
+
+        maximaFeature1: "Modular Design",
+        maximaFeature2: "LED Integration",
+        maximaFeature3: "Custom Branding",
+        maximaFeature4: "Global Execution",
+        maximaFeature5: "Quick Installation",
+        maximaFeature6: "Reusable Systems",
+         galleryTag: "OUR PROJECTS",
+        galleryTitle: "Recent Exhibition Works",
+
+        gallery1: "Karnataka Pavilion Octonorm",
+        gallery2: "Successfully delivered 6 custom Octonorm stalls for this exhibition.",
+        gallery3: "Maxima Modular Stand Leather Expo",
+        gallery4: "Jewellery Expo Octonorm",
+        gallery5: "Octonorm Tech",
+        gallery6: "Octonorm and Maxima",
+        gallery7: "Octonorm Expo",
+        gallery8: "Octonorm Expo",
+        gallery9: "Octonorm Expo",
+        gallery10: "Maxima Expo",
+        gallery11: "Octonorm Mockup",
+        gallery12: "Maxima Shenzhen Roof India",
+        gallery13: "Maxima Modular Structure",
+        gallery14: "Country Pavilion China Maxima",
+        gallery15: "China Pavilion IITF Octonorm",
+        gallery16: "Elecrama China Pavilion Maxima",
+        gallery17: "Excon India Octonorm",
+        gallery18: "Poly China Automation Maxima",
+        gallery19: "Poly China Automation Maxima",
+        gallery20: "Taiwan Pavilion Automation India Maxima",
+        gallery21: "AOMEI Palm Expo Octonorm",
+        gallery22: "MAXIMA",
+        processTag: "OUR PROCESS",
+        processTitle: "From Concept To Installation",
+
+        processStep1: "Consultation",
+        processStep2: "Design",
+        processStep3: "Production",
+        processStep4: "Installation",
+        processStep5: "Handover",
+         ctaTitle: "Ready To Build Your Next Exhibition Booth?",
+        ctaDescription: "Partner with Trio Exhibitions for innovative, high-impact and professionally executed exhibition solutions.",
+        ctaButton: "Request A Quote",
+           faqTag: "FAQ",
+        faqTitle: "Frequently Asked Questions",
+
+        faqQ1: "What is the difference between Maxima and Octonorm systems?",
+        faqA1: "Maxima systems offer premium structural profiles and a modern appearance, while Octonorm systems are lightweight, modular, and cost-effective for exhibitions and trade shows.",
+
+        faqQ2: "Are Maxima and Octonorm stands reusable?",
+        faqA2: "Yes, both Maxima and Octonorm systems are built as reusable modular structures, making them a cost-effective choice for brands that exhibit regularly.",
+
+        faqQ3: "Do you provide installation services?",
+        faqA3: "Yes, Trio Exhibitions provides complete booth installation, dismantling, logistics, and on-site support services.",
+
+        faqQ4: "Can you execute exhibition projects internationally?",
+        faqA4: "Yes, we deliver exhibition booth solutions across India, Dubai, Germany, Thailand, and various international exhibition venues.",
+
+        faqQ5: "Can Maxima and Octonorm booths be customized?",
+        faqA5: "Absolutely, we provide custom branding, graphics, lighting integration, meeting areas, product displays, and complete stand customization.",
+
+        faqQ6: "What industries use Maxima and Octonorm exhibition stands?",
+        faqA6: "Maxima and Octonorm systems are widely used in healthcare, technology, manufacturing, food, automotive, education, and industrial exhibitions worldwide.",
+
+        faqQ7: "How long does it take to build a Maxima or Octonorm booth?",
+        faqA7: "The timeline depends on booth size and complexity, but most modular stands can be installed much faster than traditional custom-built exhibition booths.",
+
+        faqQ8: "Do you provide 3D booth design before fabrication?",
+        faqA8: "Yes, we create detailed 3D exhibition stand designs and visual presentations for client approval before production begins.",
+
+        faqQ9: "Are Maxima and Octonorm systems suitable for large exhibitions?",
+        faqA9: "Yes, both systems are ideal for small, medium, and large-scale exhibitions, trade fairs, expos, and international events.",
+
+        faqQ10: "Why choose Trio Exhibitions for Maxima and Octonorm stands?",
+        faqA10: "With 18+ years of experience, in-house production facilities, creative design expertise, and global execution capabilities, we deliver high-quality modular exhibition solutions.",
+
+        faqQ11: "Do you provide graphic printing and branding services?",
+        faqA11: "Yes, we offer large-format printing, custom graphics, signage, LED integration, and complete booth branding solutions.",
+
+        faqQ12: "What are the advantages of modular exhibition stands?",
+        faqA12: "Modular stands are cost-effective, reusable, easy to transport, quick to install, and highly flexible for different exhibition layouts.",
+          pavilionHeroTag: "GLOBAL EXHIBITION SOLUTIONS",
+        pavilionHeroTitle: "Country Pavilion Design & Construction",
+        pavilionHeroDesc: "Delivering world-class country pavilion solutions for international trade fairs, expos and global exhibitions.",
+        pavilionHeroBtn: "Request A Quote",
+          pavilionStat1: "Years Experience",
+        pavilionStat2: "Projects Delivered",
+        pavilionStat3: "Countries Served",
+        pavilionStat4: "Custom Solutions",
+          pavilionServicesTag: "OUR SERVICES",
+        pavilionServicesTitle: "Complete Pavilion Management",
+
+        pavilionService1: "Pavilion Design",
+        pavilionService2: "3D Visualization",
+        pavilionService3: "Fabrication",
+        pavilionService4: "Branding",
+        pavilionService5: "Installation",
+        pavilionService6: "Project Management",
+        pavilionCountriesTag: "GLOBAL PRESENCE",
+        pavilionCountriesTitle: "Countries We Support",
+
+        country1: "India",
+        country2: "Germany",
+        country3: "China",
+        country4: "Thailand",
+        country5: "Dubai",
+        country6: "USA",
+        country7: "Brazil",
+        country8: "Singapore",
+         countryGalleryTitle: "Country Pavilion Projects",
+
+        countryProject1: "Automation Iran China Pavilion",
+        countryProject2: "China Country Pavilion Iran",
+        countryProject3: "China Pavilion IITF",
+        countryProject4: "China Pavilion IMTEX BIEC Bangalore",
+        countryProject5: "China Pavilion Palm Expo",
+        countryProject6: "China Pavilion Palm Expo Maxima",
+        countryProject7: "China Pavilion Pragathi Maidan",
+        countryProject8: "China Pavilion Vashi",
+        countryProject9: "China Pavilion IITF",
+        countryProject10: "Country Pavilion China",
+        countryProject11: "Country Pavilion Mockup",
+        countryProject12: "Elecrama China Pavilion",
+        countryProject13: "Excon India 1600 sqm",
+        countryProject14: "IMTEX India 1600 sqm",
+        countryProject15: "Poly China Automation India",
+        countryProject16: "Poly China Automation",
+        countryProject17: "POLY China Pavilion Automation",
+        countryProject18: "China Pavilion Leather Expo",
+        countryProject19: "FUJI Leather Expo",
+        countryProject20: "Mumbai Auto Expo",
+         pavilionProcessTag: "WORKFLOW",
+        pavilionProcessTitle: "Our Pavilion Process",
+
+        pavilionProcess1: "Consultation",
+        pavilionProcess2: "Concept Design",
+        pavilionProcess3: "Production",
+        pavilionProcess4: "Installation",
+        pavilionProcess5: "Handover",
+         pavilionCtaTitle: "Build Your Next Country Pavilion With Trio Exhibitions",
+        pavilionCtaDesc: "We create impactful national pavilions that attract visitors, showcase innovation and strengthen global presence.",
+        pavilionCtaBtn: "Contact Us",
+         pavilionFaqTag: "COMMON QUESTIONS",
+        pavilionFaqTitle: "Country Pavilion",
+
+        pavilionFaqQ1: "What is a country pavilion?",
+        pavilionFaqA1: "A country pavilion is a dedicated exhibition space representing a nation's industries, product innovation, and investment opportunities at international trade fairs and expos.",
+
+        pavilionFaqQ2: "Do you provide complete pavilion construction service?",
+        pavilionFaqA2: "Yes, we provide design, 3D visualization, fabrication, branding, installation, dismantling, and complete project management services.",
+
+        pavilionFaqQ3: "Can you execute pavilion projects outside India?",
+        pavilionFaqA3: "Yes, Trio Exhibitions supports pavilion projects across India, Dubai, Germany, Thailand, USA, Singapore, and other international exhibition destinations.",
+
+        pavilionFaqQ4: "Do you provide custom pavilion design?",
+        pavilionFaqA4: "Absolutely. Every pavilion is custom-designed according to the country's branding objectives and exhibition requirements.",
+
+        pavilionFaqQ5: "How early should a pavilion project be planned?",
+        pavilionFaqA5: "We recommend planning at least 2–6 months before the exhibition date to ensure smooth execution and approvals.",
+
+        pavilionFaqQ6: "What industries can participate in a country pavilion?",
+        pavilionFaqA6: "Country pavilions can showcase industries such as manufacturing, healthcare, food processing, education, tourism, and export businesses.",
+
+        pavilionFaqQ7: "Do you provide branding and graphics for country pavilions?",
+        pavilionFaqA7: "Yes, we offer complete branding solutions including pavilion graphics, signage, digital displays, country branding elements, and promotional materials.",
+
+        pavilionFaqQ8: "Why choose Trio Exhibitions for country pavilion projects?",
+        pavilionFaqA8: "With 18+ years of experience, global execution capabilities, in-house production facilities, and dedicated project management, we deliver world-class country pavilion solutions.",
+
+        pavilionFaqQ9: "How much does a country pavilion cost?",
+        pavilionFaqA9: "The cost depends on pavilion size, location, design complexity, branding requirements, and exhibition venue specifications. Contact us for a customized quotation.",
+         furniHeroTag: "TRIO EXHIBITIONS",
+        furniHeroTitle: "Furniture On Rental",
+        furniHeroDesc: "Premium furniture rental solutions for exhibitions, trade shows, conferences and corporate events.",
+        furniHeroBtn: "Get Free Quote",
+        furniServicesTitle: "Rental Furniture Collection",
+
+        furniService1: "Sofas",
+        furniService2: "Chairs",
+        furniService3: "Tables",
+        furniService4: "Reception Counters",
+        furniService5: "LED Furniture",
+        furniService6: "Lounge Setup",
+         furniAboutTag: "WHY CHOOSE US",
+        furniAboutTitle: "Premium Furniture Rental Services",
+        furniAboutDesc: "Trio Exhibitions provides high-quality furniture rental services for exhibitions, trade fairs, conferences, seminars and corporate events.",
+
+        furniFeature1: "Modern Designs",
+        furniFeature2: "Affordable Pricing",
+        furniFeature3: "Quick Delivery",
+        furniFeature4: "Professional Installation",
+        furniFeature5: "Large Inventory",
+           furniGallery1: "Chair",
+        furniGallery2: "Sofa",
+        furniGallery3: "Freezer",
+        furniGallery4: "Glass & Wooden Round Tables",
+        furniGallery5: "Water Dispenser",
+        furniGallery6: "Glass Counter Showcase",
+        furniGallery7: "Center Glass Table",
+        furniGallery8: "Dustbin",
+        furniGallery9: "Brochure Stand",
+        furniGallery10: "Plants",
+        furniGallery11: "LED Furniture",
+          furniStat1: "Rental Projects",
+        furniStat2: "Years Experience",
+        furniStat3: "Client Satisfaction",
+        furniStat4: "Support",
+          furniProcessTitle: "Our Rental Process",
+
+        furniProcess1: "Consultation",
+        furniProcess2: "Selection",
+        furniProcess3: "Delivery",
+        furniProcess4: "Setup",
+          furniCtaTitle: "Need Furniture For Your Event?",
+        furniCtaDesc: "Get stylish and premium furniture delivered directly to your exhibition venue.",
+        furniCtaBtn: "Contact Us",
+           furniFaqTitle: "Frequently Asked Questions",
+
+        furniFaqQ1: "What furniture is available for rent?",
+        furniFaqA1: "We offer sofas, chairs, tables, reception counters, bar stools, lounge furniture and more.",
+
+        furniFaqQ2: "How much does exhibition furniture rental cost?",
+        furniFaqA2: "Pricing depends on furniture type, quantity, duration and event location.",
+
+        furniFaqQ3: "Do you provide delivery?",
+        furniFaqA3: "Yes, we provide delivery across exhibition venues and event locations.",
+
+        furniFaqQ4: "Do you provide setup?",
+        furniFaqA4: "Yes, our team handles installation, arrangement and dismantling.",
+
+        furniFaqQ5: "Can I rent furniture for a single-day exhibition?",
+        furniFaqA5: "Yes, we provide flexible rental options for one-day events, exhibitions, conferences and trade shows.",
+
+        furniFaqQ6: "Do you offer furniture rental across India?",
+        furniFaqA6: "Yes, we provide exhibition and event furniture rental services across major cities and exhibition venues in India.",
+
+        furniFaqQ7: "Can I customize my furniture selection?",
+        furniFaqA7: "Absolutely. You can choose furniture based on your booth design, branding requirements and event theme.",
+
+        furniFaqQ8: "Do you provide lounge furniture for VIP areas?",
+        furniFaqA8: "Yes, we offer premium lounge setups, sofas, coffee tables and VIP seating solutions for exhibitions and events.",
+
+        furniFaqQ9: "Are reception counters available on rent?",
+        furniFaqA9: "Yes, we provide reception counters, information desks and branded welcome counters for exhibitions and trade fairs.",
+
+        furniFaqQ10: "Can furniture be branded with our company logo?",
+        furniFaqA10: "Yes, selected furniture and counters can be customized with company branding and graphics.",
+
+        furniFaqQ11: "How far in advance should I book exhibition furniture?",
+        furniFaqA11: "We recommend booking at least 2–4 weeks before the event to ensure availability and smooth delivery.",
+
+        furniFaqQ12: "Why choose Trio Exhibitions for furniture rental?",
+        furniFaqA12: "We provide premium-quality furniture, timely delivery, professional setup and reliable support for exhibitions and events.",
+          intHeroTag: "Professional Language Support",
+        intHeroTitle: "Korean & Chinese <br> Interpretation Services",
+        intHeroDesc: "Break language barriers with our professional Korean and Chinese interpreters. We provide reliable language support for exhibitions, trade fairs, business meetings, factory visits, and international client communication.",
+        intHeroBtn1: "Get Free Quote",
+        intHeroBtn2: "Call Now",
+          langServiceTitle: "Korean & Chinese Interpretation",
+
+        langServiceDesc: "We provide professional Korean and Chinese interpretation services for exhibitions, trade fairs, business meetings, factory visits, client negotiations, and international communication. Our experienced interpreters eliminate language barriers, ensuring smooth and effective conversations between global exhibitors and local partners.",
+
+        langService1: "Korean Business Interpretation",
+        langService2: "Chinese (Mandarin) Interpretation",
+        langService3: "Exhibition & Trade Show Support",
+        langService4: "Business Meetings Assistance",
+        langService5: "Factory Visit Interpretation",
+        langService6: "Client Communication Support",
+
+        langServiceBtn: "Get Free Consultation",
+          langBenefitsTitle: "Why Choose Our Interpretation Services?",
+        langBenefitsDesc: "We provide reliable Korean and Chinese interpretation services for exhibitions, trade fairs, business meetings, factory visits and international communication.",
+
+        langBenefit1Title: "Professional Interpreters",
+        langBenefit1Desc: "Experienced interpreters for exhibitions and business meetings.",
+
+        langBenefit2Title: "Business Support",
+        langBenefit2Desc: "Clear communication between exhibitors and business partners.",
+
+        langBenefit3Title: "Trade Show Assistance",
+        langBenefit3Desc: "Language support throughout exhibitions and trade fairs.",
+
+        langBenefit4Title: "International Communication",
+        langBenefit4Desc: "Helping Korean and Chinese companies connect globally.",
+          industryTitle: "Industries We Serve",
+        industryDesc: "We provide professional Korean and Chinese interpretation services across various industries, ensuring seamless communication and successful business interactions.",
+
+        industry1Title: "Exhibitions & Trade Shows",
+        industry1Desc: "Professional language support for international exhibitions, expos and trade fairs.",
+
+        industry2Title: "Manufacturing",
+        industry2Desc: "Interpretation for factory visits, production discussions and supplier meetings.",
+
+        industry3Title: "Technology",
+        industry3Desc: "Communication support for IT companies, product demonstrations and business collaborations.",
+
+        industry4Title: "Business Meetings",
+        industry4Desc: "Accurate interpretation during negotiations, conferences and corporate meetings.",
+
+        industry5Title: "Import & Export",
+        industry5Desc: "Language assistance for international trade, logistics and supplier communication.",
+
+        industry6Title: "International Delegations",
+        industry6Desc: "Professional interpretation for official visits, delegations and business events.",
+         intFaqTitle: "Frequently Asked Questions",
+        intFaqDesc: "Find answers to the most common questions about our Korean & Chinese Interpretation Services.",
+
+        intFaqQ1: "Do you provide on-site interpretation services?",
+        intFaqA1: "Yes. Our interpreters are available for exhibitions, trade fairs, business meetings, factory visits and corporate events.",
+
+        intFaqQ2: "Which languages do you support?",
+        intFaqA2: "We provide professional interpretation services in Korean and Chinese (Mandarin).",
+
+        intFaqQ3: "Can I book an interpreter for a single day?",
+        intFaqA3: "Yes. We offer flexible booking options for one-day, multi-day and long-term assignments.",
+
+        intFaqQ4: "Do you provide interpretation outside exhibitions?",
+        intFaqA4: "Absolutely. We also support business meetings, conferences, factory visits, training sessions and corporate events.",
+
+        intFaqQ5: "How can I request a quotation?",
+        intFaqA5: "Simply contact us, and we will provide a customized quotation based on your requirements.",
+        quoteTag: "Contact Us",
+        quoteTitle: "Need a Korean or Chinese Interpreter?",
+        quoteDesc: "Whether you're attending an exhibition, hosting international clients, or arranging a business meeting, our professional interpreters are ready to assist you.",
+        quoteLocation: "Mumbai, Maharashtra, India",
+
+        quoteName: "Full Name",
+        quoteEmail: "Email Address",
+        quotePhone: "Phone Number",
+        quoteMessage: "Tell us about your requirement",
+
+        quoteSelectLang: "Select Language",
+        quoteLang1: "Korean Interpretation",
+        quoteLang2: "Chinese Interpretation",
+
+        quoteBtn: "Request a Free Quote",
 
   },
 
@@ -1933,6 +2286,374 @@ privacy: "隐私政策",
   seo_venues: "我们已成功完成多个大型展会项目，包括孟买 Jio World Convention Centre，以及韩国馆、Dubai Lab Expo 等国际展馆项目。无论您需要紧凑型展位还是大型国家馆，Trio Exhibitions 都能为您的品牌打造令人难忘的展示效果。",
 
   seo_cta: `正在寻找经验丰富的中国展会展台搭建公司，或位于孟买、德里或班加罗尔？<a href="contact.html">立即联系我们的团队</a>，获取免费咨询与报价。`,
+   maximaTag: "TRIO 展览",
+        maximaTitle1: "Maxima 与 Octonorm",
+        maximaTitle2: "展览展位系统",
+        maximaDescription: "高端模块化展览解决方案，为贸易展览、博览会及国际活动打造卓越的品牌展示体验。",
+        maximaBtn1: "获取免费报价",
+        maximaBtn2: "查看项目",
+          maximaStat1: "年行业经验",
+        maximaStat2: "已完成项目",
+        maximaStat3: "服务国家",
+        maximaStat4: "定制化解决方案",
+          maximaAboutTag: "关于系统",
+        maximaAboutTitle1: "什么是 Maxima 与",
+        maximaAboutTitle2: "Octonorm 展位系统？",
+        maximaAboutDesc1: "Maxima 和 Octonorm 是先进的模块化展览系统，广泛应用于贸易展览会、博览会、会议、国家馆及国际展览活动。",
+        maximaAboutDesc2: "这些系统具有灵活性、高端美观、安装快捷和成本效益高等优势，可帮助品牌打造卓越的展览展示效果。",
+         maximaSystemTag: "MAXIMA 系统",
+        maximaSystemTitle: "高端展览结构解决方案",
+        maximaSystemDesc: "Maxima 系统拥有卓越的外观设计、更坚固的结构型材和高品质饰面，是企业品牌展位的理想选择。",
+        maximaSystemFeature1: "高端外观",
+        maximaSystemFeature2: "可重复使用",
+        maximaSystemFeature3: "企业级饰面",
+        maximaSystemFeature4: "坚固框架",
+
+        octonormSystemTag: "OCTONORM 系统",
+        octonormSystemTitle: "经济高效且灵活的解决方案",
+        octonormSystemDesc: "Octonorm 系统采用模块化设计，重量轻、灵活性高，适用于各种规模的展览和活动。",
+        octonormFeature1: "经济实惠",
+        octonormFeature2: "快速安装",
+        octonormFeature3: "运输便捷",
+        octonormFeature4: "灵活布局",
+         maximaBenefitsTag: "核心优势",
+        maximaBenefitsTitle: "为什么选择 TRIO EXHIBITIONS？",
+
+        maximaFeature1: "模块化设计",
+        maximaFeature2: "LED 集成",
+        maximaFeature3: "定制品牌展示",
+        maximaFeature4: "全球项目执行",
+        maximaFeature5: "快速安装",
+        maximaFeature6: "可重复使用系统",
+          galleryTag: "我们的项目",
+        galleryTitle: "近期展览项目",
+
+        gallery1: "卡纳塔克邦馆 Octonorm",
+        gallery2: "本次展会成功交付 6 个定制 Octonorm 展位。",
+        gallery3: "Leather Expo Maxima 模块化展位",
+        gallery4: "珠宝展 Octonorm",
+        gallery5: "科技展 Octonorm",
+        gallery6: "Octonorm 与 Maxima",
+        gallery7: "Octonorm 展位",
+        gallery8: "Octonorm 展位",
+        gallery9: "Octonorm 展位",
+        gallery10: "Maxima 展位",
+        gallery11: "Octonorm 模型设计",
+        gallery12: "深圳 Maxima · Roof India",
+        gallery13: "Maxima 模块化结构",
+        gallery14: "中国国家馆 Maxima",
+        gallery15: "中国馆 IITF Octonorm",
+        gallery16: "Elecrama 中国馆 Maxima",
+        gallery17: "Excon India Octonorm",
+        gallery18: "Poly China Automation Maxima",
+        gallery19: "Poly China Automation Maxima",
+        gallery20: "台湾馆 Automation India Maxima",
+        gallery21: "AOMEI Palm Expo Octonorm",
+        gallery22: "MAXIMA",
+          processTag: "我们的流程",
+        processTitle: "从概念到安装",
+
+        processStep1: "需求咨询",
+        processStep2: "方案设计",
+        processStep3: "生产制造",
+        processStep4: "现场安装",
+        processStep5: "项目交付",
+         ctaTitle: "准备打造您的下一场展览展位吗？",
+        ctaDescription: "与 TRIO EXHIBITIONS 合作，获得创新、高影响力且专业执行的展览展示解决方案。",
+        ctaButton: "立即获取报价",
+   faqTag: "常见问题",
+        faqTitle: "常见问题解答",
+
+        faqQ1: "Maxima 与 Octonorm 系统有什么区别？",
+        faqA1: "Maxima 系统具有高端结构型材和现代化外观，而 Octonorm 系统则轻便、模块化且更具成本效益，适用于各类展览和贸易展会。",
+
+        faqQ2: "Maxima 和 Octonorm 展位可以重复使用吗？",
+        faqA2: "可以，两种系统均采用可重复使用的模块化结构，非常适合经常参加展会的企业。",
+
+        faqQ3: "你们提供安装服务吗？",
+        faqA3: "是的，TRIO EXHIBITIONS 提供展位安装、拆除、物流运输及现场支持等完整服务。",
+
+        faqQ4: "你们可以承接国际展览项目吗？",
+        faqA4: "可以，我们在印度、迪拜、德国、泰国及多个国际展览场馆提供展位解决方案。",
+
+        faqQ5: "Maxima 和 Octonorm 展位可以定制吗？",
+        faqA5: "当然可以，我们提供品牌定制、图形设计、灯光集成、洽谈区、产品展示及整体展位定制服务。",
+
+        faqQ6: "哪些行业会使用 Maxima 和 Octonorm 展位？",
+        faqA6: "广泛应用于医疗、科技、制造、食品、汽车、教育及工业等国际展览。",
+
+        faqQ7: "搭建一个 Maxima 或 Octonorm 展位需要多久？",
+        faqA7: "具体时间取决于展位规模和复杂程度，但模块化展位通常比传统定制展位安装更快。",
+
+        faqQ8: "制作前会提供 3D 展位设计吗？",
+        faqA8: "会，我们会提供详细的 3D 展位设计和效果图，供客户确认后再开始生产。",
+
+        faqQ9: "Maxima 和 Octonorm 系统适合大型展览吗？",
+        faqA9: "是的，这两种系统都适用于小型、中型及大型展览、贸易展、博览会和国际活动。",
+
+        faqQ10: "为什么选择 TRIO EXHIBITIONS？",
+        faqA10: "凭借 18 年以上行业经验、自有生产设施、专业设计团队及全球执行能力，我们提供高品质模块化展览解决方案。",
+
+        faqQ11: "你们提供图文印刷和品牌展示服务吗？",
+        faqA11: "是的，我们提供大幅面印刷、品牌图形设计、标识制作、LED 集成及完整展位品牌展示服务。",
+
+        faqQ12: "模块化展位有哪些优势？",
+        faqA12: "模块化展位经济实惠、可重复使用、运输方便、安装快捷，并可灵活适应不同展会布局。",
+          pavilionHeroTag: "全球展览解决方案",
+        pavilionHeroTitle: "国家馆设计与搭建",
+        pavilionHeroDesc: "为国际贸易展览会、博览会及全球展会提供世界级国家馆设计与搭建解决方案。",
+        pavilionHeroBtn: "立即获取报价",
+         pavilionStat1: "年行业经验",
+        pavilionStat2: "已完成项目",
+        pavilionStat3: "服务国家",
+        pavilionStat4: "定制化解决方案",
+        pavilionServicesTag: "我们的服务",
+        pavilionServicesTitle: "国家馆全流程管理",
+
+        pavilionService1: "国家馆设计",
+        pavilionService2: "3D 效果图",
+        pavilionService3: "制作加工",
+        pavilionService4: "品牌展示",
+        pavilionService5: "现场安装",
+        pavilionService6: "项目管理",
+         pavilionCountriesTag: "全球业务覆盖",
+        pavilionCountriesTitle: "我们服务的国家",
+
+        country1: "印度",
+        country2: "德国",
+        country3: "中国",
+        country4: "泰国",
+        country5: "迪拜",
+        country6: "美国",
+        country7: "巴西",
+        country8: "新加坡",
+           countryGalleryTitle: "国家馆项目",
+
+        countryProject1: "伊朗中国馆 · 自动化展",
+        countryProject2: "伊朗中国国家馆",
+        countryProject3: "中国馆 · IITF",
+        countryProject4: "中国馆 · 班加罗尔 IMTEX BIEC",
+        countryProject5: "中国馆 · Palm Expo",
+        countryProject6: "中国馆 · Palm Expo Maxima",
+        countryProject7: "中国馆 · Pragathi Maidan",
+        countryProject8: "中国馆 · Vashi",
+        countryProject9: "中国馆 · IITF",
+        countryProject10: "中国国家馆",
+        countryProject11: "国家馆概念设计",
+        countryProject12: "Elecrama 中国馆",
+        countryProject13: "Excon India 1600 平方米",
+        countryProject14: "IMTEX India 1600 平方米",
+        countryProject15: "Poly China · Automation India",
+        countryProject16: "Poly China Automation",
+        countryProject17: "POLY 中国馆 · Automation",
+        countryProject18: "中国馆 · Leather Expo",
+        countryProject19: "FUJI · Leather Expo",
+        countryProject20: "孟买汽车博览会",
+         pavilionProcessTag: "工作流程",
+        pavilionProcessTitle: "我们的国家馆流程",
+
+        pavilionProcess1: "需求咨询",
+        pavilionProcess2: "概念设计",
+        pavilionProcess3: "生产制造",
+        pavilionProcess4: "现场安装",
+        pavilionProcess5: "项目交付",
+          pavilionCtaTitle: "与 TRIO EXHIBITIONS 携手打造您的下一座国家馆",
+        pavilionCtaDesc: "我们打造具有影响力的国家馆，吸引观众、展示创新成果，并提升全球品牌影响力。",
+        pavilionCtaBtn: "联系我们",
+         pavilionFaqTag: "常见问题",
+        pavilionFaqTitle: "国家馆",
+
+        pavilionFaqQ1: "什么是国家馆？",
+        pavilionFaqA1: "国家馆是在国际贸易展览会和博览会上展示国家产业、产品创新及投资机会的专属展览空间。",
+
+        pavilionFaqQ2: "你们提供完整的国家馆搭建服务吗？",
+        pavilionFaqA2: "是的，我们提供设计、3D 效果图、制作、品牌展示、安装、拆除及完整项目管理服务。",
+
+        pavilionFaqQ3: "你们可以在印度以外执行国家馆项目吗？",
+        pavilionFaqA3: "可以，TRIO EXHIBITIONS 在印度、迪拜、德国、泰国、美国、新加坡及其他国际展览目的地提供国家馆项目服务。",
+
+        pavilionFaqQ4: "你们提供定制国家馆设计吗？",
+        pavilionFaqA4: "当然可以，每个国家馆都会根据国家品牌定位和展览需求进行专属定制设计。",
+
+        pavilionFaqQ5: "国家馆项目应提前多久规划？",
+        pavilionFaqA5: "建议至少提前 2–6 个月开始规划，以确保项目顺利执行并完成相关审批。",
+
+        pavilionFaqQ6: "哪些行业适合参加国家馆？",
+        pavilionFaqA6: "国家馆可展示制造业、医疗、食品加工、教育、旅游及出口贸易等多个行业。",
+
+        pavilionFaqQ7: "你们提供国家馆品牌设计和图形制作吗？",
+        pavilionFaqA7: "是的，我们提供完整的品牌展示服务，包括展馆图形设计、标识系统、数字显示、国家品牌元素及宣传材料。",
+
+        pavilionFaqQ8: "为什么选择 TRIO EXHIBITIONS 承建国家馆？",
+        pavilionFaqA8: "凭借 18 年以上经验、全球执行能力、自有生产基地及专业项目管理团队，我们提供世界级国家馆解决方案。",
+
+        pavilionFaqQ9: "国家馆项目费用是多少？",
+        pavilionFaqA9: "费用取决于国家馆面积、地点、设计复杂度、品牌需求及展馆要求。欢迎联系我们获取专属报价。",
+          furniHeroTag: "TRIO 展览",
+        furniHeroTitle: "展览家具租赁",
+        furniHeroDesc: "为展览会、贸易展、会议及企业活动提供高品质家具租赁解决方案。",
+        furniHeroBtn: "获取免费报价",
+          furniServicesTitle: "家具租赁系列",
+
+        furniService1: "沙发",
+        furniService2: "椅子",
+        furniService3: "桌子",
+        furniService4: "接待台",
+        furniService5: "LED 家具",
+        furniService6: "休息区布置",
+          furniAboutTag: "为什么选择我们",
+        furniAboutTitle: "高品质家具租赁服务",
+        furniAboutDesc: "TRIO EXHIBITIONS 为展览会、贸易展、会议、研讨会及企业活动提供高品质家具租赁服务。",
+
+        furniFeature1: "现代化设计",
+        furniFeature2: "价格实惠",
+        furniFeature3: "快速交付",
+        furniFeature4: "专业安装",
+        furniFeature5: "丰富库存",
+         furniGallery1: "椅子",
+        furniGallery2: "沙发",
+        furniGallery3: "冷冻柜",
+        furniGallery4: "玻璃和木质圆桌",
+        furniGallery5: "饮水机",
+        furniGallery6: "玻璃展示柜",
+        furniGallery7: "玻璃茶几",
+        furniGallery8: "垃圾桶",
+        furniGallery9: "宣传册展示架",
+        furniGallery10: "绿植",
+        furniGallery11: "LED 家具",
+        furniStat1: "租赁项目",
+        furniStat2: "年行业经验",
+        furniStat3: "客户满意度",
+        furniStat4: "全天候支持",
+          furniProcessTitle: "我们的租赁流程",
+
+        furniProcess1: "需求咨询",
+        furniProcess2: "产品选择",
+        furniProcess3: "配送交付",
+        furniProcess4: "现场布置",
+        furniCtaTitle: "需要为您的活动租赁家具吗？",
+        furniCtaDesc: "我们将时尚、高品质的家具直接配送到您的展览现场。",
+        furniCtaBtn: "联系我们",
+          furniFaqTitle: "常见问题",
+
+        furniFaqQ1: "可租赁哪些家具？",
+        furniFaqA1: "我们提供沙发、椅子、桌子、接待台、吧椅、休息区家具等多种租赁产品。",
+
+        furniFaqQ2: "展览家具租赁费用是多少？",
+        furniFaqA2: "价格取决于家具类型、数量、租赁时长及活动地点。",
+
+        furniFaqQ3: "你们提供配送服务吗？",
+        furniFaqA3: "是的，我们可配送至各大展馆及活动场地。",
+
+        furniFaqQ4: "你们提供现场安装吗？",
+        furniFaqA4: "是的，我们负责安装、摆放及活动结束后的拆除。",
+
+        furniFaqQ5: "可以租赁一天吗？",
+        furniFaqA5: "可以，我们提供适用于单日展览、会议、展会及活动的灵活租赁方案。",
+
+        furniFaqQ6: "你们是否提供印度全国家具租赁服务？",
+        furniFaqA6: "是的，我们在印度主要城市及展览场馆提供家具租赁服务。",
+
+        furniFaqQ7: "可以根据需求选择家具吗？",
+        furniFaqA7: "当然可以，您可根据展位设计、品牌需求及活动主题自由选择家具。",
+
+        furniFaqQ8: "提供 VIP 休息区家具吗？",
+        furniFaqA8: "是的，我们提供高端休息区、沙发、茶几及 VIP 座椅解决方案。",
+
+        furniFaqQ9: "接待台可以租赁吗？",
+        furniFaqA9: "可以，我们提供接待台、咨询台及品牌定制迎宾台。",
+
+        furniFaqQ10: "家具可以添加公司 Logo 吗？",
+        furniFaqA10: "可以，部分家具及接待台支持品牌 Logo 和图形定制。",
+
+        furniFaqQ11: "应提前多久预订展览家具？",
+        furniFaqA11: "建议至少提前 2–4 周预订，以确保库存充足并按时交付。",
+
+        furniFaqQ12: "为什么选择 TRIO EXHIBITIONS 的家具租赁服务？",
+        furniFaqA12: "我们提供高品质家具、准时交付、专业安装以及可靠的展会活动支持服务。",
+         intHeroTag: "专业语言支持",
+        intHeroTitle: "韩语与中文<br>口译服务",
+        intHeroDesc: "我们的专业韩语和中文口译员帮助您跨越语言障碍，为展览会、贸易展、商务会议、工厂参观及国际客户沟通提供可靠的语言支持。",
+        intHeroBtn1: "获取免费报价",
+        intHeroBtn2: "立即致电",
+        langServiceTitle: "韩语与中文口译服务",
+
+        langServiceDesc: "我们为展览会、贸易展、商务会议、工厂参观、客户洽谈及国际商务交流提供专业的韩语和中文口译服务。经验丰富的口译员帮助消除语言障碍，确保国际参展商与本地合作伙伴之间实现顺畅、高效的沟通。",
+
+        langService1: "韩语商务口译",
+        langService2: "中文（普通话）口译",
+        langService3: "展览与贸易展支持",
+        langService4: "商务会议口译",
+        langService5: "工厂参观口译",
+        langService6: "客户沟通支持",
+
+        langServiceBtn: "获取免费咨询",
+          langBenefitsTitle: "为什么选择我们的口译服务？",
+        langBenefitsDesc: "我们为展览会、贸易展、商务会议、工厂参观及国际商务交流提供可靠的韩语和中文口译服务。",
+
+        langBenefit1Title: "专业口译员",
+        langBenefit1Desc: "为展览会及商务会议提供经验丰富的专业口译服务。",
+
+        langBenefit2Title: "商务支持",
+        langBenefit2Desc: "帮助参展商与商业合作伙伴实现高效、清晰的沟通。",
+
+        langBenefit3Title: "展会支持",
+        langBenefit3Desc: "在展览会及贸易展期间提供全程语言支持。",
+
+        langBenefit4Title: "国际商务沟通",
+        langBenefit4Desc: "帮助韩国及中国企业与全球客户建立联系。",
+          industryTitle: "我们服务的行业",
+        industryDesc: "我们为各行业提供专业的韩语和中文口译服务，确保沟通顺畅，促进成功的商务合作。",
+
+        industry1Title: "展览与贸易展",
+        industry1Desc: "为国际展览、博览会及贸易展提供专业语言支持。",
+
+        industry2Title: "制造业",
+        industry2Desc: "为工厂参观、生产讨论及供应商会议提供专业口译服务。",
+
+        industry3Title: "科技行业",
+        industry3Desc: "为 IT 企业、产品演示及商务合作提供沟通支持。",
+
+        industry4Title: "商务会议",
+        industry4Desc: "在商务谈判、会议及企业活动中提供精准口译服务。",
+
+        industry5Title: "进出口贸易",
+        industry5Desc: "为国际贸易、物流及供应商沟通提供语言支持。",
+
+        industry6Title: "国际代表团",
+        industry6Desc: "为官方访问、国际代表团及商务活动提供专业口译服务。",
+          intFaqTitle: "常见问题",
+        intFaqDesc: "了解有关我们韩语和中文口译服务的常见问题及解答。",
+
+        intFaqQ1: "你们提供现场口译服务吗？",
+        intFaqA1: "是的，我们的口译员可为展览会、贸易展、商务会议、工厂参观及企业活动提供现场口译服务。",
+
+        intFaqQ2: "你们支持哪些语言？",
+        intFaqA2: "我们提供专业的韩语和中文（普通话）口译服务。",
+
+        intFaqQ3: "可以预订一天的口译服务吗？",
+        intFaqA3: "可以，我们提供单日、多日及长期口译服务，满足不同需求。",
+
+        intFaqQ4: "除了展览会，还提供其他场合的口译服务吗？",
+        intFaqA4: "当然可以，我们还为商务会议、研讨会、工厂参观、培训课程及企业活动提供口译服务。",
+
+        intFaqQ5: "如何获取报价？",
+        intFaqA5: "只需联系我们，我们将根据您的具体需求提供定制报价。",
+          quoteTag: "联系我们",
+        quoteTitle: "需要韩语或中文口译员吗？",
+        quoteDesc: "无论您是参加展览会、接待国际客户还是安排商务会议，我们的专业口译员都将为您提供可靠的语言支持。",
+        quoteLocation: "印度 · 马哈拉施特拉邦 · 孟买",
+
+        quoteName: "姓名",
+        quoteEmail: "电子邮箱",
+        quotePhone: "电话号码",
+        quoteMessage: "请告诉我们您的需求",
+
+        quoteSelectLang: "请选择语言",
+        quoteLang1: "韩语口译",
+        quoteLang2: "中文口译",
+
+        quoteBtn: "申请免费报价",
   }
 };
 
@@ -2199,3 +2920,22 @@ if (faqQuestions.length > 0) {
     });
 
 }
+function toggleAboutDropdown(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    document.querySelector(".about-dropdown-menu").classList.toggle("show");
+
+    // Service dropdown close
+    document.querySelectorAll(".mega-menu").forEach(menu=>{
+        menu.classList.remove("show");
+    });
+}
+
+document.addEventListener("click", function(e){
+
+    if(!e.target.closest(".about-nav-item")){
+        document.querySelector(".about-dropdown-menu").classList.remove("show");
+    }
+
+});

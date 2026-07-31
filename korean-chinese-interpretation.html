@@ -13,22 +13,32 @@
 </head>
 
 <body>
+
 <header>
   <img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo" alt="Trio Exhibitions logo - exhibition stall design company in Mumbai">
- 
+
   <!-- 🔥 Hamburger -->
   <div class="hamburger" onclick="toggleMenu()">
     ☰
   </div>
- 
+
   <nav id="nav-menu">
     <a href="index.html" data-key="home">Home</a>
-     <a href="about.html" data-key="about">About</a>
+     <div class="about-nav-item">
+      <a href="#" class="about-nav-link" onclick="toggleAboutDropdown(event)">
+        About
+      </a>
+
+      <div class="about-dropdown-menu">
+        <a href="about.html">About Us</a>
+        <a href="korean-chinese-interpretation.html">Korean & Chinese Interpretation</a>
+      </div>
+    </div>
     <div class="nav-item dropdown">
     <a href="#" class="nav-link" data-key="services" onclick="toggleDropdown(event)">
   Services
 </a>
- 
+
  <div class="mega-menu">
   <div class="menu-column">
 <a href="stand.html" data-key="exhibition_stand">Exhibition Stand Fabrication</a>
@@ -45,15 +55,16 @@
     <a href="services.html" data-key="all_services">All Services</a>
     <a href="Interior.html" data-key="interior_menu">Interior</a>
   </div>
- 
-  <div class="menu-column">
- 
+
+ <div class="menu-column">
+
+
     <a href="miami.html" data-key="miami_booth">Germany Booth</a>
- 
+
     <a href="thailand.html" data-key="thailand_booth">Thailand Booth</a>
- 
+
     <a href="dubai.html" data-key="dubai_booth">Dubai Booth</a>
- 
+
   </div>
 </div>
     </div>
@@ -75,15 +86,15 @@
 
     <div class="trio-int-content">
 
-        <span class="trio-int-tag">
+        <span class="trio-int-tag" data-key="intHeroTag">
             Professional Language Support
         </span>
 
-        <h1 class="trio-int-title">
+        <h1 class="trio-int-title" data-key="intHeroTitle">
             Korean & Chinese <br> Interpretation Services
         </h1>
 
-        <p class="trio-int-text">
+        <p class="trio-int-text" data-key="intHeroDesc">
             Break language barriers with our professional Korean and Chinese
             interpreters. We provide reliable language support for exhibitions,
             trade fairs, business meetings, factory visits, and international
@@ -92,11 +103,11 @@
 
         <div class="trio-int-buttons">
 
-            <a href="contact.html" class="trio-btn-primary">
+            <a href="contact.html" class="trio-btn-primary" data-key="intHeroBtn1">
                 Get Free Quote
             </a>
 
-            <a href="tel:+919987570309" class="trio-btn-secondary">
+            <a href="tel:+919987570309" class="trio-btn-secondary" data-key="intHeroBtn2">
                 Call Now
             </a>
 
@@ -106,41 +117,58 @@
 
 </section>
 <section class="language-service-section">
+
     <div class="language-service-card">
+
         <div class="language-service-content">
-            <div class="language-service-left" >
+
+            <div class="language-service-left">
+
                 <div class="language-service-icon">🌏</div>
-              <h2 class="language-service-title">Korean & Chinese Interpretation</h2>
-              <p class="language-service-description">We provide professional Korean and Chinese interpretation services for exhibition,trade fairs,business meeting,factory visits,client negotiations, and international communication.Our experienced interpreters barriers,ensuring smooth and effective conversations between global exhibitors and local partners.</p>
-              <ul class="language-service-list">
-                <li>Korean Business Interpretation</li>
-                <li>Chinese(Mandarin) Interpretation</li>
-                <li>Exhibition & Trade Show Support</li>
-                <li>Business Meetings Assistance</li>
-                <li>Factory Visit Interpretation</li>
-                <li>Client Communication Support</li>
-              </ul>
-              <a href="contact.html" class="language-service-button">Get Free Consultation</a>
+
+                <h2 class="language-service-title" data-key="langServiceTitle">
+                    Korean & Chinese Interpretation
+                </h2>
+
+                <p class="language-service-description" data-key="langServiceDesc">
+                    We provide professional Korean and Chinese interpretation services for exhibitions, trade fairs, business meetings, factory visits, client negotiations, and international communication. Our experienced interpreters eliminate language barriers, ensuring smooth and effective conversations between global exhibitors and local partners.
+                </p>
+
+                <ul class="language-service-list">
+                    <li data-key="langService1">Korean Business Interpretation</li>
+                    <li data-key="langService2">Chinese (Mandarin) Interpretation</li>
+                    <li data-key="langService3">Exhibition & Trade Show Support</li>
+                    <li data-key="langService4">Business Meetings Assistance</li>
+                    <li data-key="langService5">Factory Visit Interpretation</li>
+                    <li data-key="langService6">Client Communication Support</li>
+                </ul>
+
+                <a href="contact.html" class="language-service-button" data-key="langServiceBtn">
+                    Get Free Consultation
+                </a>
 
             </div>
+
             <div class="language-service-right">
                 <img src="trio-website/Projects/image/translate1...png" alt="Interpreter Service">
                 <img src="trio-website/Projects/image/translate2.png" alt="Interpreter Service">
             </div>
-            
+
         </div>
+
     </div>
 
 </section>
-
 <section class="trio-lang-benefits">
 
     <div class="trio-lang-wrapper">
 
         <div class="trio-lang-header">
-            <h2>Why Choose Our Interpretation Services?</h2>
+            <h2 data-key="langBenefitsTitle">
+                Why Choose Our Interpretation Services?
+            </h2>
 
-            <p>
+            <p data-key="langBenefitsDesc">
                 We provide reliable Korean and Chinese interpretation services for
                 exhibitions, trade fairs, business meetings, factory visits and
                 international communication.
@@ -151,26 +179,34 @@
 
             <div class="trio-lang-card">
                 <span class="trio-lang-icon">🗣️</span>
-                <h3>Professional Interpreters</h3>
-                <p>Experienced interpreters for exhibitions and business meetings.</p>
+                <h3 data-key="langBenefit1Title">Professional Interpreters</h3>
+                <p data-key="langBenefit1Desc">
+                    Experienced interpreters for exhibitions and business meetings.
+                </p>
             </div>
 
             <div class="trio-lang-card">
                 <span class="trio-lang-icon">🤝</span>
-                <h3>Business Support</h3>
-                <p>Clear communication between exhibitors and business partners.</p>
+                <h3 data-key="langBenefit2Title">Business Support</h3>
+                <p data-key="langBenefit2Desc">
+                    Clear communication between exhibitors and business partners.
+                </p>
             </div>
 
             <div class="trio-lang-card">
                 <span class="trio-lang-icon">🏢</span>
-                <h3>Trade Show Assistance</h3>
-                <p>Language support throughout exhibitions and trade fairs.</p>
+                <h3 data-key="langBenefit3Title">Trade Show Assistance</h3>
+                <p data-key="langBenefit3Desc">
+                    Language support throughout exhibitions and trade fairs.
+                </p>
             </div>
 
             <div class="trio-lang-card">
                 <span class="trio-lang-icon">🌍</span>
-                <h3>International Communication</h3>
-                <p>Helping Korean and Chinese companies connect globally.</p>
+                <h3 data-key="langBenefit4Title">International Communication</h3>
+                <p data-key="langBenefit4Desc">
+                    Helping Korean and Chinese companies connect globally.
+                </p>
             </div>
 
         </div>
@@ -178,14 +214,14 @@
     </div>
 
 </section>
-
 <section class="global-industry-zone">
 
     <div class="global-industry-wrap">
 
         <div class="global-industry-head">
-            <h2>Industries We Serve</h2>
-            <p>
+            <h2 data-key="industryTitle">Industries We Serve</h2>
+
+            <p data-key="industryDesc">
                 We provide professional Korean and Chinese interpretation
                 services across various industries, ensuring seamless
                 communication and successful business interactions.
@@ -196,38 +232,50 @@
 
             <div class="global-industry-card">
                 <i class="fas fa-store"></i>
-                <h3>Exhibitions & Trade Shows</h3>
-                <p>Professional language support for international exhibitions, expos and trade fairs.</p>
+                <h3 data-key="industry1Title">Exhibitions & Trade Shows</h3>
+                <p data-key="industry1Desc">
+                    Professional language support for international exhibitions, expos and trade fairs.
+                </p>
             </div>
 
             <div class="global-industry-card">
                 <i class="fas fa-industry"></i>
-                <h3>Manufacturing</h3>
-                <p>Interpretation for factory visits, production discussions and supplier meetings.</p>
+                <h3 data-key="industry2Title">Manufacturing</h3>
+                <p data-key="industry2Desc">
+                    Interpretation for factory visits, production discussions and supplier meetings.
+                </p>
             </div>
 
             <div class="global-industry-card">
                 <i class="fas fa-laptop-code"></i>
-                <h3>Technology</h3>
-                <p>Communication support for IT companies, product demonstrations and business collaborations.</p>
+                <h3 data-key="industry3Title">Technology</h3>
+                <p data-key="industry3Desc">
+                    Communication support for IT companies, product demonstrations and business collaborations.
+                </p>
             </div>
 
             <div class="global-industry-card">
                 <i class="fas fa-handshake"></i>
-                <h3>Business Meetings</h3>
-                <p>Accurate interpretation during negotiations, conferences and corporate meetings.</p>
+                <h3 data-key="industry4Title">Business Meetings</h3>
+                <p data-key="industry4Desc">
+                    Accurate interpretation during negotiations, conferences and corporate meetings.
+                </p>
             </div>
 
             <div class="global-industry-card">
                 <i class="fas fa-truck"></i>
-                <h3>Import & Export</h3>
-                <p>Language assistance for international trade, logistics and supplier communication.</p>
+                <h3 data-key="industry5Title">Import & Export</h3>
+                <p data-key="industry5Desc">
+                    Language assistance for international trade, logistics and supplier communication.
+                </p>
             </div>
 
             <div class="global-industry-card">
                 <i class="fas fa-globe-asia"></i>
-                <h3>International Delegations</h3>
-                <p>Professional interpretation for official visits, delegations and business events.</p>
+                <h3 data-key="industry6Title">International Delegations</h3>
+                <p data-key="industry6Desc">
+                    Professional interpretation for official visits, delegations and business events.
+                </p>
             </div>
 
         </div>
@@ -236,37 +284,75 @@
 
 </section>
 <section class="faq-premium-zone">
+
     <div class="faq-premium-container">
+
         <div class="faq-premium-heading">
-            <h2>Frequently Asked Questions</h2>
-            <p>Find answers to the most common questions about our Korean & Chinese Interpretation Services.</p>
+            <h2 data-key="intFaqTitle">
+                Frequently Asked Questions
+            </h2>
+
+            <p data-key="intFaqDesc">
+                Find answers to the most common questions about our Korean & Chinese Interpretation Services.
+            </p>
         </div>
+
         <div class="faq-premium-list">
-            <details class="faq-premium-item">
-                <summary>Do you provide on site interpretation services?</summary>
-                <p>Yes. Our interpreters are available for exhibitions,trade fairs ,business meeting, factory visits and corporate events.</p>
-            </details>
-            <details class="faq-premium-item">
-                <summary>Which language do you support?</summary>
-                <p>We provide professional interpretation in Korea and Chinese(Mandarin).</p>
-            </details>
-            <details class="faq-premium-item">
-                <summary>Can I book an interpreter for single day?</summary>
-                <p>Yes. We offer flexible booking options for one-day,multi day and long-term assignments.</p>
 
+            <details class="faq-premium-item">
+                <summary data-key="intFaqQ1">
+                    Do you provide on-site interpretation services?
+                </summary>
 
+                <p data-key="intFaqA1">
+                    Yes. Our interpreters are available for exhibitions, trade fairs, business meetings, factory visits and corporate events.
+                </p>
             </details>
+
             <details class="faq-premium-item">
-                <summary>Do you provide interpretation outside exhibitions?</summary>
-                <p>Absolutely.We also support business meeting,conferences,factory visits,training sessions and corporate events.</p>
+                <summary data-key="intFaqQ2">
+                    Which languages do you support?
+                </summary>
+
+                <p data-key="intFaqA2">
+                    We provide professional interpretation services in Korean and Chinese (Mandarin).
+                </p>
             </details>
+
             <details class="faq-premium-item">
-                <summary>How Can I request a quotation?</summary>
-                <p>Simply contact us through our we will provide a customized quotation based on your requirements.</p>
+                <summary data-key="intFaqQ3">
+                    Can I book an interpreter for a single day?
+                </summary>
+
+                <p data-key="intFaqA3">
+                    Yes. We offer flexible booking options for one-day, multi-day and long-term assignments.
+                </p>
             </details>
-            
+
+            <details class="faq-premium-item">
+                <summary data-key="intFaqQ4">
+                    Do you provide interpretation outside exhibitions?
+                </summary>
+
+                <p data-key="intFaqA4">
+                    Absolutely. We also support business meetings, conferences, factory visits, training sessions and corporate events.
+                </p>
+            </details>
+
+            <details class="faq-premium-item">
+                <summary data-key="intFaqQ5">
+                    How can I request a quotation?
+                </summary>
+
+                <p data-key="intFaqA5">
+                    Simply contact us, and we will provide a customized quotation based on your requirements.
+                </p>
+            </details>
+
         </div>
+
     </div>
+
 </section>
 <section class="quote-connect-section">
 
@@ -274,15 +360,15 @@
 
         <div class="quote-connect-left">
 
-            <span class="quote-connect-tag">
+            <span class="quote-connect-tag" data-key="quoteTag">
                 Contact Us
             </span>
 
-            <h2>
+            <h2 data-key="quoteTitle">
                 Need a Korean or Chinese Interpreter?
             </h2>
 
-            <p>
+            <p data-key="quoteDesc">
                 Whether you're attending an exhibition, hosting international
                 clients, or arranging a business meeting, our professional
                 interpreters are ready to assist you.
@@ -302,7 +388,7 @@
 
                 <div class="quote-connect-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Mumbai, Maharashtra, India</span>
+                    <span data-key="quoteLocation">Mumbai, Maharashtra, India</span>
                 </div>
 
             </div>
@@ -318,6 +404,7 @@
                 <input
                     type="text"
                     name="name"
+                    data-key-placeholder="quoteName"
                     placeholder="Full Name"
                     required
                 >
@@ -325,6 +412,7 @@
                 <input
                     type="email"
                     name="email"
+                    data-key-placeholder="quoteEmail"
                     placeholder="Email Address"
                     required
                 >
@@ -332,22 +420,24 @@
                 <input
                     type="tel"
                     name="phone"
+                    data-key-placeholder="quotePhone"
                     placeholder="Phone Number"
                 >
 
                 <select name="language" required>
-                    <option value="">Select Language</option>
-                    <option value="Korean Interpretation">Korean Interpretation</option>
-                    <option value="Chinese Interpretation">Chinese Interpretation</option>
+                    <option value="" data-key="quoteSelectLang">Select Language</option>
+                    <option value="Korean Interpretation" data-key="quoteLang1">Korean Interpretation</option>
+                    <option value="Chinese Interpretation" data-key="quoteLang2">Chinese Interpretation</option>
                 </select>
 
                 <textarea
                     name="message"
+                    data-key-placeholder="quoteMessage"
                     placeholder="Tell us about your requirement"
                     rows="5"
                 ></textarea>
 
-                <button type="submit">
+                <button type="submit" data-key="quoteBtn">
                     Request a Free Quote
                 </button>
 

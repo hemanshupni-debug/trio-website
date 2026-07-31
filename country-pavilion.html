@@ -27,23 +27,30 @@
 
 <body>
 
-
 <header>
   <img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo" alt="Trio Exhibitions logo - exhibition stall design company in Mumbai">
- 
+
   <!-- 🔥 Hamburger -->
   <div class="hamburger" onclick="toggleMenu()">
     ☰
   </div>
- 
+
   <nav id="nav-menu">
     <a href="index.html" data-key="home">Home</a>
-     <a href="about.html" data-key="about">About</a>
+     <div class="about-nav-item">
+      <a href="#" class="about-nav-link" onclick="toggleAboutDropdown(event)">
+        About
+      </a>
+
+      <div class="about-dropdown-menu">
+        <a href="about.html">About Us</a>
+        <a href="korean-chinese-interpretation.html">Korean & Chinese Interpretation</a>
+      </div>
+    </div>
     <div class="nav-item dropdown">
     <a href="#" class="nav-link" data-key="services" onclick="toggleDropdown(event)">
   Services
 </a>
- 
 
  <div class="mega-menu">
   <div class="menu-column">
@@ -61,14 +68,16 @@
     <a href="services.html" data-key="all_services">All Services</a>
     <a href="Interior.html" data-key="interior_menu">Interior</a>
   </div>
-  <div class="menu-column">
- 
+
+ <div class="menu-column">
+
+
     <a href="miami.html" data-key="miami_booth">Germany Booth</a>
- 
+
     <a href="thailand.html" data-key="thailand_booth">Thailand Booth</a>
- 
+
     <a href="dubai.html" data-key="dubai_booth">Dubai Booth</a>
- 
+
   </div>
 </div>
     </div>
@@ -87,28 +96,27 @@
 
     <div class="pavilion-content">
 
-        <span class="pavilion-tag">
+        <span class="pavilion-tag" data-key="pavilionHeroTag">
             GLOBAL EXHIBITION SOLUTIONS
         </span>
 
-        <h1>
+        <h1 data-key="pavilionHeroTitle">
             Country Pavilion
             Design & Construction
         </h1>
 
-        <p>
+        <p data-key="pavilionHeroDesc">
             Delivering world-class country pavilion solutions for
             international trade fairs, expos and global exhibitions.
         </p>
 
-        <a href="contact.html" class="pavilion-btn">
+        <a href="contact.html" class="pavilion-btn" data-key="pavilionHeroBtn">
             Request A Quote
         </a>
 
     </div>
 
 </section>
-
 <section class="pavilion-intro">
 
     <div class="pavilion-container">
@@ -147,33 +155,32 @@
 
     <div class="pavilion-stat-box">
         <h3>18+</h3>
-        <p>Years Experience</p>
+        <p data-key="pavilionStat1">Years Experience</p>
     </div>
 
     <div class="pavilion-stat-box">
         <h3>500+</h3>
-        <p>Projects Delivered</p>
+        <p data-key="pavilionStat2">Projects Delivered</p>
     </div>
 
     <div class="pavilion-stat-box">
         <h3>20+</h3>
-        <p>Countries Served</p>
+        <p data-key="pavilionStat3">Countries Served</p>
     </div>
 
     <div class="pavilion-stat-box">
         <h3>100%</h3>
-        <p>Custom Solutions</p>
+        <p data-key="pavilionStat4">Custom Solutions</p>
     </div>
 
 </section>
-
 <section class="pavilion-services">
 
     <div class="pavilion-heading">
 
-        <span>OUR SERVICES</span>
+        <span data-key="pavilionServicesTag">OUR SERVICES</span>
 
-        <h2>
+        <h2 data-key="pavilionServicesTitle">
             Complete Pavilion Management
         </h2>
 
@@ -183,45 +190,44 @@
 
         <div class="pavilion-card">
             <i class="fas fa-pencil-ruler"></i>
-            <h3>Pavilion Design</h3>
+            <h3 data-key="pavilionService1">Pavilion Design</h3>
         </div>
 
         <div class="pavilion-card">
             <i class="fas fa-cube"></i>
-            <h3>3D Visualization</h3>
+            <h3 data-key="pavilionService2">3D Visualization</h3>
         </div>
 
         <div class="pavilion-card">
             <i class="fas fa-industry"></i>
-            <h3>Fabrication</h3>
+            <h3 data-key="pavilionService3">Fabrication</h3>
         </div>
 
         <div class="pavilion-card">
             <i class="fas fa-paint-brush"></i>
-            <h3>Branding</h3>
+            <h3 data-key="pavilionService4">Branding</h3>
         </div>
 
         <div class="pavilion-card">
             <i class="fas fa-tools"></i>
-            <h3>Installation</h3>
+            <h3 data-key="pavilionService5">Installation</h3>
         </div>
 
         <div class="pavilion-card">
             <i class="fas fa-user-tie"></i>
-            <h3>Project Management</h3>
+            <h3 data-key="pavilionService6">Project Management</h3>
         </div>
 
     </div>
 
 </section>
-
 <section class="pavilion-countries">
 
     <div class="pavilion-heading">
 
-        <span>GLOBAL PRESENCE</span>
+        <span data-key="pavilionCountriesTag">GLOBAL PRESENCE</span>
 
-        <h2>
+        <h2 data-key="pavilionCountriesTitle">
             Countries We Support
         </h2>
 
@@ -229,14 +235,14 @@
 
     <div class="pavilion-country-grid">
 
-        <div class="country-box">India</div>
-        <div class="country-box">Germany</div>
-        <div class="country-box">China</div>
-        <div class="country-box">Thailand</div>
-        <div class="country-box">Dubai</div>
-        <div class="country-box">USA</div>
-        <div class="country-box">Brazil</div>
-        <div class="country-box">Singapore</div>
+        <div class="country-box" data-key="country1">India</div>
+        <div class="country-box" data-key="country2">Germany</div>
+        <div class="country-box" data-key="country3">China</div>
+        <div class="country-box" data-key="country4">Thailand</div>
+        <div class="country-box" data-key="country5">Dubai</div>
+        <div class="country-box" data-key="country6">USA</div>
+        <div class="country-box" data-key="country7">Brazil</div>
+        <div class="country-box" data-key="country8">Singapore</div>
 
     </div>
 
@@ -244,93 +250,93 @@
 
 <section class="country-gallery-section">
 
-    <h1 class="country-gallery-title">
-        Country Pavilion Projects
-    </h1>
-
+    <h1 class="country-gallery-title" data-key="countryGalleryTitle">
+    Country Pavilion Projects
+</h1>
     <div class="country-gallery-grid">
 
         <a href="country-pavilion-gallery.html?project=IRAN" class="country-gallery-item">
             <img src="trio-website/Projects/Automation @ Iran China Pavilion/1.JPG" alt="Korea Pavilion">
-               <span>Automation  Iran China Pavilion</span>
+             <span data-key="countryProject1">Automation Iran China Pavilion</span>
         </a>
            <a href="country-pavilion-gallery.html?project=CHINAPAVILION" class="country-gallery-item">
             <img src="trio-website/Projects/China Country Pavilion @ Iran/1.JPG" alt="china Pavilion">
-               <span>China Country Pavilion  Iran</span>
+               <span data-key="countryProject2">China Country Pavilion Iran</span>
         </a>
    
          <a href="country-pavilion-gallery.html?project=CHINAPAVILION1" class="country-gallery-item">
             <img src="trio-website/Projects/China Pavilion @ IITF 2019/1.JPG" alt="china Pavilion">
-               <span>China Pavilion  IITF </span>
+               <span data-key="countryProject3">China Pavilion IITF</span>
         </a>
              <a href="country-pavilion-gallery.html?project=BANGLORE" class="country-gallery-item">
             <img src="trio-website/Projects/China Pavilion @ IMTEX BIEC Bangalore/1.JPG" alt="china Pavilion">
-               <span>China Pavilion IMTEX BIEC Bangalore </span>
+               <span data-key="countryProject4">China Pavilion IMTEX BIEC Bangalore</span>
         </a>
           <a href="country-pavilion-gallery.html?project=SOUND" class="country-gallery-item">
             <img src="trio-website/Projects/China Pavilion @ Palm Expo/1.JPG" alt="china Pavilion">
-               <span>China Pavilion Palm Expo</span>
+               <span data-key="countryProject5">China Pavilion Palm Expo</span>
         </a>
           <a href="country-pavilion-gallery.html?project=ELECTRONICS" class="country-gallery-item">
             <img src="trio-website/Projects/China Pavilion @ Palm Expo Maxima/1.JPG" alt="china Pavilion">
-               <span>China Pavilion  Palm Expo Maxima</span>
+               <span data-key="countryProject6">China Pavilion Palm Expo Maxima</span>
         </a>
           <a href="country-pavilion-gallery.html?project=SHENZHEN" class="country-gallery-item">
             <img src="trio-website/Projects/China Pavilion @ Pragathi Maidan/1.JPG" alt="china Pavilion">
-               <span>China Pavilion  Pragathi Maidan</span>
+               <span data-key="countryProject7">China Pavilion Pragathi Maidan</span>
         </a>
         <a href="country-pavilion-gallery.html?project=VASHI" class="country-gallery-item">
             <img src="trio-website/Projects/China Pavilion @ Vashi/1.JPG" alt="china Pavilion">
-               <span>China Pavilion  Vashi</span>
+             <span data-key="countryProject8">China Pavilion Vashi</span>
         </a>
          <a href="country-pavilion-gallery.html?project=CHINAPAVILION2" class="country-gallery-item">
             <img src="trio-website/Projects/China Pavilion @IITF/1.JPG" alt="china Pavilion">
-               <span>China Pavilion IITF</span>
+               <span data-key="countryProject9">China Pavilion IITF</span>
         </a>
           <a href="country-pavilion-gallery.html?project=Countrypavilion" class="country-gallery-item">
             <img src="trio-website/Projects/Country Pavilion China/1.JPG" alt="china Pavilion">
-               <span>Country Pavilion China</span>
+               <span data-key="countryProject10">Country Pavilion China</span>
         </a>
         <a href="country-pavilion-gallery.html?project=MOCKUP" class="country-gallery-item">
             <img src="trio-website/Projects/Country Pavilion Mockup/1.png" alt="china Pavilion">
-               <span>Country Pavilion Mockup</span>
+               <span data-key="countryProject11">Country Pavilion Mockup</span>
         </a>
          <a href="country-pavilion-gallery.html?project=Elecrama" class="country-gallery-item">
             <img src="trio-website/Projects/Elecrama 2018 China Pavilion/1.JPG" alt="china Pavilion">
-               <span>Elecrama  China Pavilion</span>
+               <span data-key="countryProject12">Elecrama China Pavilion</span>
         </a>
         <a href="country-pavilion-gallery.html?project=Excon" class="country-gallery-item">
             <img src="trio-website/Projects/Excon India/1.JPG" alt="exon pavilion">
-            <span>Excon India 1600sqm</span>
+            <span data-key="countryProject13">Excon India 1600 sqm</span>
+
         </a>
            <a href="country-pavilion-gallery.html?project=Imtex" class="country-gallery-item">
             <img src="trio-website/Projects/Excon India 2015/1.png" alt="exon pavilion">
-            <span>Intex India 1600sqm</span>
+           <span data-key="countryProject14">IMTEX India 1600 sqm</span>
         </a>
          
           <a href="country-pavilion-gallery.html?project=POLYAUTOMATION" class="country-gallery-item">
             <img src="trio-website/Projects/Poly china @ Automation India/1.JPG" alt="exon pavilion">
-            <span>Poly china Automation India</span>
+            <span data-key="countryProject15">Poly China Automation India</span>
         </a>
           <a href="country-pavilion-gallery.html?project=POLY" class="country-gallery-item">
             <img src="trio-website/Projects/Poly China Automation/1.JPG" alt="exon pavilion">
-            <span>Poly china Automation </span>
+            <span data-key="countryProject16">Poly China Automation</span>
         </a>
         <a href="country-pavilion-gallery.html?project=POLYCHINA" class="country-gallery-item">
             <img src="trio-website/Projects/POLY China Pavilion @ Automation/1.JPG" alt="china pavilion">
-            <span>POLY China Pavilion  Automation</span>
+            <span data-key="countryProject17">POLY China Pavilion Automation</span>
         </a>
           <a href="country-pavilion-gallery.html?project=LEATHER" class="country-gallery-item">
             <img src="trio-website/Projects/China Pavilion @ Leather Expo/1 (2).png" alt="china pavilion">
-            <span>China Pavilion Leather Expo</span>
+           <span data-key="countryProject18">China Pavilion Leather Expo</span>
         </a>
         <a href="country-pavilion-gallery.html?project=FUJI" class="country-gallery-item">
             <img src="trio-website/Projects/FUJI @ Leather Expo/1.JPG" alt="china pavilion">
-            <span>FUJI  Leather Expo</span>
+            <span data-key="countryProject19">FUJI Leather Expo</span>
         </a>
          <a href="country-pavilion-gallery.html?project=RENAULT" class="country-gallery-item">
             <img src="trio-website/Projects/RENU @ MIMI 2016 MUMBAI/1.JPG" alt="china pavilion">
-            <span>  MUMBAI AUTO EXPO </span>
+           <span data-key="countryProject20">Mumbai Auto Expo</span>
         </a>
       
         <!-- Aur projects yaha add karna -->
@@ -342,9 +348,9 @@
 
     <div class="pavilion-heading">
 
-        <span>WORKFLOW</span>
+        <span data-key="pavilionProcessTag">WORKFLOW</span>
 
-        <h2>
+        <h2 data-key="pavilionProcessTitle">
             Our Pavilion Process
         </h2>
 
@@ -354,99 +360,127 @@
 
         <div class="pavilion-step">
             <span>01</span>
-            <h3>Consultation</h3>
+            <h3 data-key="pavilionProcess1">Consultation</h3>
         </div>
 
         <div class="pavilion-step">
             <span>02</span>
-            <h3>Concept Design</h3>
+            <h3 data-key="pavilionProcess2">Concept Design</h3>
         </div>
 
         <div class="pavilion-step">
             <span>03</span>
-            <h3>Production</h3>
+            <h3 data-key="pavilionProcess3">Production</h3>
         </div>
 
         <div class="pavilion-step">
             <span>04</span>
-            <h3>Installation</h3>
+            <h3 data-key="pavilionProcess4">Installation</h3>
         </div>
 
         <div class="pavilion-step">
             <span>05</span>
-            <h3>Handover</h3>
+            <h3 data-key="pavilionProcess5">Handover</h3>
         </div>
 
     </div>
 
 </section>
-
 <section class="pavilion-cta">
 
     <div class="pavilion-cta-content">
 
-        <h2>
+        <h2 data-key="pavilionCtaTitle">
             Build Your Next Country Pavilion
             With Trio Exhibitions
         </h2>
 
-        <p>
+        <p data-key="pavilionCtaDesc">
             We create impactful national pavilions that attract
             visitors, showcase innovation and strengthen global presence.
         </p>
 
-        <a href="contact.html" class="pavilion-btn">
+        <a href="contact.html" class="pavilion-btn" data-key="pavilionCtaBtn">
             Contact Us
         </a>
 
     </div>
 
 </section>
-<section class="pavilion-insights" >
+<section class="pavilion-insights">
+
     <div class="pavilion-heading">
-        <span >COMMON QUESTIONS</span>
-        <h2>Country Pavilion</h2>
+        <span data-key="pavilionFaqTag">COMMON QUESTIONS</span>
+        <h2 data-key="pavilionFaqTitle">Country Pavilion</h2>
     </div>
+
     <div class="pavilion-insights-wrap">
-       <details class="pavilion-question">
-        <summary>What is a country pavilion?</summary>
-        <p>A Country pavilion is a dedicated exhibition space representing a nation's industries product innovation and investment opportunities at international trade fairs and expos.</p>
-       </details>
-       <details class="pavilion-question">
-        <summary>Do you provide complete pavilion construction service?</summary>
-        <p>Yes, We provide desig,3d visualization ,fabrication,branding,installation,dismantling and complete project management services.</p>
-       </details>
-       <details class="pavilion-question">
-        <summary>Can execute pavilion outside India?</summary>
-        <p>Yes, Trio exhibition supoort pavilion project acrodd India, Dubai, Germany,Thailand,USA,Singapore, And other international exhibition destination.</p>
-       </details>
-       <details class="pavilion-question">
-        <summary>Do you provide custom pavilion design?</summary>
-        <p>Absolutely, Every pavilion is custom designed according to the country branding objective and exhibition requirements.</p>
-       </details>
-       <details class="pavilion-question">
-        <summary>How early should a pavilion project be planned?</summary>
-        <p>We recommend planning at least 2-6 month before the exhibition date to ensure smooth execution and approvals.</p>
-       </details>
-       <details class="pavilion-question">
-        <summary>What industries can participate in a country pavilion?</summary>
-         <p>Country pavilion can showcase industries such as manufacturing, healthcare, food processing, education, tourisum and export business.</p>      
-    </details>
-    <details class="pavilion-question">
-        <summary>Do you provide branding and graphics for country pavilion?</summary>
-        <p>Yes, we offer complete branding solutions including pavilion graphics, signage, digital display, country branding elements and promotional materials. </p>
-    </details>
-     
-        </details>
+
         <details class="pavilion-question">
-            <summary>Why choose Trio Exhibition for country pavilion projects?</summary>
-            <p>With 18+ years of experience global execution capabilities in-house production facilities and dedicated project management ,we deliver world-class country pavilion solutions.</p>
+            <summary data-key="pavilionFaqQ1">What is a country pavilion?</summary>
+            <p data-key="pavilionFaqA1">
+                A country pavilion is a dedicated exhibition space representing a nation's industries, product innovation, and investment opportunities at international trade fairs and expos.
+            </p>
         </details>
+
         <details class="pavilion-question">
-            <summary>How much does a country pavilion cost?</summary>
-            <p>The cost depends on pavilion size ,location,design complexity,branding requirements and exhibition venue specification. Contact us for a customized quotation.</p>
+            <summary data-key="pavilionFaqQ2">Do you provide complete pavilion construction service?</summary>
+            <p data-key="pavilionFaqA2">
+                Yes, we provide design, 3D visualization, fabrication, branding, installation, dismantling, and complete project management services.
+            </p>
         </details>
+
+        <details class="pavilion-question">
+            <summary data-key="pavilionFaqQ3">Can you execute pavilion projects outside India?</summary>
+            <p data-key="pavilionFaqA3">
+                Yes, Trio Exhibitions supports pavilion projects across India, Dubai, Germany, Thailand, USA, Singapore, and other international exhibition destinations.
+            </p>
+        </details>
+
+        <details class="pavilion-question">
+            <summary data-key="pavilionFaqQ4">Do you provide custom pavilion design?</summary>
+            <p data-key="pavilionFaqA4">
+                Absolutely. Every pavilion is custom-designed according to the country's branding objectives and exhibition requirements.
+            </p>
+        </details>
+
+        <details class="pavilion-question">
+            <summary data-key="pavilionFaqQ5">How early should a pavilion project be planned?</summary>
+            <p data-key="pavilionFaqA5">
+                We recommend planning at least 2–6 months before the exhibition date to ensure smooth execution and approvals.
+            </p>
+        </details>
+
+        <details class="pavilion-question">
+            <summary data-key="pavilionFaqQ6">What industries can participate in a country pavilion?</summary>
+            <p data-key="pavilionFaqA6">
+                Country pavilions can showcase industries such as manufacturing, healthcare, food processing, education, tourism, and export businesses.
+            </p>
+        </details>
+
+        <details class="pavilion-question">
+            <summary data-key="pavilionFaqQ7">Do you provide branding and graphics for country pavilions?</summary>
+            <p data-key="pavilionFaqA7">
+                Yes, we offer complete branding solutions including pavilion graphics, signage, digital displays, country branding elements, and promotional materials.
+            </p>
+        </details>
+
+        <details class="pavilion-question">
+            <summary data-key="pavilionFaqQ8">Why choose Trio Exhibitions for country pavilion projects?</summary>
+            <p data-key="pavilionFaqA8">
+                With 18+ years of experience, global execution capabilities, in-house production facilities, and dedicated project management, we deliver world-class country pavilion solutions.
+            </p>
+        </details>
+
+        <details class="pavilion-question">
+            <summary data-key="pavilionFaqQ9">How much does a country pavilion cost?</summary>
+            <p data-key="pavilionFaqA9">
+                The cost depends on pavilion size, location, design complexity, branding requirements, and exhibition venue specifications. Contact us for a customized quotation.
+            </p>
+        </details>
+
     </div>
+
 </section>
 
 <footer class="footer">

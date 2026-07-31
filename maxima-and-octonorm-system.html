@@ -131,20 +131,28 @@
 
 <header>
   <img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo" alt="Trio Exhibitions logo - exhibition stall design company in Mumbai">
- 
+
   <!-- 🔥 Hamburger -->
   <div class="hamburger" onclick="toggleMenu()">
     ☰
   </div>
- 
+
   <nav id="nav-menu">
     <a href="index.html" data-key="home">Home</a>
-     <a href="about.html" data-key="about">About</a>
+     <div class="about-nav-item">
+      <a href="#" class="about-nav-link" onclick="toggleAboutDropdown(event)">
+        About
+      </a>
+
+      <div class="about-dropdown-menu">
+        <a href="about.html">About Us</a>
+        <a href="korean-chinese-interpretation.html">Korean & Chinese Interpretation</a>
+      </div>
+    </div>
     <div class="nav-item dropdown">
     <a href="#" class="nav-link" data-key="services" onclick="toggleDropdown(event)">
   Services
 </a>
- 
 
  <div class="mega-menu">
   <div class="menu-column">
@@ -162,14 +170,16 @@
     <a href="services.html" data-key="all_services">All Services</a>
     <a href="Interior.html" data-key="interior_menu">Interior</a>
   </div>
-  <div class="menu-column">
- 
+
+ <div class="menu-column">
+
+
     <a href="miami.html" data-key="miami_booth">Germany Booth</a>
- 
+
     <a href="thailand.html" data-key="thailand_booth">Thailand Booth</a>
- 
+
     <a href="dubai.html" data-key="dubai_booth">Dubai Booth</a>
- 
+
   </div>
 </div>
     </div>
@@ -184,54 +194,36 @@
 </header>
 <section class="maxima-hero">
     <div class="maxima-video-overlay"></div>
-
     <div class="maxima-hero-content">
-        <span class="maxima-tag">TRIO EXHIBITIONS</span>
-
+        <span class="maxima-tag" data-key="maximaTag">TRIO EXHIBITIONS</span>
         <h1>
-            Maxima & Octonorm
-            <span>Exhibition Stall Systems</span>
+            <span data-key="maximaTitle1">Maxima & Octonorm</span>
+            <span data-key="maximaTitle2">Exhibition Stall Systems</span>
         </h1>
-
-        <p>
-            Premium modular exhibition solutions designed to create impactful
-            brand experiences across trade shows, expos and global events.
-        </p>
-
+        <p data-key="maximaDescription">Premium modular exhibition solution designed to create impactful brand experience across trade shows,expos,and global events.</p>
         <div class="maxima-hero-buttons">
-            <a href="contact.html" class="maxima-btn-primary">
-                Get Free Quote
-            </a>
-
-            <a href="work.html" class="maxima-btn-secondary">
-                View Projects
-            </a>
+      <a href="contact.html" class="maxima-btn-primary" data-key="maximaBtn1">Get Free Quote</a>
+      <a href="work.html" class="maxima-btn-secondary" data-key="maximaBtn2">View Projects</a>
         </div>
     </div>
 </section>
-
 <section class="maxima-stats">
-
     <div class="maxima-stat-box">
         <h2>18+</h2>
-        <p>Years Experience</p>
+        <p data-key="maximaStat1">Years Experience</p>
     </div>
-
     <div class="maxima-stat-box">
         <h2>500+</h2>
-        <p>Projects Delivered</p>
+        <p data-key="maximaStat2">Projects Delivered</p>
     </div>
-
     <div class="maxima-stat-box">
         <h2>20+</h2>
-        <p>Countries Served</p>
+        <p data-key="maximaStat3">Countries Served</p>
     </div>
-
     <div class="maxima-stat-box">
         <h2>100%</h2>
-        <p>Custom Solutions</p>
+        <p data-key="maximastat4">Custom Solutions</p>
     </div>
-
 </section>
 
 <section class="maxima-about-section">
@@ -239,27 +231,28 @@
     <div class="maxima-container">
 
         <div class="maxima-about-image">
-            <img src="trio-website/Projects/Karnataka Pavilion/1.JPG" alt="Maxima and Octonorm exhibition stand at FIPIN Brazil expo">
+            <img src="trio-website/Projects/Karnataka Pavilion/1.JPG"
+                 alt="Maxima and Octonorm exhibition stand at FIPIN Brazil expo">
         </div>
 
         <div class="maxima-about-content">
 
-            <span class="maxima-small-title">
+            <span class="maxima-small-title" data-key="maximaAboutTag">
                 ABOUT SYSTEMS
             </span>
 
             <h2>
-                What Are Maxima &
-                Octonorm Systems?
+                <span data-key="maximaAboutTitle1">What Are Maxima &</span><br>
+                <span data-key="maximaAboutTitle2">Octonorm Systems?</span>
             </h2>
 
-            <p>
+            <p data-key="maximaAboutDesc1">
                 Maxima and Octonorm systems are advanced modular exhibition
                 structures widely used for trade shows, expos, conferences,
                 pavilions and international exhibitions.
             </p>
 
-            <p>
+            <p data-key="maximaAboutDesc2">
                 These systems provide flexibility, premium aesthetics,
                 fast installation and cost-effective solutions for brands
                 looking to create a strong exhibition presence.
@@ -270,35 +263,34 @@
     </div>
 
 </section>
-
 <section class="maxima-showcase">
 
     <div class="maxima-showcase-card">
 
         <div class="maxima-showcase-image">
-            <img src="trio-website/Projects/Maxima and Octonorm Stall/1.JPG" alt="Maxima premium exhibition stand structure for VIEGL">
+            <img src="trio-website/Projects/Maxima and Octonorm Stall/1.JPG"
+                 alt="Maxima premium exhibition stand structure for VIEGL">
         </div>
 
         <div class="maxima-showcase-content">
 
-            <span>MAXIMA SYSTEM</span>
+            <span data-key="maximaSystemTag">MAXIMA SYSTEM</span>
 
-            <h2>
-                Premium Exhibition
-                Structure Solution
+            <h2 data-key="maximaSystemTitle">
+                Premium Exhibition Structure Solution
             </h2>
 
-            <p>
+            <p data-key="maximaSystemDesc">
                 Maxima systems offer superior aesthetics,
                 stronger structural profiles and premium finishes,
                 making them ideal for corporate brands.
             </p>
 
             <ul>
-                <li>Premium Appearance</li>
-                <li>Reusable Structure</li>
-                <li>Corporate Finish</li>
-                <li>Strong Framework</li>
+                <li data-key="maximaSystemFeature1">Premium Appearance</li>
+                <li data-key="maximaSystemFeature2">Reusable Structure</li>
+                <li data-key="maximaSystemFeature3">Corporate Finish</li>
+                <li data-key="maximaSystemFeature4">Strong Framework</li>
             </ul>
 
         </div>
@@ -309,43 +301,42 @@
 
         <div class="maxima-showcase-content">
 
-            <span>OCTONORM SYSTEM</span>
+            <span data-key="octonormSystemTag">OCTONORM SYSTEM</span>
 
-            <h2>
-                Cost Effective &
-                Flexible Solution
+            <h2 data-key="octonormSystemTitle">
+                Cost Effective & Flexible Solution
             </h2>
 
-            <p>
+            <p data-key="octonormSystemDesc">
                 Octonorm systems are modular,
                 lightweight and highly adaptable exhibition
                 booth solutions suitable for all event scales.
             </p>
 
             <ul>
-                <li>Affordable Solution</li>
-                <li>Fast Installation</li>
-                <li>Easy Transportation</li>
-                <li>Flexible Layouts</li>
+                <li data-key="octonormFeature1">Affordable Solution</li>
+                <li data-key="octonormFeature2">Fast Installation</li>
+                <li data-key="octonormFeature3">Easy Transportation</li>
+                <li data-key="octonormFeature4">Flexible Layouts</li>
             </ul>
 
         </div>
 
         <div class="maxima-showcase-image">
-            <img src="trio-website/Projects/octonorm1/1.jpg" alt="Octonorm modular exhibition booth for Arkema">
+            <img src="trio-website/Projects/octonorm1/1.jpg"
+                 alt="Octonorm modular exhibition booth for Arkema">
         </div>
 
     </div>
 
 </section>
-
 <section class="maxima-features-section">
 
     <div class="maxima-heading">
 
-        <span>KEY BENEFITS</span>
+        <span data-key="maximaBenefitsTag">KEY BENEFITS</span>
 
-        <h2>
+        <h2 data-key="maximaBenefitsTitle">
             Why Choose Trio Exhibitions?
         </h2>
 
@@ -355,32 +346,32 @@
 
         <div class="maxima-feature-card">
             <i class="fas fa-cubes"></i>
-            <h3>Modular Design</h3>
+            <h3 data-key="maximaFeature1">Modular Design</h3>
         </div>
 
         <div class="maxima-feature-card">
             <i class="fas fa-lightbulb"></i>
-            <h3>LED Integration</h3>
+            <h3 data-key="maximaFeature2">LED Integration</h3>
         </div>
 
         <div class="maxima-feature-card">
             <i class="fas fa-palette"></i>
-            <h3>Custom Branding</h3>
+            <h3 data-key="maximaFeature3">Custom Branding</h3>
         </div>
 
         <div class="maxima-feature-card">
             <i class="fas fa-globe"></i>
-            <h3>Global Execution</h3>
+            <h3 data-key="maximaFeature4">Global Execution</h3>
         </div>
 
         <div class="maxima-feature-card">
             <i class="fas fa-bolt"></i>
-            <h3>Quick Installation</h3>
+            <h3 data-key="maximaFeature5">Quick Installation</h3>
         </div>
 
         <div class="maxima-feature-card">
             <i class="fas fa-recycle"></i>
-            <h3>Reusable Systems</h3>
+            <h3 data-key="maximaFeature6">Reusable Systems</h3>
         </div>
 
     </div>
@@ -390,8 +381,8 @@
 <section class="maxima-gallery-section">
 
     <div class="maxima-heading">
-        <span>OUR PROJECTS</span>
-        <h2>Recent Exhibition Works</h2>
+        <span data-key="galleryTag">OUR PROJECTS</span>
+    <h2 data-key="galleryTitle">Recent Exhibition Works</h2>
     </div>
 
   <div class="maxima-gallery-grid">
@@ -399,134 +390,136 @@
     <a href="maxima-octonorm-gallery.html?project=karnataka" class="maxima-gallery-item">
         <img src="trio-website/Projects/Karnataka Pavilion/1.JPG" alt="Karnataka Pavilion Octonorm exhibition stand">
         <div class="overlay">
-            <h3>Karnataka Pavilion Octonorm</h3>
+            <h3 data-key="gallery1">Karnataka Pavilion Octonorm</h3>
         </div>
     </a>
 
     <a href="maxima-octonorm-gallery.html?project=stalls" class="maxima-gallery-item">
         <img src="trio-website/Projects/Maxima and Octonorm Stall/1.JPG" alt="Custom Octonorm exhibition stalls">
         <div class="overlay">
-            <h3>Successfully delivered 6 custom Octonorm stalls for this exhibition.</h3>
+            <h3 data-key="gallery2">Successfully delivered 6 custom Octonorm stalls for this exhibition.</h3>
         </div>
     </a>
        <a href="maxima-octonorm-gallery.html?project=GUANGDONG" class="maxima-gallery-item">
         <img src="trio-website/Projects/Maxima Modular Stand @ Lether Expo/1.JPG" alt="Maxima modular exhibition stand at Leather Expo">
         <div class="overlay">
-            <h3>Maxima Modular Stand Leather Expo</h3>
+            <h3 data-key="gallery3">Maxima Modular Stand Leather Expo</h3>
         </div>
     </a>
        <a href="maxima-octonorm-gallery.html?project=jewellery" class="maxima-gallery-item">
         <img src="trio-website/Projects/System Booth For Sponsors/1.jpg" alt="Octonorm exhibition booth at jewellery expo">
         <div class="overlay">
-            <h3>Jewellery expo Octonorm</h3>
+            <h3 data-key="gallery4">Jewellery Expo Octonorm</h3>
         </div>
     </a>
     <a href="maxima-octonorm-gallery.html?project=TECH" class="maxima-gallery-item">
         <img src="trio-website/Projects/octonorm1/1.jpg" alt="Octonorm exhibition stand for technology expo">
         <div class="overlay">
-            <h3>Octonorm Tech</h3>
+            <h3 data-key="gallery5">Octonorm Tech</h3>
         </div>
     </a>
       <a href="maxima-octonorm-gallery.html?project=octoandmax" class="maxima-gallery-item">
         <img src="trio-website/Projects/octonorm2/1.jpg" alt="Octonorm and Maxima combined exhibition stand">
         <div class="overlay">
-            <h3>Octonorm and Maxima</h3>
+           <h3 data-key="gallery6">Octonorm and Maxima</h3>
         </div>
     </a>
     <a href="maxima-octonorm-gallery.html?project=octonorm" class="maxima-gallery-item">
         <img src="trio-website/Projects/octonorm3/1.jpg" alt="Octonorm exhibition stand design">
         <div class="overlay">
-            <h3>Octonorm expo</h3>
+            <h3 data-key="gallery7">Octonorm Expo</h3>
         </div>
     </a>
       <a href="maxima-octonorm-gallery.html?project=octonorm1" class="maxima-gallery-item">
         <img src="trio-website/Projects/octonorm4/1.JPG" alt="Octonorm modular exhibition stand">
         <div class="overlay">
-            <h3>Octonorm expo</h3>
+          <h3 data-key="gallery8">Octonorm Expo</h3>
         </div>
     </a>
     <a href="maxima-octonorm-gallery.html?project=octonorm2" class="maxima-gallery-item">
         <img src="trio-website/Projects/octonorm5/1.JPG" alt="Octonorm exhibition booth fabrication">
         <div class="overlay">
-            <h3>Octonorm expo</h3>
+           <h3 data-key="gallery9">Octonorm Expo</h3>
+
         </div>
     </a>
        <a href="maxima-octonorm-gallery.html?project=MAXIMA" class="maxima-gallery-item">
         <img src="trio-website/Projects/China Pavilion @ Palm Expo Maxima/1.JPG" alt="China Pavilion Maxima exhibition stand at Palm Expo">
         <div class="overlay">
-            <h3>Maxima expo</h3>
+            <h3 data-key="gallery10">Maxima Expo</h3>
         </div>
     </a>
     <a href="maxima-octonorm-gallery.html?project=MOCKUP" class="maxima-gallery-item">
         <img src="trio-website/Projects/Country Pavilion Mockup/1.png" alt="Country pavilion Octonorm mockup design">
         <div class="overlay">
-            <h3>Octonorm Mockup</h3>
+           <h3 data-key="gallery11">Octonorm Mockup</h3>
         </div>
     </a>
        <a href="maxima-octonorm-gallery.html?project=Maxima1" class="maxima-gallery-item">
         <img src="trio-website/Projects/Shengzan @ Roof India/1.JPG" alt="Maxima exhibition stand for Shenzhen at Roof India">
         <div class="overlay">
-            <h3>Maxima Shenzhen  Roof India</h3>
+            <h3 data-key="gallery12">Maxima Shenzhen Roof India</h3>
         </div>
     </a>
     <a href="maxima-octonorm-gallery.html?project=Maxima2" class="maxima-gallery-item">
         <img src="trio-website/Projects/Maxima Modular Structure/1.JPG" alt="Maxima exhibition stand for Shenzhen at Roof India">
         <div class="overlay">
-            <h3>Maxima Modular Structure</h3>
+            <h3 data-key="gallery13">Maxima Modular Structure</h3>
         </div>
     </a>
     <a href="maxima-octonorm-gallery.html?project=Maxima3" class="maxima-gallery-item">
         <img src="trio-website/Projects/Country Pavilion China/1.JPG" alt="Maxima exhibition stand for Shenzhen at Roof India">
         <div class="overlay">
-            <h3>Country Pavilion China Maxima</h3>
+            <h3 data-key="gallery14">Country Pavilion China Maxima</h3>
         </div>
     </a>
     <a href="maxima-octonorm-gallery.html?project=Octonorm3" class="maxima-gallery-item">
         <img src="trio-website/Projects/China Pavilion @IITF/1.JPG" alt="Maxima exhibition stand for Shenzhen at Roof India">
         <div class="overlay">
-            <h3>China Pavilion  IITF Octonorm</h3>
+            <h3 data-key="gallery15">China Pavilion IITF Octonorm</h3>
         </div>
     </a>
     <a href="maxima-octonorm-gallery.html?project=Maxima4" class="maxima-gallery-item">
         <img src="trio-website/Projects/Elecrama 2018 China Pavilion/1.JPG" alt="Maxima exhibition stand for Shenzhen at Roof India">
         <div class="overlay">
-            <h3>Elecrama China Pavilion Maxima</h3>
+            <h3 data-key="gallery16">Elecrama China Pavilion Maxima</h3>
         </div>
     </a>
     <a href="maxima-octonorm-gallery.html?project=Octonorm4" class="maxima-gallery-item">
         <img src="trio-website/Projects/Excon India/1.JPG" alt="Maxima exhibition stand for Shenzhen at Roof India">
         <div class="overlay">
-            <h3>Excon India Octonorm</h3>
+            <h3 data-key="gallery17">Excon India Octonorm</h3>
         </div>
     </a>
     <a href="maxima-octonorm-gallery.html?project=Maxima5" class="maxima-gallery-item">
         <img src="trio-website/Projects/Poly china @ Automation India/1.JPG" alt="Maxima exhibition stand for Shenzhen at Roof India">
         <div class="overlay">
-            <h3>Poly china  Automation Maxima</h3>
+            <h3 data-key="gallery18">Poly China Automation Maxima</h3>
         </div>
     </a>
     <a href="maxima-octonorm-gallery.html?project=Maxima6" class="maxima-gallery-item">
         <img src="trio-website/Projects/Poly China Automation/1.JPG" alt="Maxima exhibition stand for Shenzhen at Roof India">
         <div class="overlay">
-            <h3>Poly China Automation Maxima </h3>
+            <h3 data-key="gallery19">Poly China Automation Maxima</h3>
         </div>
     </a>
     <a href="maxima-octonorm-gallery.html?project=Maxima7" class="maxima-gallery-item">
         <img src="trio-website/Projects/Tiwan Pavilion @ Autoamtion India/1.JPG" alt="Maxima exhibition stand for Shenzhen at Roof India">
         <div class="overlay">
-            <h3>Tiwan Pavilion Autoamtion India Maxima </h3>
+            
+<h3 data-key="gallery20">Taiwan Pavilion Automation India Maxima</h3>
         </div>
     </a>
     <a href="maxima-octonorm-gallery.html?project=Octonorm5" class="maxima-gallery-item">
         <img src="trio-website/Projects/AOMEI @ Palm Expo/1.JPG" alt="Maxima exhibition stand for Shenzhen at Roof India">
         <div class="overlay">
-            <h3> AOMEI  Palm Expo Octonorm</h3>
+            <h3 data-key="gallery21">AOMEI Palm Expo Octonorm</h3>
         </div>
     </a>
     <a href="maxima-octonorm-gallery.html?project=Maxima8" class="maxima-gallery-item">
         <img src="trio-website/Projects/Octonorm Stall Branding/1.jpg" alt="Maxima exhibition stand for Shenzhen at Roof India">
         <div class="overlay">
-            <h3>MAXIMA</h3>
+           <h3 data-key="gallery22">MAXIMA</h3>
         </div>
     </a>
     
@@ -535,60 +528,58 @@
 </div>
 
 </section>
-
 <section class="maxima-process-section">
 
     <div class="maxima-heading">
-        <span>OUR PROCESS</span>
-        <h2>From Concept To Installation</h2>
+        <span data-key="processTag">OUR PROCESS</span>
+        <h2 data-key="processTitle">From Concept To Installation</h2>
     </div>
 
     <div class="maxima-process-grid">
 
         <div class="maxima-process-card">
             <h3>01</h3>
-            <p>Consultation</p>
+            <p data-key="processStep1">Consultation</p>
         </div>
 
         <div class="maxima-process-card">
             <h3>02</h3>
-            <p>Design</p>
+            <p data-key="processStep2">Design</p>
         </div>
 
         <div class="maxima-process-card">
             <h3>03</h3>
-            <p>Production</p>
+            <p data-key="processStep3">Production</p>
         </div>
 
         <div class="maxima-process-card">
             <h3>04</h3>
-            <p>Installation</p>
+            <p data-key="processStep4">Installation</p>
         </div>
 
         <div class="maxima-process-card">
             <h3>05</h3>
-            <p>Handover</p>
+            <p data-key="processStep5">Handover</p>
         </div>
 
     </div>
 
 </section>
-
 <section class="maxima-cta-section">
 
     <div class="maxima-cta-overlay">
 
-        <h2>
+        <h2 data-key="ctaTitle">
             Ready To Build Your
             Next Exhibition Booth?
         </h2>
 
-        <p>
+        <p data-key="ctaDescription">
             Partner with Trio Exhibitions for innovative,
             high-impact and professionally executed exhibition solutions.
         </p>
 
-        <a href="contact.html" class="maxima-btn-primary">
+        <a href="contact.html" class="maxima-btn-primary" data-key="ctaButton">
             Request A Quote
         </a>
 
@@ -596,62 +587,72 @@
 
 </section>
 <section class="maxima-faq-section">
+
     <div class="maxima-faq-heading">
-        <span>FAQ</span>
-        <h2>Frequently Asked Questions</h2>
+        <span data-key="faqTag">FAQ</span>
+        <h2 data-key="faqTitle">Frequently Asked Questions</h2>
+    </div>
 
-    </div>
     <div class="maxima-faq-item">
-        <h3>What is the difference between Maxima and Octonorm systems?</h3>
-        <p>Maxima systems offer premium structural profiles and a modern appearance, while Octonorm systems are lightweight, modular, and cost-effective for exhibitions and trade shows.</p>
+        <h3 data-key="faqQ1">What is the difference between Maxima and Octonorm systems?</h3>
+        <p data-key="faqA1">Maxima systems offer premium structural profiles and a modern appearance, while Octonorm systems are lightweight, modular, and cost-effective for exhibitions and trade shows.</p>
+    </div>
 
-    </div>
     <div class="maxima-faq-item">
-        <h3>Are Maxima and Octonorm stands reusable?</h3>
-        <p>Yes, both Maxima and Octonorm systems are built as reusable modular structures, making them a cost-effective choice for brands that exhibit regularly.</p>
+        <h3 data-key="faqQ2">Are Maxima and Octonorm stands reusable?</h3>
+        <p data-key="faqA2">Yes, both Maxima and Octonorm systems are built as reusable modular structures, making them a cost-effective choice for brands that exhibit regularly.</p>
     </div>
-    <div class="maxima-faq-item">
-        <h3>Do you provide installation services?</h3>
-        <p>Yes, Trio Exhibitions provides complete booth installation, dismantling, logistics, and on-site support services.</p>
-    </div>
-    <div class="maxima-faq-item">
-        <h3>Can you execute exhibition projects internationally?</h3>
-        <p>Yes, we deliver exhibition booth solutions across India, Dubai, Germany, Thailand, and various international exhibition venues.</p>
-    </div>
-    <div class="maxima-faq-item">
-        <h3>Can Maxima and Octonorm booths be customized?</h3>
-        <p>Absolutely, we provide custom branding, graphics, lighting integration, meeting areas, product displays, and complete stand customization.</p>
-    </div>
-    <div class="maxima-faq-item">
-        <h3>What industries use Maxima and Octonorm exhibition stands?</h3>
-        <p>Maxima and Octonorm systems are widely used in healthcare, technology, manufacturing, food, automotive, education and industrial exhibitions worldwide.</p>
-    </div>
-    <div class="maxima-faq-item">
-        <h3>How long does it take to build a Maxima or Octonorm booth?</h3>
-        <p>The timeline depends on booth size and complexity, but most modular stands can be installed much faster than traditional custom-built exhibition booths.</p>
-         </div>
-         <div class="maxima-faq-item">
-          <h3>Do you provide 3D booth design before fabrication?</h3>
-             <p>Yes, we create detailed 3D exhibition stand designs and visual presentations for client approval before production begins.</p>
-         </div>
-         <div class="maxima-faq-item">
-            <h3>Are Maxima and Octonorm systems suitable for large exhibitions?</h3>
-            <p>Yes, both systems are ideal for small, medium and large-scale exhibitions, trade fairs, expos and international events.</p>
-         </div>
-        <div class="maxima-faq-item">
-            <h3>Why choose Trio Exhibitions for Maxima and Octonorm stands?</h3>
-            <p>With 18+ Years of experience,in-house production facilities,Creative design expertise and global execution capabilities, we deliver high-quailty modular exhibition solutions.</p>
-        </div>
-        <div class="maxima-faq-item">
-            <h3>Do you provide graphic printing and branding services?</h3>
-            <p>Yes,we offer large-format printing, Custom graphics, Signage, LED Integration and Complete booth branding Solutions. </p>
-        </div>
-        <div class="maxima-faq-item">
-            <h3>What are the advantages of modular exhibition stands?</h3>
-            <p>Modular stands are cost-effective,reusable,easy to transport, quick to install and highly flexible for different exhibition layouts.</p>
 
-        </div>
-        
+    <div class="maxima-faq-item">
+        <h3 data-key="faqQ3">Do you provide installation services?</h3>
+        <p data-key="faqA3">Yes, Trio Exhibitions provides complete booth installation, dismantling, logistics, and on-site support services.</p>
+    </div>
+
+    <div class="maxima-faq-item">
+        <h3 data-key="faqQ4">Can you execute exhibition projects internationally?</h3>
+        <p data-key="faqA4">Yes, we deliver exhibition booth solutions across India, Dubai, Germany, Thailand, and various international exhibition venues.</p>
+    </div>
+
+    <div class="maxima-faq-item">
+        <h3 data-key="faqQ5">Can Maxima and Octonorm booths be customized?</h3>
+        <p data-key="faqA5">Absolutely, we provide custom branding, graphics, lighting integration, meeting areas, product displays, and complete stand customization.</p>
+    </div>
+
+    <div class="maxima-faq-item">
+        <h3 data-key="faqQ6">What industries use Maxima and Octonorm exhibition stands?</h3>
+        <p data-key="faqA6">Maxima and Octonorm systems are widely used in healthcare, technology, manufacturing, food, automotive, education, and industrial exhibitions worldwide.</p>
+    </div>
+
+    <div class="maxima-faq-item">
+        <h3 data-key="faqQ7">How long does it take to build a Maxima or Octonorm booth?</h3>
+        <p data-key="faqA7">The timeline depends on booth size and complexity, but most modular stands can be installed much faster than traditional custom-built exhibition booths.</p>
+    </div>
+
+    <div class="maxima-faq-item">
+        <h3 data-key="faqQ8">Do you provide 3D booth design before fabrication?</h3>
+        <p data-key="faqA8">Yes, we create detailed 3D exhibition stand designs and visual presentations for client approval before production begins.</p>
+    </div>
+
+    <div class="maxima-faq-item">
+        <h3 data-key="faqQ9">Are Maxima and Octonorm systems suitable for large exhibitions?</h3>
+        <p data-key="faqA9">Yes, both systems are ideal for small, medium, and large-scale exhibitions, trade fairs, expos, and international events.</p>
+    </div>
+
+    <div class="maxima-faq-item">
+        <h3 data-key="faqQ10">Why choose Trio Exhibitions for Maxima and Octonorm stands?</h3>
+        <p data-key="faqA10">With 18+ years of experience, in-house production facilities, creative design expertise, and global execution capabilities, we deliver high-quality modular exhibition solutions.</p>
+    </div>
+
+    <div class="maxima-faq-item">
+        <h3 data-key="faqQ11">Do you provide graphic printing and branding services?</h3>
+        <p data-key="faqA11">Yes, we offer large-format printing, custom graphics, signage, LED integration, and complete booth branding solutions.</p>
+    </div>
+
+    <div class="maxima-faq-item">
+        <h3 data-key="faqQ12">What are the advantages of modular exhibition stands?</h3>
+        <p data-key="faqA12">Modular stands are cost-effective, reusable, easy to transport, quick to install, and highly flexible for different exhibition layouts.</p>
+    </div>
+
 </section>
 <footer class="footer">
 

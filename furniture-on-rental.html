@@ -23,18 +23,26 @@
 
 <body>
 
-
 <header>
   <img src="Screenshot_2025-11-28_130954-removebg-preview.png" class="logo" alt="Trio Exhibitions logo - exhibition stall design company in Mumbai">
- 
+
   <!-- 🔥 Hamburger -->
   <div class="hamburger" onclick="toggleMenu()">
     ☰
   </div>
- 
+
   <nav id="nav-menu">
     <a href="index.html" data-key="home">Home</a>
-     <a href="about.html" data-key="about">About</a>
+     <div class="about-nav-item">
+      <a href="#" class="about-nav-link" onclick="toggleAboutDropdown(event)">
+        About
+      </a>
+
+      <div class="about-dropdown-menu">
+        <a href="about.html">About Us</a>
+        <a href="korean-chinese-interpretation.html">Korean & Chinese Interpretation</a>
+      </div>
+    </div>
     <div class="nav-item dropdown">
     <a href="#" class="nav-link" data-key="services" onclick="toggleDropdown(event)">
   Services
@@ -56,14 +64,16 @@
     <a href="services.html" data-key="all_services">All Services</a>
     <a href="Interior.html" data-key="interior_menu">Interior</a>
   </div>
-  <div class="menu-column">
- 
+
+ <div class="menu-column">
+
+
     <a href="miami.html" data-key="miami_booth">Germany Booth</a>
- 
+
     <a href="thailand.html" data-key="thailand_booth">Thailand Booth</a>
- 
+
     <a href="dubai.html" data-key="dubai_booth">Dubai Booth</a>
- 
+
   </div>
 </div>
     </div>
@@ -82,67 +92,65 @@
 
     <div class="furni-content">
 
-        <span class="furni-tag">
+        <span class="furni-tag" data-key="furniHeroTag">
             TRIO EXHIBITIONS
         </span>
 
-        <h1>
+        <h1 data-key="furniHeroTitle">
             Furniture On Rental
         </h1>
 
-        <p>
+        <p data-key="furniHeroDesc">
             Premium furniture rental solutions for exhibitions,
             trade shows, conferences and corporate events.
         </p>
 
-        <a href="contact.html" class="furni-btn">
+        <a href="contact.html" class="furni-btn" data-key="furniHeroBtn">
             Get Free Quote
         </a>
 
     </div>
 
 </section>
-
 <section class="furni-services">
 
-    <h2>Rental Furniture Collection</h2>
+    <h2 data-key="furniServicesTitle">Rental Furniture Collection</h2>
 
     <div class="furni-grid">
 
         <div class="furni-card">
             <i class="fas fa-couch"></i>
-            <h3>Sofas</h3>
+            <h3 data-key="furniService1">Sofas</h3>
         </div>
 
         <div class="furni-card">
             <i class="fas fa-chair"></i>
-            <h3>Chairs</h3>
+            <h3 data-key="furniService2">Chairs</h3>
         </div>
 
         <div class="furni-card">
             <i class="fas fa-table"></i>
-            <h3>Tables</h3>
+            <h3 data-key="furniService3">Tables</h3>
         </div>
 
         <div class="furni-card">
             <i class="fas fa-store"></i>
-            <h3>Reception Counters</h3>
+            <h3 data-key="furniService4">Reception Counters</h3>
         </div>
 
         <div class="furni-card">
             <i class="fas fa-lightbulb"></i>
-            <h3>LED Furniture</h3>
+            <h3 data-key="furniService5">LED Furniture</h3>
         </div>
 
         <div class="furni-card">
             <i class="fas fa-building"></i>
-            <h3>Lounge Setup</h3>
+            <h3 data-key="furniService6">Lounge Setup</h3>
         </div>
 
     </div>
 
 </section>
-
 <section class="furni-about">
 
     <div class="furni-about-container">
@@ -153,24 +161,24 @@
 
         <div class="furni-text">
 
-            <span>WHY CHOOSE US</span>
+            <span data-key="furniAboutTag">WHY CHOOSE US</span>
 
-            <h2>
+            <h2 data-key="furniAboutTitle">
                 Premium Furniture Rental Services
             </h2>
 
-            <p>
+            <p data-key="furniAboutDesc">
                 Trio Exhibitions provides high-quality furniture
                 rental services for exhibitions, trade fairs,
                 conferences, seminars and corporate events.
             </p>
 
             <ul>
-                <li>Modern Designs</li>
-                <li>Affordable Pricing</li>
-                <li>Quick Delivery</li>
-                <li>Professional Installation</li>
-                <li>Large Inventory</li>
+                <li data-key="furniFeature1">Modern Designs</li>
+                <li data-key="furniFeature2">Affordable Pricing</li>
+                <li data-key="furniFeature3">Quick Delivery</li>
+                <li data-key="furniFeature4">Professional Installation</li>
+                <li data-key="furniFeature5">Large Inventory</li>
             </ul>
 
         </div>
@@ -178,123 +186,130 @@
     </div>
 
 </section>
-
 <div class="furni-gallery-grid">
 
- <a href="furniture-on-rental-gallery.html?project=FURNITURE" class="furni-gallery-item">
+    <a href="furniture-on-rental-gallery.html?project=FURNITURE" class="furni-gallery-item">
         <img src="trio-website/Projects/chair/1.png">
-        <span>chair</span>
+        <span data-key="furniGallery1">Chair</span>
     </a>
- <a href="furniture-on-rental-gallery.html?project=Sofa" class="furni-gallery-item">
+
+    <a href="furniture-on-rental-gallery.html?project=Sofa" class="furni-gallery-item">
         <img src="trio-website/Projects/sofa/1.png">
-        <span>sofa</span>
+        <span data-key="furniGallery2">Sofa</span>
     </a>
-  <a href="furniture-on-rental-gallery.html?project=Freezer" class="furni-gallery-item">
+
+    <a href="furniture-on-rental-gallery.html?project=Freezer" class="furni-gallery-item">
         <img src="trio-website/Projects/Freezer/1.png">
-        <span>Freezer</span>
+        <span data-key="furniGallery3">Freezer</span>
     </a>
-      <a href="furniture-on-rental-gallery.html?project=GLASSTABLES" class="furni-gallery-item">
+
+    <a href="furniture-on-rental-gallery.html?project=GLASSTABLES" class="furni-gallery-item">
         <img src="trio-website/Projects/Glass Tables/1.png">
-        <span>Glass and Wooden Round Tables</span>
+        <span data-key="furniGallery4">Glass & Wooden Round Tables</span>
     </a>
-      <a href="furniture-on-rental-gallery.html?project=waterdispenser" class="furni-gallery-item">
+
+    <a href="furniture-on-rental-gallery.html?project=waterdispenser" class="furni-gallery-item">
         <img src="trio-website/Projects/water dispenser/1.png">
-        <span>water dispenser</span>
+        <span data-key="furniGallery5">Water Dispenser</span>
     </a>
-     <a href="furniture-on-rental-gallery.html?project=glasscountershowcase" class="furni-gallery-item">
+
+    <a href="furniture-on-rental-gallery.html?project=glasscountershowcase" class="furni-gallery-item">
         <img src="trio-website/Projects/glass counter showcase/1.png">
-        <span>glass counter showcase</span>
+        <span data-key="furniGallery6">Glass Counter Showcase</span>
     </a>
-      <a href="furniture-on-rental-gallery.html?project=centerglasstable" class="furni-gallery-item">
+
+    <a href="furniture-on-rental-gallery.html?project=centerglasstable" class="furni-gallery-item">
         <img src="trio-website/Projects/center table/1.png">
-        <span>center glass table</span>
+        <span data-key="furniGallery7">Center Glass Table</span>
     </a>
-       <a href="furniture-on-rental-gallery.html?project=DUSTBIN" class="furni-gallery-item">
+
+    <a href="furniture-on-rental-gallery.html?project=DUSTBIN" class="furni-gallery-item">
         <img src="trio-website/Projects/dustbin/1.png">
-        <span>Dustbin</span>
+        <span data-key="furniGallery8">Dustbin</span>
     </a>
+
     <a href="furniture-on-rental-gallery.html?project=brochurestand" class="furni-gallery-item">
         <img src="trio-website/Projects/Brochure Stand/1.png">
-        <span>Brochure Stand </span>
+        <span data-key="furniGallery9">Brochure Stand</span>
     </a>
+
     <a href="furniture-on-rental-gallery.html?project=Plant" class="furni-gallery-item">
         <img src="trio-website/Projects/plant/1.png">
-        <span>Plants</span>
+        <span data-key="furniGallery10">Plants</span>
     </a>
+
     <a href="furniture-on-rental-gallery.html?project=LED" class="furni-gallery-item">
         <img src="trio-website/Projects/LED/1.png">
-        <span>LED</span>
+        <span data-key="furniGallery11">LED Furniture</span>
     </a>
-</div>
 
+</div>
 <section class="furni-stats">
 
     <div class="furni-stat">
         <h3>500+</h3>
-        <p>Rental Projects</p>
+        <p data-key="furniStat1">Rental Projects</p>
     </div>
 
     <div class="furni-stat">
         <h3>18+</h3>
-        <p>Years Experience</p>
+        <p data-key="furniStat2">Years Experience</p>
     </div>
 
     <div class="furni-stat">
         <h3>100%</h3>
-        <p>Client Satisfaction</p>
+        <p data-key="furniStat3">Client Satisfaction</p>
     </div>
 
     <div class="furni-stat">
         <h3>24/7</h3>
-        <p>Support</p>
+        <p data-key="furniStat4">Support</p>
     </div>
 
 </section>
-
 <section class="furni-process">
 
-    <h2>Our Rental Process</h2>
+    <h2 data-key="furniProcessTitle">Our Rental Process</h2>
 
     <div class="furni-process-grid">
 
         <div class="furni-step">
             <span>01</span>
-            <h3>Consultation</h3>
+            <h3 data-key="furniProcess1">Consultation</h3>
         </div>
 
         <div class="furni-step">
             <span>02</span>
-            <h3>Selection</h3>
+            <h3 data-key="furniProcess2">Selection</h3>
         </div>
 
         <div class="furni-step">
             <span>03</span>
-            <h3>Delivery</h3>
+            <h3 data-key="furniProcess3">Delivery</h3>
         </div>
 
         <div class="furni-step">
             <span>04</span>
-            <h3>Setup</h3>
+            <h3 data-key="furniProcess4">Setup</h3>
         </div>
 
     </div>
 
 </section>
-
 <section class="furni-cta">
 
     <div class="furni-cta-overlay">
 
-        <h2>
+        <h2 data-key="furniCtaTitle">
             Need Furniture For Your Event?
         </h2>
 
-        <p>
+        <p data-key="furniCtaDesc">
             Get stylish and premium furniture delivered
             directly to your exhibition venue.
         </p>
 
-        <a href="contact.html" class="furni-btn">
+        <a href="contact.html" class="furni-btn" data-key="furniCtaBtn">
             Contact Us
         </a>
 
@@ -303,60 +318,68 @@
 </section>
 <section class="furni-faq">
 
-<h2>Frequently Asked Questions</h2>
+    <h2 data-key="furniFaqTitle">Frequently Asked Questions</h2>
 
-<div class="furni-faq-item">
-    <h3>What furniture is available for rent?</h3>
-    <p>We offer sofas, chairs, tables, reception counters, bar stools, lounge furniture and more.</p>
-</div>
+    <div class="furni-faq-item">
+        <h3 data-key="furniFaqQ1">What furniture is available for rent?</h3>
+        <p data-key="furniFaqA1">We offer sofas, chairs, tables, reception counters, bar stools, lounge furniture and more.</p>
+    </div>
 
-<div class="furni-faq-item">
-    <h3>How much does exhibition furniture rental cost?</h3>
-    <p>Pricing depends on furniture type, quantity, duration and event location.</p>
-</div>
+    <div class="furni-faq-item">
+        <h3 data-key="furniFaqQ2">How much does exhibition furniture rental cost?</h3>
+        <p data-key="furniFaqA2">Pricing depends on furniture type, quantity, duration and event location.</p>
+    </div>
 
-<div class="furni-faq-item">
-    <h3>Do you provide delivery?</h3>
-    <p>Yes, we provide delivery across exhibition venues and event locations.</p>
-</div>
+    <div class="furni-faq-item">
+        <h3 data-key="furniFaqQ3">Do you provide delivery?</h3>
+        <p data-key="furniFaqA3">Yes, we provide delivery across exhibition venues and event locations.</p>
+    </div>
 
-<div class="furni-faq-item">
-    <h3>Do you provide setup?</h3>
-    <p>Yes, our team handles installation, arrangement and dismantling.</p>
-</div>
-<div class="furni-faq-item">
-    <h3>Can I rent furniture for a single-day exhibition?</h3>
-    <p>Yes, we provide flexible rental options for one-day events, exhibitions, conferences and trade shows.</p>
-</div>
-<div class="furni-faq-item">
-    <h3>Do you offer furniture rental across India?</h3>
-    <p>Yes, we provide exhibition and event furniture rental services across major cities and exhibition venues in India.</p>
-</div>
-<div class="furni-faq-item">
-    <h3>Can I customize my furniture Selection</h3>
-    <p>Absolutely.You can choose furniture based on your booth design,branding requirements and event theme.</p>
+    <div class="furni-faq-item">
+        <h3 data-key="furniFaqQ4">Do you provide setup?</h3>
+        <p data-key="furniFaqA4">Yes, our team handles installation, arrangement and dismantling.</p>
+    </div>
 
-</div>
-<div class="furni-faq-item">
-   <h3>Do you provide lounge furniture for VIP  areas?</h3>
-   <p>Yes, we offer premium lounge setups,sofas,coffee tables and VIP seating solutions for exhibition and events. </p>
-</div>
-<div class="furni-faq-item">
-    <h3>Are reception counter available on rent?</h3>
-    <p>Yes, we provide reception counters, information desks and branded welcome counter for exhibition and trade fairs.</p>
-</div>
-<div class="furni-faq-item">
-    <h3>Can furniture be branded with our company  logo?</h3>
-    <p>Yes,selected furniture and counters can be customized with company branding and graphics.</p>
-</div>
-<div class="furni-faq-item">
-    <h3>How far in advance should I book exhibition furniture?</h3>
-    <p>We recommend booking at least 2-4 weeks before the event to ensure availability and smooth delivery.</p>
-</div>
-<div class="furni-faq-item">
-    <h3>Why choose Trio exhibition for furniture rental?</h3>
-    <p>We provide premium-quality furniture ,timely,professional setup and reliable support for exhibition and events.</p>
-</div>
+    <div class="furni-faq-item">
+        <h3 data-key="furniFaqQ5">Can I rent furniture for a single-day exhibition?</h3>
+        <p data-key="furniFaqA5">Yes, we provide flexible rental options for one-day events, exhibitions, conferences and trade shows.</p>
+    </div>
+
+    <div class="furni-faq-item">
+        <h3 data-key="furniFaqQ6">Do you offer furniture rental across India?</h3>
+        <p data-key="furniFaqA6">Yes, we provide exhibition and event furniture rental services across major cities and exhibition venues in India.</p>
+    </div>
+
+    <div class="furni-faq-item">
+        <h3 data-key="furniFaqQ7">Can I customize my furniture selection?</h3>
+        <p data-key="furniFaqA7">Absolutely. You can choose furniture based on your booth design, branding requirements and event theme.</p>
+    </div>
+
+    <div class="furni-faq-item">
+        <h3 data-key="furniFaqQ8">Do you provide lounge furniture for VIP areas?</h3>
+        <p data-key="furniFaqA8">Yes, we offer premium lounge setups, sofas, coffee tables and VIP seating solutions for exhibitions and events.</p>
+    </div>
+
+    <div class="furni-faq-item">
+        <h3 data-key="furniFaqQ9">Are reception counters available on rent?</h3>
+        <p data-key="furniFaqA9">Yes, we provide reception counters, information desks and branded welcome counters for exhibitions and trade fairs.</p>
+    </div>
+
+    <div class="furni-faq-item">
+        <h3 data-key="furniFaqQ10">Can furniture be branded with our company logo?</h3>
+        <p data-key="furniFaqA10">Yes, selected furniture and counters can be customized with company branding and graphics.</p>
+    </div>
+
+    <div class="furni-faq-item">
+        <h3 data-key="furniFaqQ11">How far in advance should I book exhibition furniture?</h3>
+        <p data-key="furniFaqA11">We recommend booking at least 2–4 weeks before the event to ensure availability and smooth delivery.</p>
+    </div>
+
+    <div class="furni-faq-item">
+        <h3 data-key="furniFaqQ12">Why choose Trio Exhibitions for furniture rental?</h3>
+        <p data-key="furniFaqA12">We provide premium-quality furniture, timely delivery, professional setup and reliable support for exhibitions and events.</p>
+    </div>
+
 </section>
 <footer class="footer">
 

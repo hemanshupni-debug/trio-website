@@ -282,7 +282,7 @@
   </nav>
 </header>
 <section class="gallery-section">
-    <h1 id="gallery-title">Furniture On Rental</h1>
+    <h1 id="gallery-title">Warehouse</h1>
     <div class="gallery-grid" id="galleryGrid"></div>
 </section>
 
@@ -295,7 +295,8 @@
     <button id="furniturePrev" class="lightbox-prev">&#10094;</button>
 
     <img id="furnitureLightboxImg" src="" alt="" style="display:none;">
- <video
+
+  <video
     id="furnitureLightboxVideo"
     controls
     autoplay
@@ -305,8 +306,6 @@
     oncontextmenu="return false;"
     style="display:none; max-width:90%; max-height:90%;">
 </video>
-    
-
     <button id="furnitureNext" class="lightbox-next">&#10095;</button>
 
 </div>
@@ -314,139 +313,76 @@
 <!-- Lightbox End -->
 <script>
 const params = new URLSearchParams(window.location.search);
-const project = params.get("project") || "FURNITURE";
+const project = params.get("project") || "warehouse1";
 
 const galleries = {
 
-    FURNITURE:[
-        "trio-website/Projects/chair/1.png",
-        "trio-website/Projects/chair/2.png",
-        "trio-website/Projects/chair/3.png",
-        "trio-website/Projects/chair/4.png",
-        "trio-website/Projects/chair/5.png",
-        "trio-website/Projects/chair/6.png",
-        "trio-website/Projects/chair/7.png",
-        "trio-website/Projects/chair/8.png",
-        "trio-website/Projects/chair/9.png",
-        "trio-website/Projects/chair/10.png",
-        "trio-website/Projects/chair/11.png",
-        "trio-website/Projects/chair/12.png",
-        "trio-website/Projects/chair/13.png",
-        "trio-website/Projects/chair/14.png",
-        "trio-website/Projects/chair/15.png",
-        "trio-website/Projects/chair/16.png",
-        "trio-website/Projects/chair/17.png",
-        "trio-website/Projects/chair/18.png"
+    warehouse1:[
+        "trio-website/Projects/w1/1.png",
+        "trio-website/Projects/w1/2.png",
+        "trio-website/Projects/w1/3.mp4",
+        "trio-website/Projects/w1/4.mp4",
     ],
-
-    Sofa:[
-        "trio-website/Projects/sofa/1.png",
-        "trio-website/Projects/sofa/2.png",
-        "trio-website/Projects/sofa/3.png",
-        "trio-website/Projects/sofa/4.png",
-        "trio-website/Projects/sofa/5.png",
-        "trio-website/Projects/sofa/6.png"
-    ],
-
-    Freezer:[
-        "trio-website/Projects/Freezer/1.png",
-        "trio-website/Projects/Freezer/2.png"
-    ],
-
-    GLASSTABLES:[
-        "trio-website/Projects/Glass Tables/1.png",
-        "trio-website/Projects/Glass Tables/2.png",
-       
-        "trio-website/Projects/Glass Tables/4.png",
-        "trio-website/Projects/Glass Tables/5.png",
-        "trio-website/Projects/Glass Tables/6.png",
-        "trio-website/Projects/Glass Tables/7.png",
-        "trio-website/Projects/Glass Tables/8.png"
-    ],
-
-    waterdispenser:[
-        "trio-website/Projects/water dispenser/1.png"
-    ],
-
-    glasscountershowcase:[
-        "trio-website/Projects/glass counter showcase/1.png",
-        "trio-website/Projects/glass counter showcase/2.png"
-    ],
-
-    centerglasstable:[
-        "trio-website/Projects/center table/1.png",
-        "trio-website/Projects/center table/2.png",
-        "trio-website/Projects/center table/3.png",
-        "trio-website/Projects/center table/4.png",
-        "trio-website/Projects/Glass Tables/3.png",
-    ],
-
-    DUSTBIN:[
-        "trio-website/Projects/dustbin/1.png",
-        "trio-website/Projects/dustbin/du2.png"
-    ],
-
-    brochurestand:[
-        "trio-website/Projects/Brochure Stand/1.png"
-    ],
-
-    Plant:[
-        "trio-website/Projects/plant/1.png",
-        "trio-website/Projects/plant/2.png"
-    ],
-
-    LED:[
-        "trio-website/Projects/LED/1.png",
-        "trio-website/Projects/LED/2.png",
-        "trio-website/Projects/LED/3.mp4",
-        "trio-website/Projects/LED/4.mp4",
+    warehouse2:[
+        "trio-website/Projects/w2/1.jpeg",
+        "trio-website/Projects/w2/2.mp4",
+        "trio-website/Projects/w2/3.jpg",
+        "trio-website/Projects/w2/4.mp4",
     ],
 
 };
 
-document.getElementById("gallery-title").textContent="Furniture On Rental";
+document.getElementById("gallery-title").textContent="Warehouse & Production Gallery";
 
 const grid=document.getElementById("galleryGrid");
 
-const furnitureLightbox=document.getElementById("furnitureLightbox");
+const warehouseLightbox=document.getElementById("furnitureLightbox");
 
-const furnitureImg=document.getElementById("furnitureLightboxImg");
+const warehouseImg=document.getElementById("furnitureLightboxImg");
 
-const furnitureVideo=document.getElementById("furnitureLightboxVideo");
+const warehouseVideo=document.getElementById("furnitureLightboxVideo");
 
-let furnitureImages=galleries[project]||[];
+let warehouseImages=galleries[project]||[];
 
-let furnitureIndex=0;
-
+let warehouseIndex=0;
 function showMedia(index){
 
-    const file=furnitureImages[index];
+    const file = warehouseImages[index];
 
     if(file.endsWith(".mp4")){
 
-        furnitureImg.style.display="none";
+        warehouseImg.style.display = "none";
+        warehouseVideo.style.display = "block";
 
-        furnitureVideo.style.display="block";
+        warehouseVideo.src = file;
 
-        furnitureVideo.src=file;
+        // Hide browser features as much as possible
+        warehouseVideo.controls = true;
+        warehouseVideo.setAttribute(
+            "controlsList",
+            "nodownload noplaybackrate noremoteplayback"
+        );
+        warehouseVideo.disablePictureInPicture = true;
+        warehouseVideo.setAttribute("disablePictureInPicture", "");
+        warehouseVideo.setAttribute("oncontextmenu", "return false;");
 
-        furnitureVideo.play();
+        warehouseVideo.load();
+        warehouseVideo.play();
 
     }else{
 
-        furnitureVideo.pause();
+        warehouseVideo.pause();
+        warehouseVideo.removeAttribute("src");
+        warehouseVideo.load();
 
-        furnitureVideo.style.display="none";
+        warehouseVideo.style.display = "none";
 
-        furnitureImg.style.display="block";
-
-        furnitureImg.src=file;
-
+        warehouseImg.style.display = "block";
+        warehouseImg.src = file;
     }
 
 }
-
-furnitureImages.forEach((file,index)=>{
+warehouseImages.forEach((file,index)=>{
 
     const card=document.createElement("div");
 
@@ -463,18 +399,18 @@ furnitureImages.forEach((file,index)=>{
     }else{
 
         card.innerHTML=`
-        <img src="${file}" alt="Furniture">
+        <img src="${file}" alt="Warehouse">
         `;
 
     }
 
     card.onclick=function(){
 
-        furnitureIndex=index;
+        warehouseIndex=index;
 
-        showMedia(furnitureIndex);
+        showMedia(warehouseIndex);
 
-        furnitureLightbox.classList.add("active");
+        warehouseLightbox.classList.add("active");
 
     };
 
@@ -484,39 +420,39 @@ furnitureImages.forEach((file,index)=>{
 
 document.getElementById("furnitureClose").onclick=function(){
 
-    furnitureLightbox.classList.remove("active");
+    warehouseLightbox.classList.remove("active");
 
-    furnitureVideo.pause();
+    warehouseVideo.pause();
 
 };
 
 document.getElementById("furniturePrev").onclick=function(){
 
-    furnitureIndex--;
+    warehouseIndex--;
 
-    if(furnitureIndex<0) furnitureIndex=furnitureImages.length-1;
+    if(warehouseIndex<0) warehouseIndex=warehouseImages.length-1;
 
-    showMedia(furnitureIndex);
+    showMedia(warehouseIndex);
 
 };
 
 document.getElementById("furnitureNext").onclick=function(){
 
-    furnitureIndex++;
+    warehouseIndex++;
 
-    if(furnitureIndex>=furnitureImages.length) furnitureIndex=0;
+    if(warehouseIndex>=warehouseImages.length) warehouseIndex=0;
 
-    showMedia(furnitureIndex);
+    showMedia(warehouseIndex);
 
 };
 
-furnitureLightbox.onclick=function(e){
+warehouseLightbox.onclick=function(e){
 
-    if(e.target===furnitureLightbox){
+    if(e.target===warehouseLightbox){
 
-        furnitureLightbox.classList.remove("active");
+        warehouseLightbox.classList.remove("active");
 
-        furnitureVideo.pause();
+        warehouseVideo.pause();
 
     }
 
@@ -524,7 +460,7 @@ furnitureLightbox.onclick=function(e){
 
 document.addEventListener("keydown",function(e){
 
-    if(!furnitureLightbox.classList.contains("active")) return;
+    if(!warehouseLightbox.classList.contains("active")) return;
 
     if(e.key==="ArrowRight") document.getElementById("furnitureNext").click();
 
@@ -532,9 +468,9 @@ document.addEventListener("keydown",function(e){
 
     if(e.key==="Escape"){
 
-        furnitureLightbox.classList.remove("active");
+        warehouseLightbox.classList.remove("active");
 
-        furnitureVideo.pause();
+        warehouseVideo.pause();
 
     }
 
