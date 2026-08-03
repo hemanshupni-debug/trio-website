@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Trust </title>
+<title>Trust Materials for Exhibition Stands | Trio Exhibitions</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+<meta name="description" content="Trio Exhibitions provides premium trust materials for exhibition stands including wood, modular systems, graphics, acrylic, metal fabrication, lighting, flooring and high-quality booth construction solutions.">
+
+<meta name="keywords" content="trust materials, exhibition stand materials, booth construction materials, exhibition fabrication materials, modular exhibition systems, exhibition woodwork, exhibition graphics, acrylic fabrication, metal fabrication, exhibition flooring, exhibition lighting, booth building materials, exhibition contractor India, exhibition stand fabrication, Trio Exhibitions">
+
+<meta name="author" content="Trio Exhibitions">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<link rel="canonical" href="https://trioexhibitions.com/trust.html">
+
+<link rel="alternate" hreflang="en" href="https://trioexhibitions.com/trust.html">
+<link rel="alternate" hreflang="x-default" href="https://trioexhibitions.com/trust.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Trust Materials for Exhibition Stands | Trio Exhibitions">
+<meta property="og:description" content="Premium materials and fabrication solutions for custom exhibition stands and trade show booths.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://trioexhibitions.com/trust.html">
+<meta property="og:image" content="https://trioexhibitions.com/trust-materials.jpg">
+<meta property="og:site_name" content="Trio Exhibitions">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Trust Materials | Trio Exhibitions">
+<meta name="twitter:description" content="Premium exhibition stand materials, fabrication quality and booth construction solutions.">
+<meta name="twitter:image" content="https://trioexhibitions.com/trust-materials.jpg">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
@@ -56,7 +82,7 @@
  <div class="menu-column">
 
 
-    <a href="miami.html" data-key="miami_booth">Germany Booth</a>
+      <a href="miami.html" data-key="miami_booth">Germany Booth</a>
 
     <a href="thailand.html" data-key="thailand_booth">Thailand Booth</a>
 
@@ -239,7 +265,9 @@
 <a href="#" class="wechat" onclick="openWechatQR(event)">
     <i class="fab fa-weixin"></i>
 </a>
-
+<a href="#" class="certificate" onclick="openCertificate(event)">
+    <img src="trio-website/Projects/image/certificate.png" alt="Certificate">
+</a>
 <!-- QR Modal -->
 <div id="wechatModal" class="wechat-modal">
     <span class="close-btn" onclick="closeWechatQR()">&times;</span>
@@ -253,6 +281,74 @@
 
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2026/04/09/06/20260409060544-DG066HXA.js" defer></script>
+<div id="certificateModal" class="certificate-modal">
+
+    <div class="certificate-content">
+
+        <span class="close-btn" onclick="closeCertificate()">&times;</span>
+
+        <h2>Your Exhibition Partner</h2>
+
+        <div class="certificate-row">
+
+            <!-- Certificate 1 -->
+            <img src="trio-website/Projects/image/cer1.jpg"
+                 alt="Certificate 1"
+                 class="certificate-img"
+                 onclick="openCertificateViewer(this.src)">
+
+            <!-- Flags -->
+            <div class="flags">
+
+                <div class="flag-item">
+                    <img src="trio-website/Projects/image/china.png" alt="India">
+                    <span>China</span>
+                </div>
+
+                <div class="flag-item">
+                    <img src="trio-website/Projects/image/India.jpg" alt="Germany">
+                    <span>India</span>
+                </div>
+
+                <div class="flag-item">
+                    <img src="trio-website/Projects/image/korea.jpg" alt="USA">
+                    <span>Korea</span>
+                </div>
+
+            </div>
+
+            <!-- Certificate 2 -->
+            <img src="trio-website/Projects/image/cer2.jpg"
+                 alt="Certificate 2"
+                 class="certificate-img"
+                 onclick="openCertificateViewer(this.src)">
+
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="bottom-certificate">
+            <img src="trio-website/Projects/image/cer3.jpg"
+                 alt="Certificate 3"
+                 class="certificate-img"
+                 onclick="openCertificateViewer(this.src)">
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Full Screen Certificate Viewer -->
+<div id="certificateViewer" class="certificate-viewer">
+
+    <span class="viewer-close" onclick="closeCertificateViewer()">&times;</span>
+
+    <img id="viewerImage" src="" alt="Certificate">
+
+</div>
+
+
+
+
 
 </body>
 

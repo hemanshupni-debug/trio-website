@@ -2939,3 +2939,57 @@ document.addEventListener("click", function(e){
     }
 
 });
+function openCertificate(e) {
+    e.preventDefault();
+    document.getElementById("certificateModal").style.display = "flex";
+}
+
+function closeCertificate() {
+    document.getElementById("certificateModal").style.display = "none";
+}
+
+window.addEventListener("click", function(e) {
+    const modal = document.getElementById("certificateModal");
+
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
+// Open Certificate Popup
+function openCertificate(e) {
+    e.preventDefault();
+    document.getElementById("certificateModal").style.display = "flex";
+}
+
+// Close Certificate Popup
+function closeCertificate() {
+    document.getElementById("certificateModal").style.display = "none";
+}
+
+// Open Large Certificate Image
+function openCertificateViewer(src) {
+    document.getElementById("viewerImage").src = src;
+    document.getElementById("certificateViewer").style.display = "flex";
+}
+
+// Close Large Certificate Image
+function closeCertificateViewer() {
+    document.getElementById("certificateViewer").style.display = "none";
+}
+
+// Close when clicking outside
+window.addEventListener("click", function(e) {
+
+    const modal = document.getElementById("certificateModal");
+    const viewer = document.getElementById("certificateViewer");
+
+    if (e.target === modal) {
+        closeCertificate();
+    }
+
+    if (e.target === viewer) {
+        closeCertificateViewer();
+    }
+
+});

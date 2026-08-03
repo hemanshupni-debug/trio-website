@@ -3,7 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scope Project</title>
+
+<title>Exhibition Project Management & Scope | Trio Exhibitions</title>
+
+<meta name="description" content="Trio Exhibitions provides complete exhibition project management including booth planning, design, fabrication, logistics, installation, dismantling and turnkey exhibition solutions for trade shows worldwide.">
+
+<meta name="keywords" content="exhibition project management, exhibition scope, turnkey exhibition solutions, booth project management, exhibition planning, exhibition logistics, booth installation, exhibition fabrication, exhibition contractor India, exhibition stand builder, trade show project management, custom exhibition stands, country pavilion management, exhibition services, Trio Exhibitions">
+
+<meta name="author" content="Trio Exhibitions">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<link rel="canonical" href="https://trioexhibitions.com/scope.html">
+
+<link rel="alternate" hreflang="en" href="https://trioexhibitions.com/scope.html">
+<link rel="alternate" hreflang="x-default" href="https://trioexhibitions.com/scope.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Exhibition Project Management & Scope | Trio Exhibitions">
+<meta property="og:description" content="Professional exhibition planning, booth fabrication, installation and turnkey project management services.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://trioexhibitions.com/scope.html">
+<meta property="og:image" content="https://trioexhibitions.com/scope-project.jpg">
+<meta property="og:site_name" content="Trio Exhibitions">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Exhibition Project Management & Scope | Trio Exhibitions">
+<meta name="twitter:description" content="Complete exhibition planning, fabrication and project management services.">
+<meta name="twitter:image" content="https://trioexhibitions.com/scope-project.jpg">
+
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -55,7 +83,7 @@
  <div class="menu-column">
 
 
-    <a href="miami.html" data-key="miami_booth">Germany Booth</a>
+      <a href="miami.html" data-key="miami_booth">Germany Booth</a>
 
     <a href="thailand.html" data-key="thailand_booth">Thailand Booth</a>
 
@@ -188,7 +216,9 @@
 <a href="#" class="wechat" onclick="openWechatQR(event)">
     <i class="fab fa-weixin"></i>
 </a>
-
+<a href="#" class="certificate" onclick="openCertificate(event)">
+    <img src="trio-website/Projects/image/certificate.png" alt="Certificate">
+</a>
 <!-- QR Modal -->
 <div id="wechatModal" class="wechat-modal">
     <span class="close-btn" onclick="closeWechatQR()">&times;</span>
@@ -198,6 +228,69 @@
 <script src="script.js"></script>
 <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2026/04/09/06/20260409060544-DG066HXA.js" defer></script>
-    
+    <div id="certificateModal" class="certificate-modal">
+
+    <div class="certificate-content">
+
+        <span class="close-btn" onclick="closeCertificate()">&times;</span>
+
+        <h2>Your Exhibition Partner</h2>
+
+        <div class="certificate-row">
+
+            <!-- Certificate 1 -->
+            <img src="trio-website/Projects/image/cer1.jpg"
+                 alt="Certificate 1"
+                 class="certificate-img"
+                 onclick="openCertificateViewer(this.src)">
+
+            <!-- Flags -->
+            <div class="flags">
+
+                <div class="flag-item">
+                    <img src="trio-website/Projects/image/china.png" alt="India">
+                    <span>China</span>
+                </div>
+
+                <div class="flag-item">
+                    <img src="trio-website/Projects/image/India.jpg" alt="Germany">
+                    <span>India</span>
+                </div>
+
+                <div class="flag-item">
+                    <img src="trio-website/Projects/image/korea.jpg" alt="USA">
+                    <span>Korea</span>
+                </div>
+
+            </div>
+
+            <!-- Certificate 2 -->
+            <img src="trio-website/Projects/image/cer2.jpg"
+                 alt="Certificate 2"
+                 class="certificate-img"
+                 onclick="openCertificateViewer(this.src)">
+
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="bottom-certificate">
+            <img src="trio-website/Projects/image/cer3.jpg"
+                 alt="Certificate 3"
+                 class="certificate-img"
+                 onclick="openCertificateViewer(this.src)">
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Full Screen Certificate Viewer -->
+<div id="certificateViewer" class="certificate-viewer">
+
+    <span class="viewer-close" onclick="closeCertificateViewer()">&times;</span>
+
+    <img id="viewerImage" src="" alt="Certificate">
+
+</div>
 </body>
 </html>

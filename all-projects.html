@@ -1,8 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>All Projects</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>All Exhibition Projects | Portfolio & Gallery | Trio Exhibitions</title>
+
+<meta name="description" content="Browse all exhibition projects by Trio Exhibitions including custom exhibition stands, trade show booths, country pavilions, modular displays, event interiors and turnkey exhibition solutions completed across India and worldwide.">
+
+<meta name="keywords" content="all exhibition projects, exhibition portfolio, exhibition stand gallery, trade show booth gallery, exhibition stand projects, booth fabrication portfolio, country pavilion projects, modular exhibition stands, exhibition work gallery, exhibition contractor India, exhibition stand builder Mumbai, trade show display portfolio, exhibition project gallery, turnkey exhibition solutions, Trio Exhibitions">
+
+<meta name="author" content="Trio Exhibitions">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<link rel="canonical" href="https://trioexhibitions.com/all-project.html">
+
+<link rel="alternate" hreflang="en" href="https://trioexhibitions.com/all-project.html">
+<link rel="alternate" hreflang="x-default" href="https://trioexhibitions.com/all-project.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="All Exhibition Projects | Trio Exhibitions">
+<meta property="og:description" content="Explore our complete portfolio of exhibition stands, trade show booths, country pavilions and custom exhibition projects.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://trioexhibitions.com/all-project.html">
+<meta property="og:image" content="https://trioexhibitions.com/project-gallery.jpg">
+<meta property="og:site_name" content="Trio Exhibitions">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="All Exhibition Projects | Trio Exhibitions">
+<meta name="twitter:description" content="View our complete portfolio of exhibition stand design and booth fabrication projects.">
+<meta name="twitter:image" content="https://trioexhibitions.com/project-gallery.jpg">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -51,7 +81,7 @@
  <div class="menu-column">
 
 
-    <a href="miami.html" data-key="miami_booth">Germany Booth</a>
+       <a href="miami.html" data-key="miami_booth">Germany Booth</a>
 
     <a href="thailand.html" data-key="thailand_booth">Thailand Booth</a>
 
@@ -168,12 +198,78 @@
 <a href="#" class="wechat" onclick="openWechatQR(event)">
     <i class="fab fa-weixin"></i>
 </a>
-
+<a href="#" class="certificate" onclick="openCertificate(event)">
+    <img src="trio-website/Projects/image/certificate.png" alt="Certificate">
+</a>
 <!-- QR Modal -->
 <div id="wechatModal" class="wechat-modal">
     <span class="close-btn" onclick="closeWechatQR()">&times;</span>
     <img src="trio-website/Projects/image/wechat.jpg" alt="WeChat QR Code">
 </div>
 <script src="script.js"></script>
+<div id="certificateModal" class="certificate-modal">
+
+    <div class="certificate-content">
+
+        <span class="close-btn" onclick="closeCertificate()">&times;</span>
+
+        <h2>Your Exhibition Partner</h2>
+
+        <div class="certificate-row">
+
+            <!-- Certificate 1 -->
+            <img src="trio-website/Projects/image/cer1.jpg"
+                 alt="Certificate 1"
+                 class="certificate-img"
+                 onclick="openCertificateViewer(this.src)">
+
+            <!-- Flags -->
+            <div class="flags">
+
+                <div class="flag-item">
+                    <img src="trio-website/Projects/image/china.png" alt="India">
+                    <span>China</span>
+                </div>
+
+                <div class="flag-item">
+                    <img src="trio-website/Projects/image/India.jpg" alt="Germany">
+                    <span>India</span>
+                </div>
+
+                <div class="flag-item">
+                    <img src="trio-website/Projects/image/korea.jpg" alt="USA">
+                    <span>Korea</span>
+                </div>
+
+            </div>
+
+            <!-- Certificate 2 -->
+            <img src="trio-website/Projects/image/cer2.jpg"
+                 alt="Certificate 2"
+                 class="certificate-img"
+                 onclick="openCertificateViewer(this.src)">
+
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="bottom-certificate">
+            <img src="trio-website/Projects/image/cer3.jpg"
+                 alt="Certificate 3"
+                 class="certificate-img"
+                 onclick="openCertificateViewer(this.src)">
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Full Screen Certificate Viewer -->
+<div id="certificateViewer" class="certificate-viewer">
+
+    <span class="viewer-close" onclick="closeCertificateViewer()">&times;</span>
+
+    <img id="viewerImage" src="" alt="Certificate">
+
+</div>
 </body>
 </html>

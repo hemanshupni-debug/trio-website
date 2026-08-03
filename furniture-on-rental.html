@@ -2,21 +2,39 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="Trio Exhibitions provides exhibition furniture rental services including sofas, chairs, reception counters, meeting tables, bar stools, lounge furniture and complete event furniture solutions across India.">
-  <meta name="description" content="Trio Exhibitions offers professional exhibition stall design, booth fabrication, and trade show services across India. Get creative and high-quality exhibition solutions. Trio Exhibition is a premier one-stop exhibition contractor in India. Specializing in custom stand design, 3D space planning, and global booth fabrication with 18+ years of expertise.">
-<meta name="keywords" content="furniture on rental,exhibition furniture rental,event furniture rental,trade show furniture,booth furniture rental,exhibition sofa rental,exhibition chair rental,reception counter rental,meeting table rental,bar stool rental,lounge furniture rental,event seating solutions,corporate event furniture,conference furniture rental,trade fair furniture,modular exhibition furniture,exhibition booth accessories,event setup furniture,furniture hire India,furniture rental Mumbai,exhibition furniture supplier,event furniture company,premium exhibition furniture,Trio Exhibitions">
-  <meta name="author" content="Trio Exhibitions">
-  <!-- Open Graph (Sharing ke liye) -->
-<meta property="og:title" content="Furniture on Rental | Trio Exhibitions">
-<meta property="og:description" content="Premium exhibition and event furniture rental solutions including sofas, chairs, tables, counters and lounge setups.">
-  <meta property="og:type" content="website">
- <meta property="og:image" content="furniture1.jpg">
-  <title>Furniture on Rental for Exhibitions & Events | Trio Exhibitions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link rel="stylesheet" href="style.css">
+<title>Furniture on Rental for Exhibitions & Events | Trio Exhibitions</title>
 
-<!-- FONT -->
+<meta name="description" content="Trio Exhibitions offers premium exhibition furniture rental services including sofas, chairs, reception counters, meeting tables, bar stools, lounge furniture and complete event furniture solutions across India for exhibitions, trade shows and corporate events.">
+
+<meta name="keywords" content="furniture on rental, exhibition furniture rental, event furniture rental, trade show furniture, booth furniture rental, exhibition sofa rental, exhibition chair rental, reception counter rental, meeting table rental, bar stool rental, lounge furniture rental, corporate event furniture, conference furniture rental, modular exhibition furniture, exhibition booth accessories, furniture rental Mumbai, exhibition furniture supplier, exhibition stand furniture, premium exhibition furniture, Trio Exhibitions">
+
+<meta name="author" content="Trio Exhibitions">
+
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<link rel="canonical" href="https://trioexhibitions.com/furniture-on-rental.html">
+
+<link rel="alternate" hreflang="en" href="https://trioexhibitions.com/furniture-on-rental.html">
+<link rel="alternate" hreflang="x-default" href="https://trioexhibitions.com/furniture-on-rental.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Furniture on Rental for Exhibitions & Events | Trio Exhibitions">
+<meta property="og:description" content="Premium exhibition and event furniture rental including sofas, chairs, tables, reception counters, bar stools and lounge furniture for trade shows and exhibitions.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://trioexhibitions.com/furniture-on-rental.html">
+<meta property="og:image" content="https://trioexhibitions.com/furniture1.jpg">
+<meta property="og:site_name" content="Trio Exhibitions">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Furniture on Rental for Exhibitions & Events | Trio Exhibitions">
+<meta name="twitter:description" content="Premium exhibition furniture rental services for trade shows, exhibitions and corporate events.">
+<meta name="twitter:image" content="https://trioexhibitions.com/furniture1.jpg">
+
+<link rel="stylesheet" href="style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -68,7 +86,7 @@
  <div class="menu-column">
 
 
-    <a href="miami.html" data-key="miami_booth">Germany Booth</a>
+      <a href="miami.html" data-key="miami_booth">Germany Booth</a>
 
     <a href="thailand.html" data-key="thailand_booth">Thailand Booth</a>
 
@@ -469,6 +487,10 @@
     <i class="fab fa-weixin"></i>
 </a>
 
+
+<a href="#" class="certificate" onclick="openCertificate(event)">
+    <img src="trio-website/Projects/image/certificate.png" alt="Certificate">
+</a>
 <!-- QR Modal -->
 <div id="wechatModal" class="wechat-modal">
     <span class="close-btn" onclick="closeWechatQR()">&times;</span>
@@ -512,5 +534,70 @@ duration:1
 }
 </script>
 <script src="script.js"></script>
+
+<div id="certificateModal" class="certificate-modal">
+
+    <div class="certificate-content">
+
+        <span class="close-btn" onclick="closeCertificate()">&times;</span>
+
+        <h2>Your Exhibition Partner</h2>
+
+        <div class="certificate-row">
+
+            <!-- Certificate 1 -->
+            <img src="trio-website/Projects/image/cer1.jpg"
+                 alt="Certificate 1"
+                 class="certificate-img"
+                 onclick="openCertificateViewer(this.src)">
+
+            <!-- Flags -->
+            <div class="flags">
+
+                <div class="flag-item">
+                    <img src="trio-website/Projects/image/china.png" alt="India">
+                    <span>China</span>
+                </div>
+
+                <div class="flag-item">
+                    <img src="trio-website/Projects/image/India.jpg" alt="Germany">
+                    <span>India</span>
+                </div>
+
+                <div class="flag-item">
+                    <img src="trio-website/Projects/image/korea.jpg" alt="USA">
+                    <span>Korea</span>
+                </div>
+
+            </div>
+
+            <!-- Certificate 2 -->
+            <img src="trio-website/Projects/image/cer2.jpg"
+                 alt="Certificate 2"
+                 class="certificate-img"
+                 onclick="openCertificateViewer(this.src)">
+
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="bottom-certificate">
+            <img src="trio-website/Projects/image/cer3.jpg"
+                 alt="Certificate 3"
+                 class="certificate-img"
+                 onclick="openCertificateViewer(this.src)">
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Full Screen Certificate Viewer -->
+<div id="certificateViewer" class="certificate-viewer">
+
+    <span class="viewer-close" onclick="closeCertificateViewer()">&times;</span>
+
+    <img id="viewerImage" src="" alt="Certificate">
+
+</div>
 </body>
 </html>

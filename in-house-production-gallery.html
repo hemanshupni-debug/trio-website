@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Our Work</title>
+<title>In-House Production Gallery | Exhibition Stand Manufacturing | Trio Exhibitions</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+<meta name="description" content="Explore Trio Exhibitions' in-house production gallery featuring exhibition stand fabrication, CNC cutting, woodworking, metal fabrication, printing, warehouse facilities, and turnkey booth manufacturing projects.">
+
+<meta name="keywords" content="in-house production gallery, exhibition stand manufacturing, booth fabrication gallery, exhibition workshop, CNC cutting, woodworking, metal fabrication, exhibition printing, warehouse gallery, exhibition stand production, custom booth manufacturing, modular booth fabrication, trade show booth production, exhibition contractor India, production facility, exhibition fabrication company, exhibition stand builder, warehouse facility, Trio Exhibitions">
+
+<meta name="author" content="Trio Exhibitions">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<link rel="canonical" href="https://trioexhibitions.com/in-house-production-gallery.html">
+
+<link rel="alternate" hreflang="en" href="https://trioexhibitions.com/in-house-production-gallery.html">
+<link rel="alternate" hreflang="x-default" href="https://trioexhibitions.com/in-house-production-gallery.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="In-House Production Gallery | Trio Exhibitions">
+<meta property="og:description" content="Browse our in-house production gallery showcasing exhibition stand fabrication, warehouse operations, CNC cutting, printing, and turnkey booth manufacturing.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://trioexhibitions.com/in-house-production-gallery.html">
+<meta property="og:image" content="https://trioexhibitions.com/warehouse1.jpg">
+<meta property="og:site_name" content="Trio Exhibitions">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="In-House Production Gallery | Trio Exhibitions">
+<meta name="twitter:description" content="See our exhibition stand manufacturing, fabrication workshop, warehouse, CNC cutting, printing, and production gallery.">
+<meta name="twitter:image" content="https://trioexhibitions.com/warehouse1.jpg">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <style>
 
@@ -263,7 +289,7 @@
  <div class="menu-column">
 
 
-    <a href="miami.html" data-key="miami_booth">Germany Booth</a>
+      <a href="miami.html" data-key="miami_booth">Germany Booth</a>
 
     <a href="thailand.html" data-key="thailand_booth">Thailand Booth</a>
 
@@ -320,19 +346,19 @@ const galleries = {
     warehouse1:[
         "trio-website/Projects/w1/1.png",
         "trio-website/Projects/w1/2.png",
-        "trio-website/Projects/w1/3.mp4",
-        "trio-website/Projects/w1/4.mp4",
+        "trio-website/Projects/w1/5.mp4",
+        "trio-website/Projects/w1/Black White and Yellow Modern Welcome Video (3).mp4",
     ],
     warehouse2:[
         "trio-website/Projects/w2/1.jpeg",
-        "trio-website/Projects/w2/2.mp4",
+        "trio-website/Projects/w2/2..mp4",
         "trio-website/Projects/w2/3.jpg",
         "trio-website/Projects/w2/4.mp4",
     ],
     warehouse3:[
-        "trio-website/Projects/w3/2.mp4",
+        "trio-website/Projects/w3/4.mp4",
         "trio-website/Projects/w3/dg1.png",
-        "trio-website/Projects/w3/3.mp4",
+        "trio-website/Projects/w3/5.mp4",
     ],
 
 };
@@ -568,7 +594,9 @@ document.addEventListener("keydown",function(e){
 <a href="#" class="wechat" onclick="openWechatQR(event)">
     <i class="fab fa-weixin"></i>
 </a>
-
+<a href="#" class="certificate" onclick="openCertificate(event)">
+    <img src="trio-website/Projects/image/certificate.png" alt="Certificate">
+</a>
 <!-- QR Modal -->
 <div id="wechatModal" class="wechat-modal">
     <span class="close-btn" onclick="closeWechatQR()">&times;</span>
@@ -603,5 +631,69 @@ duration:1
 
 });
 </script>
+<div id="certificateModal" class="certificate-modal">
+
+    <div class="certificate-content">
+
+        <span class="close-btn" onclick="closeCertificate()">&times;</span>
+
+        <h2>Your Exhibition Partner</h2>
+
+        <div class="certificate-row">
+
+            <!-- Certificate 1 -->
+            <img src="trio-website/Projects/image/cer1.jpg"
+                 alt="Certificate 1"
+                 class="certificate-img"
+                 onclick="openCertificateViewer(this.src)">
+
+            <!-- Flags -->
+            <div class="flags">
+
+                <div class="flag-item">
+                    <img src="trio-website/Projects/image/china.png" alt="India">
+                    <span>China</span>
+                </div>
+
+                <div class="flag-item">
+                    <img src="trio-website/Projects/image/India.jpg" alt="Germany">
+                    <span>India</span>
+                </div>
+
+                <div class="flag-item">
+                    <img src="trio-website/Projects/image/korea.jpg" alt="USA">
+                    <span>Korea</span>
+                </div>
+
+            </div>
+
+            <!-- Certificate 2 -->
+            <img src="trio-website/Projects/image/cer2.jpg"
+                 alt="Certificate 2"
+                 class="certificate-img"
+                 onclick="openCertificateViewer(this.src)">
+
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="bottom-certificate">
+            <img src="trio-website/Projects/image/cer3.jpg"
+                 alt="Certificate 3"
+                 class="certificate-img"
+                 onclick="openCertificateViewer(this.src)">
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Full Screen Certificate Viewer -->
+<div id="certificateViewer" class="certificate-viewer">
+
+    <span class="viewer-close" onclick="closeCertificateViewer()">&times;</span>
+
+    <img id="viewerImage" src="" alt="Certificate">
+
+</div>
 </body>
 </html>
