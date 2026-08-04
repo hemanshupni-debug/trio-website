@@ -181,20 +181,29 @@
     <h1 id="trust-gallery-title"></h1>
     <div id="trustGalleryGrid" class="trust-gallery-grid"></div>
 </section>
-
 <div id="trustLightbox" class="trust-lightbox">
 
     <span id="trustClose" class="trust-close">&times;</span>
 
     <button id="trustPrev" class="trust-prev">&#10094;</button>
 
-    <img id="trustLightboxImg">
+    <img id="trustLightboxImg" style="display:none;">
+
+    <video
+        id="trustLightboxVideo"
+        controls
+        autoplay
+        playsinline
+        controlsList="nodownload noplaybackrate noremoteplayback"
+        disablePictureInPicture
+        style="display:none;max-width:90%;max-height:90%;">
+    </video>
 
     <button id="trustNext" class="trust-next">&#10095;</button>
 
 </div>
 <script>
-    const params = new URLSearchParams(window.location.search);
+const params = new URLSearchParams(window.location.search);
 const project = params.get("project") || "TRUST";
 
 const galleries = {
@@ -221,34 +230,83 @@ const galleries = {
         "trio-website/Projects/trust4/2.jpg",
         "trio-website/Projects/trust4/3.jpg",
         "trio-website/Projects/trust4/4.jpg",
+        "trio-website/Projects/trust4/WhatsApp Video 2026-08-04 at 2.25.45 PM.mp4",
+
     ],
     TRUST4:[
       "trio-website/Projects/IRAN Automacanis Show 2024/1.png",
       "trio-website/Projects/IRAN Automacanis Show 2024/2.png",
       "trio-website/Projects/IRAN Automacanis Show 2024/3.png",
+
+     
     ],
 };
-
 document.getElementById("trust-gallery-title").textContent = project;
 
-const grid=document.getElementById("trustGalleryGrid");
-const lightbox=document.getElementById("trustLightbox");
-const img=document.getElementById("trustLightboxImg");
+const grid = document.getElementById("trustGalleryGrid");
+const lightbox = document.getElementById("trustLightbox");
 
-let images=galleries[project]||[];
-let index=0;
+const img = document.getElementById("trustLightboxImg");
+const video = document.getElementById("trustLightboxVideo");
 
-images.forEach((src,i)=>{
+let images = galleries[project] || [];
+let index = 0;
 
-    const card=document.createElement("div");
-    card.className="trust-gallery-item";
+function isVideo(file){
+    return /\.(mp4|webm|ogg)$/i.test(file);
+}
 
-    card.innerHTML=`<img src="${src}">`;
+function showMedia(i){
 
-    card.onclick=function(){
+    const file = images[i];
 
-        index=i;
-        img.src=images[index];
+    if(isVideo(file)){
+
+        img.style.display = "none";
+
+        video.style.display = "block";
+        video.src = file;
+        video.load();
+        video.play();
+
+    }else{
+
+        video.pause();
+        video.removeAttribute("src");
+        video.load();
+        video.style.display = "none";
+
+        img.style.display = "block";
+        img.src = file;
+    }
+}
+
+images.forEach((file,i)=>{
+
+    const card = document.createElement("div");
+    card.className = "trust-gallery-item";
+
+    if(isVideo(file)){
+
+        card.innerHTML = `
+            <div class="video-thumb">
+                <video muted>
+                    <source src="${file}" type="video/mp4">
+                </video>
+                <span class="play-btn">&#9658;</span>
+            </div>
+        `;
+
+    }else{
+
+        card.innerHTML = `<img src="${file}">`;
+
+    }
+
+    card.onclick = function(){
+
+        index = i;
+        showMedia(index);
         lightbox.classList.add("active");
 
     };
@@ -257,31 +315,46 @@ images.forEach((src,i)=>{
 
 });
 
-document.getElementById("trustClose").onclick=()=>lightbox.classList.remove("active");
+function stopVideo(){
 
-document.getElementById("trustPrev").onclick=function(){
+    video.pause();
+    video.currentTime = 0;
+    video.removeAttribute("src");
+    video.load();
+
+}
+
+document.getElementById("trustClose").onclick = function(){
+
+    lightbox.classList.remove("active");
+    stopVideo();
+
+};
+
+document.getElementById("trustPrev").onclick = function(){
 
     index--;
-    if(index<0) index=images.length-1;
+    if(index<0) index = images.length-1;
 
-    img.src=images[index];
+    showMedia(index);
 
 };
 
-document.getElementById("trustNext").onclick=function(){
+document.getElementById("trustNext").onclick = function(){
 
     index++;
-    if(index>=images.length) index=0;
+    if(index>=images.length) index = 0;
 
-    img.src=images[index];
+    showMedia(index);
 
 };
 
-lightbox.onclick=function(e){
+lightbox.onclick = function(e){
 
     if(e.target===lightbox){
 
         lightbox.classList.remove("active");
+        stopVideo();
 
     }
 
@@ -297,8 +370,12 @@ document.addEventListener("keydown",function(e){
     if(e.key==="ArrowRight")
         document.getElementById("trustNext").click();
 
-    if(e.key==="Escape")
+    if(e.key==="Escape"){
+
         lightbox.classList.remove("active");
+        stopVideo();
+
+    }
 
 });
 </script>

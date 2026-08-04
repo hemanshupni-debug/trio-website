@@ -191,7 +191,17 @@ body{
 
     <button class="nav-btn prev" onclick="changeImage(-1)">❮</button>
 
-    <img id="lightbox-img">
+    <img id="lightbox-img" style="display:none;">
+
+    <video
+        id="lightbox-video"
+        controls
+        autoplay
+        playsinline
+        controlsList="nodownload noplaybackrate noremoteplayback"
+        disablePictureInPicture
+        style="display:none;max-width:90%;max-height:90%;">
+    </video>
 
     <button class="nav-btn next" onclick="changeImage(1)">❯</button>
 
@@ -679,6 +689,8 @@ const galleries = {
       "trio-website/Projects/trust4/2.jpg",
       "trio-website/Projects/trust4/3.jpg",
       "trio-website/Projects/trust4/4.jpg",
+      "trio-website/Projects/trust4/WhatsApp Video 2026-08-04 at 2.25.45 PM.mp4",
+      
      ],
      platinum:[
       "trio-website/Projects/platinum/1.jpg",
@@ -697,7 +709,16 @@ const galleries = {
         "trio-website/Projects/platinum1/2.jpg",
         "trio-website/Projects/platinum1/3.jpg",
       ],
-      
+      JASOLAR:[
+        "trio-website/Projects/JA Solar/1 (1).jpg",
+        "trio-website/Projects/JA Solar/2.jpg",
+        "trio-website/Projects/JA Solar/3.jpg",
+      ],
+      Trinasolar:[
+        "trio-website/Projects/Trina Solar/1.jpg",
+        "trio-website/Projects/Trina Solar/2.jpg",
+        "trio-website/Projects/Trina Solar/3.jpg",
+      ],
       
 };
 
@@ -707,72 +728,122 @@ project ? project.toUpperCase() : "Gallery";
 
 const grid = document.getElementById("galleryGrid");
 
-let currentImages = [];
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxVideo = document.getElementById("lightbox-video");
+
+let currentImages = galleries[project] || [];
 let currentIndex = 0;
 
-if (galleries[project]) {
+function isVideo(file){
+    return /\.(mp4|webm|ogg)$/i.test(file);
+}
 
-    currentImages = galleries[project];
+currentImages.forEach((file,index)=>{
 
-    galleries[project].forEach((img,index) => {
+    if(isVideo(file)){
 
         grid.innerHTML += `
-            <div class="gallery-item">
-                <img src="${img}" onclick="openLightbox(${index})">
+        <div class="gallery-item">
+            <div class="video-thumb" onclick="openLightbox(${index})">
+                <video muted preload="metadata">
+                    <source src="${file}" type="video/mp4">
+                </video>
+                <span class="play-btn">&#9658;</span>
             </div>
-        `;
+        </div>`;
+    }else{
 
-    });
+        grid.innerHTML += `
+        <div class="gallery-item">
+            <img src="${file}" onclick="openLightbox(${index})">
+        </div>`;
+    }
+
+});
+
+function showMedia(index){
+
+    const file = currentImages[index];
+
+    if(isVideo(file)){
+
+        lightboxImg.style.display="none";
+
+        lightboxVideo.style.display="block";
+        lightboxVideo.src=file;
+        lightboxVideo.load();
+        lightboxVideo.play();
+
+    }else{
+
+        lightboxVideo.pause();
+        lightboxVideo.removeAttribute("src");
+        lightboxVideo.load();
+        lightboxVideo.style.display="none";
+
+        lightboxImg.style.display="block";
+        lightboxImg.src=file;
+
+    }
 
 }
 
 function openLightbox(index){
 
-    currentIndex = index;
+    currentIndex=index;
 
-    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox").style.display="flex";
 
-    document.getElementById("lightbox-img").src =
-    currentImages[currentIndex];
+    showMedia(currentIndex);
+
+}
+
+function stopVideo(){
+
+    lightboxVideo.pause();
+    lightboxVideo.currentTime=0;
+    lightboxVideo.removeAttribute("src");
+    lightboxVideo.load();
+
 }
 
 function closeLightbox(){
 
-    document.getElementById("lightbox").style.display = "none";
+    document.getElementById("lightbox").style.display="none";
+    stopVideo();
+
 }
 
 function changeImage(step){
 
-    currentIndex += step;
+    currentIndex+=step;
 
-    if(currentIndex < 0){
-        currentIndex = currentImages.length - 1;
-    }
+    if(currentIndex<0)
+        currentIndex=currentImages.length-1;
 
-    if(currentIndex >= currentImages.length){
-        currentIndex = 0;
-    }
+    if(currentIndex>=currentImages.length)
+        currentIndex=0;
 
-    document.getElementById("lightbox-img").src =
-    currentImages[currentIndex];
+    showMedia(currentIndex);
+
 }
 
-document.addEventListener("keydown", function(e){
+document.addEventListener("keydown",function(e){
 
-    if(e.key === "ArrowRight"){
+    const lightbox=document.getElementById("lightbox");
+
+    if(lightbox.style.display!=="flex") return;
+
+    if(e.key==="ArrowRight")
         changeImage(1);
-    }
 
-    if(e.key === "ArrowLeft"){
+    if(e.key==="ArrowLeft")
         changeImage(-1);
-    }
 
-    if(e.key === "Escape"){
+    if(e.key==="Escape")
         closeLightbox();
-    }
 
 });
-
 </script>
 <div class="cursor"></div>
 <!-- FOOTER -->
